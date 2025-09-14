@@ -15,7 +15,7 @@ require(GGally)
 require(CCA)
 require(CCP)
 
-setwd("G:/My Drive/labs/Nottingham/Duckweed/Figuras paper/Clean data/Fig 1/Fig 1d/")
+setwd("G:/My Drive/labs/Nottingham/Duckweed/Figuras paper/Clean data/Fig 4/Fig 4a/")
 Exudates <- read.table("Exudates.txt", header = TRUE, row.names = 1)
 
 Exudates[,1:5]
@@ -57,4 +57,5 @@ ps.3_bray <- phyloseq::distance(ps.Syncom.Root5, method = "bray")
 sample_ps.3c <- data.frame(sample_data(ps.Syncom.Root5))
 # Adonis test
 adonis2(varespec.bray ~ CCL*Species, data = Exudates)
+
 
