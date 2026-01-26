@@ -1,0 +1,1099 @@
+														SI7820
+ID	Name	Formula	Calc. MW	m/z	RT [min]	Reference Ion	Annot. Source: Predicted Compositions	Annot. Source: mzCloud Search	mzCloud Best Match	mzCloud Best Match Confidence	Annot. Source: ChemSpider Search	# ChemSpider Results	Annot. Source: MassList Search	 Area: 1 (F1)
+1	γ-Linolenic acid ethyl ester	C20 H34 O2	312.26627	313.27354	4.907	[M+H]+1	No match	Invalid mass	57.3	7.9	No results	0	No results	4.44E+06
+2	α-Cyano-4-hydroxycinnamic acid	C10 H7 N O3	143.03737	188.03557	7.448	[M+FA-H]-1	No match	Invalid mass	84.6	49.8	No results	0	No results	2.88E+07
+3	α-Cyano-4-hydroxycinnamic acid	C10 H7 N O3	189.04284	188.03557	7.446	[M-H]-1	Full match	Full match	84.6	49.8	Partial match	6	No results	2.88E+07
+4	α-Cyano-4-hydroxycinnamic acid	C10 H7 N O3	207.05346	188.03561	7.456	[M-H-H2O]-1	No match	Invalid mass	84.6	49.8	No match	6	No results	2.88E+07
+5	Î³-Glu-Gly	C7 H12 N2 O5	204.07476	205.08202	11.533	[M+H]+1	Full match	Invalid mass			Full match	6	No results	1.64E+08
+6	{2-[(2E)-5-Hydroxy-2-penten-1-yl]-3-oxocyclopentyl}acetic acid	C12 H18 O4	226.12067	225.1134	4.238	[M-H]-1	Full match	No results			Full match	5	No results	1.38E+07
+7	YU0650000	C7 H8 N2 O	136.06307	135.05617	4.749	[M-H]-1	Full match	No results			Full match	6	No results	1.11E+06
+8	Xylitol	C5 H12 O5	152.06877	151.06149	11.579	[M-H]-1	Full match	No results			Full match	8	No results	1.11E+05
+9	XM8330200	C5 H4 O2 S	127.99349	126.98622	14.833	[M-H]-1	Full match	No results			Full match	1	No results	4.40E+06
+10	Vitexin	C21 H20 O10	432.10544	431.09837	9.241	[M-H]-1	Not the top hit	Full match	90.7	58.3	Not the top hit	20	No results	8.39E+05
+11	Vanillin	C8 H8 O3	152.04735	153.05463	4.762	[M+H]+1	Full match	No results			Full match	39	No results	8.72E+06
+12	UX9465930	C6 H9 N	95.07353	96.08076	23.204	[M+H]+1	Full match	No results			Full match	1	No results	1.33E+06
+13	ureidoglycolic acid	C3 H6 N2 O4	134.03279	135.04007	7.273	[M+H]+1	Full match	No results			Full match	3	No results	7.60E+05
+14	UNII:U48N53PWSE	C10 H14 O3	182.09479	387.17993	4.03	[2M+Na]+1	No results	No results			Full match	23	No results	9.93E+05
+15	Undecanedioic acid	C11 H20 O4	216.13629	217.14344	3.611	[M+H]+1	Full match	No results			Full match	2	No results	9.40E+05
+16	UDP-Glucose	C15 H24 N2 O17 P2	566.0558	565.04852	13.419	[M-H]-1	Full match	No results			Partial match	7	Full match	9.88E+04
+17	Tyramine	C8 H11 N O	137.0842	136.07708	4.744	[M-H]-1	Full match	No results			Full match	14	No results	2.73E+06
+18	Tyramine	C8 H11 N O	137.08437	136.07716	7.46	[M-H]-1	Full match	No results			Full match	14	No results	6.26E+06
+19	Trolox	C14 H18 O4	250.12052	251.1278	3.627	[M+H]+1	Full match	No results			Full match	11	No results	1.23E+07
+20	Trinexapac-ethyl	C13 H16 O5	252.09974	253.10702	4.162	[M+H]+1	Full match	No results			Full match	6	No results	5.51E+06
+21	trimetozine	C14 H19 N O5	281.12656	282.13384	3.619	[M+H]+1	No results	No results			Full match	2	No results	4.08E+05
+22	Triethylene glycol monomethyl ether	C7 H16 O4	164.10508	165.11221	4.751	[M+H]+1	Full match	No results			Full match	2	No results	4.55E+05
+23	Triethylene glycol monomethyl ether	C7 H16 O4	164.10488	165.11218	5.906	[M+H]+1	Full match	No results			Full match	2	No results	3.75E+05
+24	Triethyl phosphate	C6 H15 O4 P	182.07076	183.07804	4.121	[M+H]+1	Full match	Full match	82.2	51.4	Full match	2	No results	7.18E+05
+25	Triethanolamine	C6 H15 N O3	149.10524	150.11252	10.939	[M+H]+1	Full match	Full match	99.1	97	Full match	1	No results	1.11E+08
+26	Triethanolamine	C6 H15 N O3	149.1052	150.11248	9.789	[M+H]+1	Full match	Full match	97.1	88.9	Full match	1	No results	8.11E+07
+27	trans-Aconitate	C6 H6 O6	174.01666	173.00938	14.681	[M-H]-1	Full match	No results			Partial match	8	Full match	1.78E+07
+28	trans-2-Dodecenoylcarnitine	C19 H35 N O4	341.25629	342.26355	4.75	[M+H]+1	Full match	No results			Full match	1	No results	3.04E+06
+29	trans-2-Dodecenoylcarnitine	C19 H35 N O4	341.25634	342.26356	7.453	[M+H]+1	Full match	No results			Full match	1	No results	1.37E+06
+30	trans-2-Dodecenoylcarnitine	C19 H35 N O4	341.25631	342.26359	3.956	[M+H]+1	Full match	No results			Full match	1	No results	1.36E+07
+31	trans-10-Heptadecenoic Acid	C17 H32 O2	268.24009	267.23281	3.434	[M-H]-1	Full match	Full match	72.6	8.6	Partial match	7	No results	6.90E+07
+32	TI1100000	C20 H30 O4	334.21417	335.22148	3.575	[M+H]+1	Full match	No results			Full match	36	No results	1.79E+07
+33	Thymine	C5 H6 N2 O2	126.04295	127.05021	4.817	[M+H]+1	Full match	Full match	82	9.1	Full match	3	No results	3.85E+07
+34	THTC	C5 H8 O2 S	132.02458	150.05842	11.019	[M+NH4]+1	Full match	No results			Full match	2	No results	4.17E+06
+35	THREONIC ACID, L-	C4 H8 O5	136.0375	135.03022	10.968	[M-H]-1	Full match	No results			Full match	4	No results	4.63E+06
+36	THREONIC ACID, L-	C4 H8 O5	136.03749	135.03022	10.695	[M-H]-1	Full match	No results			Full match	7	No results	1.47E+07
+37	THREO-SPHINGOSINE, (-)-	C18 H37 N O2	299.28235	332.31583	7.468	[M+H+MeOH]+1	Full match	No results			Full match	6	No results	2.14E+05
+38	Thiophene	C4 H4 S	84.00334	82.99607	14.843	[M-H]-1	Full match	No results			Full match	1	No results	2.09E+06
+39	Theophylline	C7 H8 N4 O2	180.06494	179.05772	7.407	[M-H]-1	Full match	No results			Full match	3	No results	2.06E+05
+40	Theophylline	C7 H8 N4 O2	180.06484	181.07199	6.046	[M+H]+1	Full match	No results			Full match	3	No results	6.05E+05
+41	Theophylline	C7 H8 N4 O2	180.06367	179.05638	11.084	[M-H]-1	No match	Invalid mass	54.3	7.7	No match	104	No match	2.13E+07
+42	Tetrahydrocortisone	C21 H32 O5	364.22483	365.23234	3.557	[M+H]+1	Full match	No results			Full match	9	No results	8.88E+06
+43	tenivastatin	C25 H40 O6	436.28234	437.28966	3.466	[M+H]+1	No results	No results			Full match	1	No results	3.20E+06
+44	Sucrose	C12 H22 O11	342.11614	341.10908	13.005	[M-H]-1	Full match	Full match	86	71.6	Partial match	73	Full match	3.93E+06
+45	Succinimide	C4 H5 N O2	99.03232	158.04617	4.746	[M-H+HAc]-1	Full match	No results			Full match	3	No results	1.76E+06
+46	Succinic acid	C4 H6 O4	118.02688	117.01961	12.787	[M-H]-1	Full match	No results			Full match	9	No results	1.20E+07
+47	Succinic acid	C4 H6 O4	118.02689	117.01962	15.008	[M-H]-1	Full match	No results			Full match	9	No results	1.22E+07
+48	Suberic acid	C8 H14 O4	174.08939	173.08219	4.744	[M-H]-1	Full match	Full match	59.6	61.1	Full match	8	No results	6.81E+06
+49	Stiripentol	C14 H18 O3	234.12556	235.13276	3.584	[M+H]+1	Full match	No results			Full match	13	No results	1.29E+07
+50	Stearidonoyl glycine	C20 H31 N O3	345.25131	346.25857	9.453	[M+H]+1	No match	Invalid mass	88.5	9.4	No match	1	No results	4.58E+06
+51	Stearidonoyl glycine	C20 H31 N O3	345.25127	346.25855	10.107	[M+H]+1	No match	Invalid mass	85.5	9.3	No match	1	No results	1.14E+06
+52	Stearic acid	C18 H36 O2	284.27147	283.26419	3.414	[M-H]-1	Full match	Full match	97.4	9.9	Full match	5	Full match	4.31E+09
+53	Stearic acid	C18 H36 O2	284.27147	283.26419	3.869	[M-H]-1	Full match	Full match	97.4	9.9	Full match	5	Full match	4.34E+08
+54	Stearic acid	C18 H36 O2	284.27144	283.26417	4.437	[M-H]-1	Full match	Full match	97.4	9.9	Full match	5	Full match	3.91E+08
+55	ST2975000	C6 H7 N3 O2	153.05386	154.06113	4.749	[M+H]+1	Full match	No results			Full match	2	No results	8.72E+06
+56	ST2975000	C6 H7 N3 O2	153.05381	154.06109	7.691	[M+H]+1	Full match	No results			Full match	2	No results	3.57E+06
+57	ST2975000	C6 H7 N3 O2	153.05386	154.06113	5.945	[M+H]+1	Full match	No results			Full match	2	No results	5.35E+06
+58	sn-Glycero-3-Phosphocholine	C8 H20 N O6 P	257.10293	258.11021	12.336	[M+H]+1	Full match	No results			Partial match	3	Full match	3.05E+07
+59	shinanolone	C11 H12 O3	192.07859	251.09244	4.154	[M-H+HAc]-1	Full match	No results			Full match	31	No results	1.14E+06
+60	Sebacic acid	C10 H18 O4	202.12055	203.12781	3.687	[M+H]+1	Full match	No results			Full match	9	No results	6.65E+06
+61	Salicylic acid, 5-nitro-	C7 H5 N O5	183.01707	182.0098	11.642	[M-H]-1	Full match	No results			Full match	1	No results	3.63E+06
+62	salicylamide	C7 H7 N O2	137.04799	196.06185	4.506	[M-H+HAc]-1	Full match	No results			Full match	15	No results	8.96E+06
+63	Safingol	C18 H39 N O2	301.29806	302.30533	6.251	[M+H]+1	Full match	No results			Full match	3	No results	9.76E+05
+64	Rizatriptan	C15 H19 N5	269.16303	270.17031	9.494	[M+H]+1	No results	No results			Full match	2	No results	3.64E+05
+65	Ricinoleic Acid	C18 H34 O3	298.25082	279.23299	3.436	[M-H-H2O]-1	Full match	No results			Full match	15	No results	1.22E+08
+66	Ricinoleic Acid	C18 H34 O3	298.25087	297.24358	3.889	[M-H]-1	Full match	No results			Full match	15	No results	2.11E+07
+67	Rehmaionoside C	C19 H32 O8	388.20988	387.20264	4.736	[M-H]-1	Full match	No results			Not the top hit	3	No results	3.10E+06
+68	Quwenzhi	C11 H21 N O3	215.15212	216.1594	11.537	[M+H]+1	Full match	No results			Full match	2	No results	2.41E+08
+69	Quinolinic acid	C7 H5 N O4	167.02212	166.01485	12.882	[M-H]-1	Full match	No results			Full match	6	No results	7.47E+07
+70	pyroglutamylglycine	C7 H10 N2 O4	186.06411	187.07139	10.85	[M+H]+1	Full match	No results			Full match	3	No results	5.42E+07
+71	pyroglutamylglycine	C7 H10 N2 O4	186.06429	185.05708	4.821	[M-H]-1	Full match	No results			Full match	3	No results	8.47E+06
+72	pyroglutamylglycine	C7 H10 N2 O4	186.06414	187.07142	6.073	[M+H]+1	Full match	No results			Full match	3	No results	1.32E+07
+73	Pyridoxal	C8 H9 N O3	167.05832	168.06556	4.753	[M+H]+1	Full match	No results			Full match	12	No results	1.76E+07
+74	Pyridoxal	C8 H9 N O3	167.05835	168.06558	7.487	[M+H]+1	Full match	No results			Full match	12	No results	2.39E+07
+75	Protocatechuic aldehyde	C7 H6 O3	138.03179	139.03905	12.039	[M+H]+1	Full match	No results			Full match	11	No results	1.84E+07
+76	Protocatechuic acid	C7 H6 O4	154.02692	153.01964	7.464	[M-H]-1	Full match	No results			Full match	10	No results	1.48E+06
+77	Protocatechuic acid	C7 H6 O4	154.02694	153.01966	13.016	[M-H]-1	Full match	No results			Full match	10	No results	3.11E+06
+78	Propyl (9E)-12-hydroxy-9-octadecenoate	C21 H40 O3	340.29731	341.30458	3.871	[M+H]+1	Full match	No results			Full match	2	No results	6.06E+05
+79	Propyl (9E)-12-hydroxy-9-octadecenoate	C21 H40 O3	340.29746	341.30473	5.026	[M+H]+1	Full match	No results			Full match	2	No results	4.43E+06
+80	propionylcarnitine	C10 H19 N O4	217.13146	218.13874	12.391	[M+H]+1	Full match	No results			Full match	2	No results	1.24E+08
+81	Propionic acid	C3 H6 O2	74.03683	73.02946	7.457	[M-H]-1	Full match	No results			Full match	9	No results	1.33E+08
+82	Proline	C5 H9 N O2	115.06335	116.07062	11.729	[M+H]+1	Full match	Full match	99.7	10	Partial match	8	Full match	1.45E+08
+83	Pregabalin	C8 H17 N O2	159.12594	160.13321	11.813	[M+H]+1	Full match	No results			Full match	3	No results	6.22E+05
+84	Pivagabine	C9 H17 N O3	187.12089	188.12816	11.558	[M+H]+1	Full match	No results			Full match	4	No results	1.16E+09
+85	Piperidione	C9 H15 N O2	169.11035	202.14384	11.588	[M+H+MeOH]+1	Full match	No results			Full match	4	No results	1.72E+09
+86	Pinolenic acid ethyl ester	C20 H34 O2	291.25612	292.2635	3.937	[M+H]+1	No match	Invalid mass	63.4	46.9	No match	1	No results	6.78E+07
+87	Picolinic acid	C6 H5 N O2	123.03206	124.03934	5.958	[M+H]+1	Full match	Full match	58.8	7.9	Full match	5	Full match	9.26E+06
+88	Phytosphingosine	C18 H39 N O3	317.29282	318.3001	3.457	[M+H]+1	Full match	No results			Full match	1	No results	2.40E+06
+89	Phenylalanine	C9 H11 N O2	165.079	166.08627	9.989	[M+H]+1	Full match	No results			Partial match	19	Full match	2.58E+07
+90	phensuximide	C11 H11 N O2	189.07895	190.08622	5.926	[M+H]+1	Full match	No results			Full match	6	No results	1.14E+06
+91	Phenol	C6 H6 O	94.04193	93.03467	7.455	[M-H]-1	Full match	No results			Full match	2	No results	3.74E+07
+92	Phenobarbital-d5	C12 H7 [2]H5 N2 O3	237.11278	236.10551	3.458	[M-H]-1	No match	Invalid mass	84.7	71.1	No results	0	No results	3.14E+07
+93	Phenobarbital	C12 H12 N2 O3	232.08492	231.07758	7.387	[M-H]-1	Full match	No results			Full match	3	No results	5.84E+05
+94	phenacemide	C9 H10 N2 O2	178.07408	161.07095	7.475	[M+H-H2O]+1	No results	No results			Full match	5	No results	1.57E+07
+95	Perillic acid	C10 H14 O2	166.09958	165.09236	4.009	[M-H]-1	Full match	No results			Full match	46	No results	3.31E+07
+96	Pentadecanoic Acid	C15 H30 O2	242.22465	241.21737	3.455	[M-H]-1	Full match	Full match	81.2	9.1	Full match	15	No results	2.72E+08
+97	Pentacosylic acid	C25 H50 O2	382.38121	381.37393	3.371	[M-H]-1	Full match	No results			Full match	5	No results	1.05E+07
+98	paracetamol sulfate	C8 H9 N O5 S	231.02029	230.01302	11.194	[M-H]-1	Full match	No results			Full match	2	No results	2.30E+06
+99	Pantothenate	C9 H17 N O5	219.11065	220.11794	4.758	[M+H]+1	Full match	No results			Partial match	2	Full match	4.12E+06
+100	Palmitoleic acid	C16 H30 O2	254.22458	253.2173	3.447	[M-H]-1	Full match	Full match	81.7	9.1	Full match	17	No results	3.48E+08
+101	Palmitic Acid	C16 H32 O2	273.26691	274.27418	6.923	[M+H]+1	No match	Invalid mass	82	51.3	No match	2	No results	1.26E+07
+102	O~3~-[2,6-Dihydroxy-2-(2-methoxy-2-oxoethyl)-6-methylheptanoyl]cephalotaxine	C29 H39 N O9	545.26264	546.26996	4.685	[M+H]+1	Full match	No results			Full match	2	No results	5.47E+05
+103	oxiracetam	C6 H10 N2 O3	158.06915	159.07643	9.87	[M+H]+1	Full match	No results			Full match	6	No results	4.71E+07
+104	oxiracetam	C6 H10 N2 O3	158.06918	159.07644	5.227	[M+H]+1	Full match	No results			Full match	6	No results	3.53E+07
+105	Oxidopamine	C8 H11 N O3	169.07388	170.08115	9.191	[M+H]+1	Full match	No results			Full match	6	No results	1.49E+08
+106	Oxalic acid	C2 H2 O4	89.99526	88.98798	14.688	[M-H]-1	Full match	No results			Full match	1	No results	5.51E+07
+107	Orlistat	C29 H53 N O5	495.39239	496.40086	3.812	[M+H]+1	No results	No results			Full match	1	No results	2.20E+06
+108	Oleoyl ethanolamide	C20 H39 N O2	331.30851	332.31578	4.192	[M+H]+1	No match	Invalid mass	83.7	52.3	No results	0	No results	1.18E+06
+109	Oleoyl ethanolamide	C20 H39 N O2	331.30858	332.31586	4.666	[M+H]+1	No match	Invalid mass	88.2	54.9	No results	0	No results	2.83E+06
+110	Oleic acid	C18 H34 O2	282.25587	281.24859	3.419	[M-H]-1	Full match	Full match	97.6	9.9	Full match	12	No results	1.05E+09
+111	O-(4,8-dimethylnonanoyl)carnitine	C18 H35 N O4	329.25653	330.2638	9.824	[M+H]+1	Full match	No results			Full match	2	No results	5.76E+06
+112	NT2544000	C8 H6 O5	182.02183	181.01455	11.587	[M-H]-1	Full match	No results			Full match	8	No results	8.27E+06
+113	NP-020240	C14 H20 O3	218.13066	219.138	3.583	[M+H]+1	No match	Invalid mass	65.6	66.6	No match	14	No results	2.16E+07
+114	NP-020014	C15 H26 O3	276.17247	277.17975	3.582	[M+H]+1	No match	Invalid mass	68.2	67.4	No match	11	No results	1.85E+07
+115	NP-016386	C16 H26 O4	232.14631	233.15359	3.625	[M+H]+1	No match	Invalid mass	75.7	55.9	No match	48	No results	1.66E+07
+116	NP-013098	C26 H28 O14	564.1479	565.15471	9.281	[M+H]+1	Not the top hit	Full match	94.7	84	Not the top hit	10	No results	4.00E+05
+117	NP-013098	C26 H28 O14	564.14805	563.14153	9.965	[M-H]-1	Not the top hit	Full match	94.7	84	Not the top hit	10	No results	1.67E+05
+118	NP-012972	C14 H24 O3	262.15662	263.16354	3.505	[M+H]+1	No match	Invalid mass	73.1	70.2	No match	5	No results	1.62E+07
+119	NP-011548	C18 H34 O3	280.24027	281.24757	3.445	[M+H]+1	No match	Invalid mass	76.7	48.1	No match	16	No results	7.17E+07
+120	NP-007909	C13 H20 O3	224.14136	223.1343	4.746	[M-H]-1	Full match	Full match	61.6	65.5	Partial match	16	No results	2.11E+06
+121	NP-007909	C13 H20 O3	224.14128	223.13415	4.451	[M-H]-1	Full match	Full match	61.6	65.5	Partial match	16	No results	5.94E+06
+122	NP-006255	C17 H26 O4	276.17574	275.16847	3.344	[M-H]-1	No match	Invalid mass	72.7	46.5	No results	0	No results	9.58E+06
+123	NP-004038	C16 H24 O3	246.162	247.16927	3.601	[M+H]+1	No match	Invalid mass	75.5	71.9	No match	6	No results	5.52E+07
+124	NP-002676	C15 H26 O4	316.18877	315.18155	3.854	[M-H]-1	No match	Invalid mass	52.3	63.6	No match	2	No results	2.17E+07
+125	NP-001596	C16 H30 O4	308.19872	309.20602	3.577	[M+H]+1	No match	Invalid mass	64.2	66.2	No match	9	No results	1.82E+07
+126	NP-001134	C16 H22 N4 O2	302.17305	301.16577	4.056	[M-H]-1	Not the top hit	Full match	61.8	61.8	Partial match	2	No results	2.34E+07
+127	NP-001134	C16 H22 N4 O2	302.17306	301.1658	4.514	[M-H]-1	Full match	Full match	61.8	61.8	Partial match	2	No results	8.66E+06
+128	Normetanephrine	C9 H13 N O3	183.08965	184.09689	4.738	[M+H]+1	Full match	No results			Partial match	9	Full match	2.83E+07
+129	Normetanephrine	C9 H13 N O3	183.08956	184.09684	7.951	[M+H]+1	Full match	No results			Partial match	9	Full match	2.04E+07
+130	Normetanephrine	C9 H13 N O3	183.08958	184.09685	6.331	[M+H]+1	Full match	No results			Partial match	9	Full match	1.14E+07
+131	Norethindrone	C20 H26 O2	298.19302	299.20029	3.558	[M+H]+1	Full match	No results			Full match	9	No results	1.75E+07
+132	noradrenaline	C8 H11 N O3	169.0739	202.10739	5.951	[M+H+MeOH]+1	Full match	No results			Full match	6	No results	4.82E+07
+133	Nonanoic acid	C9 H18 O2	158.13095	157.12368	3.628	[M-H]-1	Full match	Full match	94.8	9.7	Full match	25	No results	5.57E+08
+134	Nojirimycin	C6 H13 N O5	179.07925	180.08652	21.408	[M+H]+1	Full match	No results			Full match	12	No results	3.49E+05
+135	Nitrendipine	C18 H20 N2 O6	360.13244	359.12522	7.47	[M-H]-1	Full match	No results			Full match	4	No results	4.35E+06
+136	Nigakilactone N	C21 H30 O7	394.19948	395.20591	3.544	[M+H]+1	No results	No results			Full match	3	No results	1.39E+06
+137	Nicotinuric acid	C8 H8 N2 O3	180.05356	181.06084	9.143	[M+H]+1	Full match	No results			Full match	3	No results	4.54E+06
+138	Niacin	C6 H5 N O2	123.0323	122.02504	12.903	[M-H]-1	Full match	No results			Full match	5	No results	2.29E+07
+139	Niacin	C6 H5 N O2	123.03207	124.03934	13.121	[M+H]+1	Full match	No results			Full match	5	No results	3.56E+07
+140	Naphthalen-2-amine	C10 H9 N	143.07356	144.08084	7.665	[M+H]+1	Full match	No results			Full match	7	No results	2.64E+05
+141	N6-(2-(1H-imidazol-4-yl)ethyl)lysine	C11 H20 N4 O2	240.15857	241.16584	7.915	[M+H]+1	Full match	No results			Full match	1	No results	1.70E+06
+142	N2-Succinyl-L-glutamic acid 5-semialdehyde	C9 H13 N O6	231.07427	230.067	12.294	[M-H]-1	Full match	No results			Full match	4	No results	8.03E+06
+143	N1-(1,3,5-Trimethyl-1H-pyrazol-4-yl)-2-cyano-3-(dimethylamino)acrylamide	C12 H17 N5 O	247.14205	248.14932	11.815	[M+H]+1	No match	Invalid mass	67.5	47.6	No match	2	No results	6.63E+07
+144	N-Tetracosanoylglycine	C26 H51 N O3	425.38673	426.39401	3.795	[M+H]+1	No results	No results			Full match	1	No results	8.04E+05
+145	N-Pentadecanoylglycine	C17 H33 N O3	299.24608	300.25336	9.084	[M+H]+1	Full match	No results			Full match	1	No results	1.83E+06
+146	N-Nonanoylglycine	C11 H21 N O3	215.1522	274.16609	7.452	[M-H+HAc]-1	Full match	No results			Full match	2	No results	4.10E+06
+147	N-NITROSOSARCOSINE	C3 H6 N2 O3	118.03807	99.02022	11.796	[M-H-H2O]-1	Full match	No results			Full match	2	No results	1.34E+05
+148	N-Nitrosoproline	C5 H8 N2 O3	144.05378	143.0465	11.506	[M-H]-1	Full match	No results			Full match	3	No results	1.49E+05
+149	N-methylethanolamine phosphate	C3 H10 N O4 P	155.03446	309.06164	10.738	[2M-H]-1	Full match	No results			Full match	4	No results	1.28E+05
+150	N-Methyl-2-pyrrolidone	C5 H9 N O	99.06843	100.07568	7.484	[M+H]+1	Full match	Full match	70.8	44.7	Not the top hit	7	No results	1.98E+07
+151	N-methyl-2-oxoglutaramic acid	C6 H9 N O4	159.05315	177.08697	12.529	[M+NH4]+1	Full match	No results			Full match	5	No results	2.96E+07
+152	N-lauroylglycine	C14 H27 N O3	257.1992	258.20655	3.431	[M+H]+1	Full match	No results			Full match	1	No results	2.71E+07
+153	N-Heptadecanoylglycine	C19 H37 N O3	327.27718	328.28446	3.934	[M+H]+1	Full match	No results			Full match	1	No results	6.08E+07
+154	N-Formyl-L-glutamic acid	C6 H9 N O5	175.04819	176.05545	13.238	[M+H]+1	Full match	No results			Not the top hit	7	No results	6.81E+06
+155	n-Butyl lactate	C7 H14 O3	146.09454	205.10833	4.369	[M-H+HAc]-1	Full match	No results			Full match	8	No results	5.75E+06
+156	N-Acetylleucylleucine	C14 H26 N2 O4	286.18917	287.19645	4.627	[M+H]+1	Full match	No results			Full match	1	No results	6.59E+05
+157	N-Acetyl-L-phenylalanine	C11 H13 N O3	207.08979	206.0826	7.588	[M-H]-1	Full match	No results			Full match	13	No results	6.37E+05
+158	N-Acetyl-L-leucine	C8 H15 N O3	173.10524	174.11252	11.432	[M+H]+1	Full match	No results			Full match	8	No results	5.90E+08
+159	N-acetyl-L-2-aminoadipic acid	C8 H13 N O5	203.07966	202.07239	12.457	[M-H]-1	Full match	No results			Full match	2	No results	4.26E+06
+160	N-acetyl-L-2-aminoadipic acid	C8 H13 N O5	203.07944	186.07612	7.874	[M+H-H2O]+1	Full match	No results			Full match	2	No results	1.03E+07
+161	N-acetyl-L-2-aminoadipic acid	C8 H13 N O5	203.07948	204.08676	10.728	[M+H]+1	Full match	No results			Full match	2	No results	6.21E+06
+162	N-[4-(5-Amino-2,2-dimethyl-4-oxo-3,4-dihydro-2H-chromen-6-yl)-1-hydroxy-4-oxo-2-butanyl]formamide	C16 H20 N2 O5	320.13724	319.13014	4.648	[M-H]-1	Full match	No results			Full match	2	No results	1.31E+06
+163	N-[3-(aminosulfonyl)phenyl]-2,3-dihydro-1,4-benzodioxine-2-carboxamide	C15 H14 N2 O5 S	334.06659	333.05933	13.134	[M-H]-1	No match	Invalid mass	61.5	44.7	No match	7	No results	1.18E+05
+164	N-[3-(aminosulfonyl)phenyl]-2,3-dihydro-1,4-benzodioxine-2-carboxamide	C15 H14 N2 O5 S	298.08999	333.0594	13.121	[M+Cl]-1	No results	Invalid mass	61.5	44.7	No match	2	No results	1.18E+05
+165	N-[(6-Hydroxy-1,3-benzodioxol-5-yl)carbonyl]glycine	C10 H9 N O6	239.043	238.03581	11.139	[M-H]-1	Full match	No results			Full match	1	No results	1.39E+05
+166	N-[(4E)-4-Nonenoyl]glycine	C11 H19 N O3	213.13661	246.1701	12.081	[M+H+MeOH]+1	Full match	Invalid mass			Full match	9	No results	4.41E+08
+167	N-[(4E)-4-Nonenoyl]glycine	C11 H19 N O3	213.13648	214.14377	4.722	[M+H]+1	Full match	No results			Full match	9	No results	2.84E+07
+168	N-[(4E)-4-Nonenoyl]glycine	C11 H19 N O3	213.1364	214.14367	9.698	[M+H]+1	Full match	No results			Full match	9	No results	2.19E+07
+169	N-(tert-Butoxycarbonyl)-L-leucine	C11 H21 N O4	231.14717	232.15444	12.106	[M+H]+1	Full match	No results			Full match	6	No results	1.07E+09
+170	N-(2,6,10,14-Tetramethylpentadecanoyl)glycine	C21 H41 N O3	355.30834	356.31568	3.883	[M+H]+1	Full match	No results			Full match	1	No results	5.66E+06
+171	N,N-Dimethylacetamide	C4 H9 N O	87.06837	86.06109	4.75	[M-H]-1	Full match	No results			Full match	13	No results	1.61E+05
+172	N,N-Bis(2-hydroxyethyl)formamide	C5 H11 N O3	133.07389	134.08117	8.027	[M+H]+1	Full match	Full match	75.8	56	Partial match	6	No results	1.69E+07
+173	Myristyl sulfate	C14 H30 O4 S	294.18305	293.17577	3.456	[M-H]-1	No match	Invalid mass	97.5	9.9	No match	8	No results	3.08E+08
+174	Myristyl sulfate	C14 H30 O4 S	248.17751	249.18491	3.461	[M+H]+1	No match	Invalid mass	97.5	9.9	No match	5	No results	5.86E+06
+175	Myristoleic acid	C14 H26 O2	226.19346	225.1862	3.472	[M-H]-1	Full match	No results			Full match	22	No results	6.13E+07
+176	Myristic Acid	C14 H28 O2	228.2091	227.20182	3.466	[M-H]-1	Full match	Full match	86.5	9.3	Not the top hit	14	No results	5.94E+08
+177	Myristamide	C14 H29 N O	227.22508	260.25849	7.435	[M+H+MeOH]+1	Full match	No results			Full match	1	No results	3.44E+05
+178	myo-Inositol	C6 H12 O6	180.06365	179.05638	9.811	[M-H]-1	Full match	No results			Not the top hit	104	Full match	1.75E+06
+179	myo-Inositol	C6 H12 O6	180.06357	179.05645	12.211	[M-H]-1	Full match	No results			Not the top hit	104	Full match	9.41E+05
+180	Moxisylyte	C16 H25 N O3	279.18337	312.21687	3.638	[M+H+MeOH]+1	Full match	No results			Full match	6	No results	2.27E+07
+181	minaprine	C17 H22 N4 O	298.17805	297.17084	4.159	[M-H]-1	Full match	No results			Full match	3	No results	2.01E+07
+182	MHPG	C9 H12 O4	184.07378	183.0665	4.054	[M-H]-1	Full match	No results			Full match	20	No results	7.21E+06
+183	MHPG	C9 H12 O4	184.07365	183.06656	4.735	[M-H]-1	Full match	No results			Full match	20	No results	6.35E+06
+184	mH	C4 H4 N2 O2	112.02731	113.03458	10.705	[M+H]+1	Full match	No results			Full match	3	No results	1.36E+07
+185	MFCD27952927	C12 H21 N O4	243.14713	244.15441	11.447	[M+H]+1	Full match	No results			Full match	3	No results	1.12E+08
+186	MFCD27952927	C12 H21 N O4	243.1471	244.15437	11.017	[M+H]+1	Full match	No results			Full match	3	No results	3.95E+07
+187	MFCD04972099	C14 H20 O6	284.12595	302.15974	3.53	[M+NH4]+1	Full match	No results			Full match	2	No results	1.21E+07
+188	MFCD00870472	C20 H26 O3	314.1886	313.18133	3.762	[M-H]-1	No results	No results			Full match	17	No results	2.35E+07
+189	MFCD00870462	C10 H15 N3 O2	209.11641	227.15023	8.96	[M+NH4]+1	Full match	No results			Full match	1	No results	8.67E+05
+190	MFCD00153469	C12 H23 N O3	229.16788	230.17516	11.182	[M+H]+1	Full match	No results			Full match	1	No results	8.91E+06
+191	MFCD00153469	C12 H23 N O3	229.1679	230.17517	11.429	[M+H]+1	Full match	No results			Full match	1	No results	7.54E+06
+192	MFCD00143991	C5 H9 N O3	131.05829	132.06556	7.511	[M+H]+1	Full match	No results			Full match	21	No results	9.09E+06
+193	MFCD00060079	C9 H14 O7	234.07419	233.06695	7.499	[M-H]-1	Full match	No results			Full match	4	No results	7.88E+06
+194	Metoprolol	C15 H25 N O3	267.18361	268.19089	6.365	[M+H]+1	Full match	No results			Full match	1	No results	5.73E+06
+195	Methyprylon	C10 H17 N O2	183.12599	184.1333	11.572	[M+H]+1	Full match	Full match	63.6	66.1	Partial match	2	No results	3.18E+07
+196	Methyprylon	C10 H17 N O2	151.09985	184.13337	11.6	[M+H+MeOH]+1	No match	Invalid mass	54.2	63.3	No match	18	No results	3.18E+07
+197	Methylphenobarbital	C13 H14 N2 O3	246.10061	305.1145	7.454	[M-H+HAc]-1	Full match	No results			Full match	7	No results	2.77E+06
+198	Methyl-3-aminobenzoate	C8 H9 N O2	169.07405	170.0812	7.497	[M+H]+1	No match	Invalid mass	62.9	8.1	No match	6	No results	2.03E+07
+199	Methyl-3-aminobenzoate	C8 H9 N O2	151.06339	152.07065	9.183	[M+H]+1	Full match	Full match	69	8.5	Partial match	23	No results	4.55E+07
+200	Methyl-3-aminobenzoate	C8 H9 N O2	151.06338	184.09688	7.95	[M+H+MeOH]+1	Full match	Full match	62.9	8.1	Partial match	23	No results	2.04E+07
+201	Methyl vinyl ketone	C4 H6 O	70.04193	71.04921	9.914	[M+H]+1	Full match	No results			Full match	7	No results	3.15E+06
+202	Methyl stearate	C19 H38 O2	298.28712	297.27985	3.408	[M-H]-1	Full match	No results			Full match	9	No results	1.17E+07
+203	Methyl palmitate	C17 H34 O2	287.28247	288.28975	6.559	[M+H]+1	No match	Invalid mass	95.4	75	No results	0	No results	2.69E+06
+204	Methyl palmitate	C17 H34 O2	287.28235	288.28963	4.691	[M+H]+1	No match	Invalid mass	97.9	81.7	No results	0	No results	1.22E+06
+205	Methyl laurate	C13 H26 O2	214.1935	213.18623	3.482	[M-H]-1	Full match	No results			Full match	14	No results	3.53E+07
+206	Methyl 3-indolylacetate	C11 H11 N O2	189.079	190.08629	7.679	[M+H]+1	Full match	No results			Full match	6	No results	1.31E+06
+207	methyl 3-amino-4-(isopropylsulfonyl)-5-tetrahydro-1H-pyrrol-1-ylthiophene-2-carboxylate	C13 H20 N2 O4 S2	354.06219	355.06947	3.732	[M+H]+1	No match	Invalid mass	61.1	65.3	No results	0	No results	7.13E+05
+208	Methyl (9E)-9-octadecenoate	C19 H36 O2	296.27141	295.26411	3.419	[M-H]-1	Full match	No results			Full match	7	No results	1.47E+07
+209	Methyl (2E,6Z)-2,6-dodecadienoate	C13 H22 O2	210.16214	209.15496	3.432	[M-H]-1	Full match	No results			Full match	12	No results	1.99E+06
+210	Meloxicam	C14 H13 N3 O4 S2	351.03461	352.04186	3.431	[M+H]+1	Full match	Full match	96.1	76.9	Full match	2	No results	3.73E+05
+211	melanostatin	C13 H24 N4 O3	284.18501	285.19228	7.992	[M+H]+1	Full match	No results			Full match	1	No results	4.44E+05
+212	Melamine	C3 H6 N6	126.06542	127.0727	0.629	[M+H]+1	Full match	Full match	62	8.1	Full match	1	No results	9.85E+06
+213	medorinone	C9 H8 N2 O	160.06376	161.07098	7.472	[M+H]+1	Full match	No results			Full match	1	No results	1.57E+07
+214	mebutamate	C10 H20 N2 O4	232.14224	233.14952	5.941	[M+H]+1	Full match	No results			Full match	6	No results	3.07E+05
+215	mebutamate	C10 H20 N2 O4	232.14208	233.14935	6.51	[M+H]+1	Full match	No results			Full match	6	No results	1.54E+05
+216	mavorixafor	C21 H27 N5	349.22488	350.23206	3.551	[M+H]+1	Invalid mass	No results			Invalid mass	2	No results	3.88E+06
+217	Margaric acid	C17 H34 O2	270.25567	269.2484	3.434	[M-H]-1	Full match	No results			Full match	9	No results	1.53E+08
+218	Margaric acid	C17 H34 O2	270.25576	269.24841	4.476	[M-H]-1	Full match	No results			Full match	9	No results	1.36E+07
+219	Malonic acid	C3 H4 O4	104.0112	103.00392	12.803	[M-H]-1	Full match	No results			Full match	3	No results	1.10E+07
+220	Malonic acid	C3 H4 O4	104.01128	163.02514	10.935	[M-H+HAc]-1	Full match	No results			Full match	3	No results	2.06E+05
+221	Maleamic acid	C4 H5 N O3	115.0272	174.041	7.445	[M-H+HAc]-1	Full match	No results			Full match	1	No results	2.52E+06
+222	MA4000000	C5 H7 N O2	113.04796	158.04616	7.336	[M+FA-H]-1	Full match	No results			Full match	10	No results	3.21E+06
+223	MA4000000	C5 H7 N O2	113.04793	158.04614	6.752	[M+FA-H]-1	Full match	No results			Full match	10	No results	3.03E+05
+224	LQ5400000	C8 H8 O2	136.0525	137.05977	4.488	[M+H]+1	Full match	No results			Full match	26	No results	4.26E+07
+225	Linolenic acid ethyl ester	C20 H34 O2	312.26627	313.27351	3.848	[M+H]+1	No match	Invalid mass	76.2	8.8	No results	0	No results	1.67E+06
+226	Lignoceric Acid	C24 H48 O2	368.36569	367.35841	3.366	[M-H]-1	Full match	Full match	90.1	9.5	Full match	4	No results	3.81E+07
+227	lidamidine	C11 H16 N4 O	220.13133	219.12404	4.744	[M-H]-1	Full match	No results			Full match	1	No results	2.99E+06
+228	leucoline	C9 H7 N	129.05789	130.06516	7.689	[M+H]+1	Full match	No results			Full match	3	No results	3.12E+05
+229	Lauramide	C12 H25 N O	199.19363	232.22715	7.485	[M+H+MeOH]+1	Full match	No results			Full match	1	No results	2.24E+05
+230	Latanoprost	C26 H40 O5	432.28741	433.29468	3.495	[M+H]+1	No results	No results			Full match	2	No results	2.68E+06
+231	lactide	C6 H8 O4	144.04255	125.02469	14.04	[M-H-H2O]-1	Full match	No results			Full match	20	No results	1.27E+07
+232	lactide	C6 H8 O4	144.04255	143.03527	10.595	[M-H]-1	Full match	No results			Full match	20	No results	3.03E+07
+233	Lacinilene C 7-methyl ether	C16 H20 O3	260.14099	261.14827	3.497	[M+H]+1	No results	No results			Full match	10	No results	3.27E+05
+234	L-α-PALMITIN	C19 H38 O4	330.27683	331.2841	3.88	[M+H]+1	Full match	No results			Full match	5	No results	9.92E+05
+235	L-α-PALMITIN	C19 H38 O4	330.27718	329.26991	4.572	[M-H]-1	Full match	No results			Full match	5	No results	1.55E+06
+236	L-Pyroglutamic acid	C5 H7 N O3	129.04277	128.03561	8.481	[M-H]-1	Full match	No results			Full match	12	No results	2.29E+07
+237	L-Hexanoylcarnitine	C13 H25 N O4	259.17848	260.18576	11.839	[M+H]+1	Full match	No results			Full match	2	No results	2.25E+07
+238	L-gamma-Glutamyl-S-[(1E)-N-hydroxy-2-(1H-indol-3-yl)ethanimidoyl]-L-cysteinylglycine	C20 H25 N5 O7 S	479.1497	480.15705	3.781	[M+H]+1	No results	No results			Full match	1	No results	6.20E+05
+239	L-dihydroanticapsin	C9 H15 N O4	201.10019	202.10746	10.729	[M+H]+1	Full match	No results			Full match	1	No results	3.38E+07
+240	L-dihydroanticapsin	C9 H15 N O4	201.10017	202.10745	5.93	[M+H]+1	Full match	No results			Full match	1	No results	4.82E+07
+241	L-(+)-Tartaric acid	C4 H6 O6	150.01713	149.00986	3.68	[M-H]-1	Not the top hit	Full match	66	45.3	Full match	4	No results	3.76E+05
+242	KETOPANTOLACTONE	C6 H8 O3	128.04758	127.04039	4.735	[M-H]-1	Full match	No results			Full match	17	No results	2.45E+07
+243	JO1843850	C12 H22 S2	230.11559	229.10819	3.842	[M-H]-1	Full match	No results			Full match	1	No results	1.37E+07
+244	JJ9800000	C12 H10 N2 O	198.07934	199.08662	7.431	[M+H]+1	Full match	No results			Full match	8	No results	5.15E+06
+245	JJ9800000	C12 H10 N2 O	198.07935	199.08662	6.526	[M+H]+1	No results	No results			Full match	8	No results	6.14E+06
+246	Jasmonic acid	C12 H18 O3	210.12569	209.11864	3.707	[M-H]-1	Full match	No results			Full match	11	No results	3.83E+06
+247	Indole-3-butyric acid	C12 H13 N O2	203.09072	204.09798	12.973	[M+H]+1	No match	Invalid mass	74.9	8.7	No match	7	No results	5.15E+05
+248	Indole-3-acetaldehyde	C10 H9 N O	159.0687	158.06142	7.676	[M-H]-1	Full match	No results			Full match	8	No results	1.99E+05
+249	Indole	C8 H7 N	117.05819	116.05089	7.471	[M-H]-1	Full match	No results			Full match	3	No results	4.54E+05
+250	Hypoxanthine	C5 H4 N4 O	136.03855	137.04583	10.112	[M+H]+1	Full match	Full match	76.5	48	Partial match	8	Full match	7.21E+06
+251	Hydroxyhexanoycarnitine	C13 H25 N O5	275.17315	274.16585	4.691	[M-H]-1	Full match	No results			Full match	1	No results	7.73E+06
+252	Hydroxyhexanoycarnitine	C13 H25 N O5	275.17326	274.16598	7.453	[M-H]-1	Full match	No results			Full match	1	No results	4.10E+06
+253	Hydroxyhexanoycarnitine	C13 H25 N O5	275.17327	274.16588	3.933	[M-H]-1	Full match	No results			Full match	1	No results	9.25E+06
+254	Hydroxyhexanoycarnitine	C13 H25 N O5	275.17318	274.1659	4.483	[M-H]-1	Full match	No results			Full match	1	No results	4.47E+06
+255	Hydroquinone	C6 H6 O2	110.03705	109.02977	7.453	[M-H]-1	Full match	No results			Full match	7	No results	4.47E+06
+256	Hydroquinone	C6 H6 O2	110.03699	169.05082	4.621	[M-H+HAc]-1	Full match	No results			Full match	7	No results	8.23E+06
+257	Hydantoin	C3 H4 N2 O2	100.0273	101.03457	8.504	[M+H]+1	Full match	No results			Full match	1	No results	3.16E+06
+258	homovanillate	C9 H10 O4	182.05802	183.06529	5.649	[M+H]+1	Full match	No results			Partial match	39	Full match	1.55E+07
+259	Hippurate	C9 H9 N O3	179.05824	180.06551	5.975	[M+H]+1	Full match	No results			Partial match	11	Full match	2.68E+05
+260	Hexyl 2-furoate	C11 H16 O3	196.10997	241.10819	4.74	[M+FA-H]-1	Full match	No results			Full match	4	No results	1.30E+07
+261	Heteroxanthine	C6 H6 N4 O2	166.04836	165.04109	3.679	[M-H]-1	Full match	No results			Full match	14	No results	2.69E+06
+262	Heteroxanthine	C6 H6 N4 O2	166.04839	165.04112	4.31	[M-H]-1	Full match	No results			Full match	14	No results	1.02E+07
+263	Heptenal	C7 H12 O	112.0891	111.08182	4.488	[M-H]-1	Full match	No results			Full match	14	No results	1.73E+07
+264	heptaminol	C8 H19 N O	145.14672	146.15399	7.473	[M+H]+1	Full match	No results			Full match	1	No results	5.54E+05
+265	heptaminol	C8 H19 N O	145.14668	146.15395	5.993	[M+H]+1	Full match	No results			Full match	1	No results	3.76E+05
+266	Guaifenesin	C10 H14 O4	198.08946	197.0822	4.556	[M-H]-1	Full match	No results			Full match	14	No results	2.37E+07
+267	guaietolin	C11 H16 O4	212.10499	211.0979	3.85	[M-H]-1	No results	Invalid mass			Full match	3	No results	3.67E+07
+268	Glycochenodeoxycholic acid	C26 H43 N O5	449.31433	450.32108	3.463	[M+H]+1	No results	No results			Full match	6	No results	2.86E+06
+269	Glycerophosphoglycerol	C6 H15 O8 P	246.05042	245.04306	10.544	[M-H]-1	Full match	No results			Full match	1	No results	1.30E+05
+270	Glycerophosphoglycerol	C6 H15 O8 P	246.05035	245.04307	10.936	[M-H]-1	Full match	No results			Full match	1	No results	6.14E+05
+271	Glutaric acid	C5 H8 O4	132.04257	131.03529	14.423	[M-H]-1	Full match	No results			Full match	20	No results	5.48E+06
+272	glucoraphanin	C12 H23 N O10 S3	437.04845	436.0412	12.478	[M-H]-1	Full match	No results			Full match	2	No results	1.72E+05
+273	Gluconic acid	C6 H12 O7	196.05848	195.0512	12.284	[M-H]-1	Full match	No results			Partial match	10	Full match	2.28E+07
+274	Gluconic acid	C6 H12 O7	196.05852	195.05124	12.432	[M-H]-1	Full match	No results			Partial match	10	Full match	2.26E+07
+275	Glucogallin	C13 H16 O10	332.07442	331.06714	10.363	[M-H]-1	Full match	No results			Full match	7	No results	1.99E+06
+276	Galacturonate	C6 H10 O7	194.04286	193.03558	13.386	[M-H]-1	Full match	No results			Partial match	24	Full match	2.30E+06
+277	Galactose	C6 H12 O6	180.06367	179.05639	14.172	[M-H]-1	Full match	No results			Partial match	104	Full match	2.69E+05
+278	Galactal	C6 H10 O4	146.05858	293.12444	9.655	[2M+H]+1	Full match	No results			Full match	23	No results	1.35E+07
+279	gaboxadol	C6 H8 N2 O2	140.05858	141.06587	7.475	[M+H]+1	Full match	No results			Full match	8	No results	9.18E+06
+280	Gabaculine	C7 H9 N O2	139.06343	138.05635	5.936	[M-H]-1	Full match	No results			Full match	5	No results	3.92E+06
+281	Furaspor	C6 H7 N O4	157.03764	216.05136	7.472	[M-H+HAc]-1	Full match	No results			Full match	6	No results	1.03E+06
+282	Fucosamine	C6 H13 N O4	163.08446	164.09174	8.831	[M+H]+1	Full match	No results			Full match	11	No results	5.06E+06
+283	frescolat ML	C13 H24 O3	228.17278	229.17978	6.741	[M+H]+1	No results	No results			Full match	4	No results	2.04E+05
+284	Fraxetin	C10 H8 O5	208.03728	209.04457	13.43	[M+H]+1	Full match	No results			Full match	3	No results	2.61E+05
+285	Eugenol	C10 H12 O2	164.084	209.08219	4.03	[M+FA-H]-1	Full match	No results			Full match	56	No results	6.24E+06
+286	etifenin	C16 H22 N2 O5	322.15305	321.1459	4.58	[M-H]-1	Full match	No results			Full match	2	No results	5.65E+06
+287	Ethylparaben	C9 H10 O3	166.06299	167.07026	4.358	[M+H]+1	Full match	No results			Full match	46	No results	2.20E+07
+288	ethylenediaminetriacetic acid	C8 H14 N2 O6	234.08516	235.09244	11.253	[M+H]+1	Full match	No results			Full match	6	No results	1.50E+07
+289	ethylenediaminetriacetic acid	C8 H14 N2 O6	234.08515	233.07795	11.492	[M-H]-1	Full match	No results			Full match	6	No results	1.46E+05
+290	Ethyl myristate	C16 H32 O2	256.24022	255.23295	7.354	[M-H]-1	Full match	Full match	97	9.9	Not the top hit	11	No results	5.89E+08
+291	Ethyl acetate	C4 H8 O2	88.05244	89.05971	6.447	[M+H]+1	Full match	No results			Full match	13	No results	7.22E+06
+292	ethyl 2-{4-[(2-cyanoethyl)(methyl)amino]benzylidene}hydrazine-1-carboxylate	C14 H18 N4 O2	228.13619	227.12914	4.711	[M-H]-1	No match	Invalid mass	55.1	59.5	No match	2	No results	4.59E+06
+293	Ethanal tetramer	C8 H16 O4	176.10522	175.09791	7.455	[M-H]-1	Full match	No results			Full match	3	No results	3.82E+06
+294	Erythorbic acid	C6 H8 O6	176.03232	175.02502	14.715	[M-H]-1	Full match	No results			Full match	27	No results	4.10E+06
+295	Eglumetad	C8 H11 N O4	185.06907	184.06179	6.318	[M-H]-1	Full match	No results			Full match	2	No results	1.19E+07
+296	Edoxudine	C11 H16 N2 O5	256.10586	257.11314	8.867	[M+H]+1	Full match	No results			Full match	3	No results	2.83E+06
+297	Drotaverine	C24 H31 N O4	397.22556	396.21828	3.76	[M-H]-1	Full match	No results			Full match	1	No results	4.45E+05
+298	dopamine	C8 H11 N O2	153.07933	152.07205	4.515	[M-H]-1	Full match	No results			Full match	9	No results	4.33E+06
+299	Dopamine	C9 H11 N O4	197.06908	196.06181	5.901	[M-H]-1	Full match	No results			Partial match	8	Full match	7.66E+06
+300	Dodecenoic acid	C12 H22 O2	198.16205	197.15491	3.486	[M-H]-1	Full match	No results			Full match	34	No results	5.78E+06
+301	Dodecamethylcyclohexasiloxane	C12 H36 O6 Si6	462.12324	463.13054	3.764	[M+H]+1	No match	Invalid mass	88.7	81.5	No results	0	No results	5.45E+05
+302	DL-TYROSINE	C9 H11 N O3	181.07388	182.08121	4.61	[M+H]+1	Full match	No results			Full match	22	No results	1.05E+07
+303	DL-TYROSINE	C9 H11 N O3	181.07424	180.06696	3.942	[M-H]-1	Full match	No results			Full match	22	No results	3.90E+06
+304	DL-Tryptophan	C11 H12 N2 O2	187.06357	188.0708	11.313	[M+H]+1	No results	Invalid mass	96.8	78.6	No match	2	No results	4.85E+05
+305	DL-Stachydrine	C7 H13 N O2	143.09473	144.10195	10.178	[M+H]+1	Full match	Full match	97.1	9.9	Full match	7	No results	1.61E+07
+306	DL-Cycloserine	C3 H6 N2 O2	102.04296	144.0768	11.489	[M+ACN+H]+1	Full match	No results			Full match	5	No results	5.03E+05
+307	DL-3-Aminoalanine	C3 H8 N2 O2	104.0586	105.06588	9.865	[M+H]+1	Full match	No results			Full match	2	No results	2.16E+07
+308	Diroxamel fumarate	C11 H13 N O6	255.07441	256.08168	12.216	[M+H]+1	Full match	No results			Full match	3	No results	5.40E+06
+309	dipyrocetyl	C11 H10 O6	238.04773	237.04045	10.541	[M-H]-1	Full match	No results			Full match	6	No results	1.34E+05
+310	Dimetofrine	C11 H17 N O4	227.11586	228.12313	7.323	[M+H]+1	Full match	No results			Full match	1	No results	2.15E+07
+311	DIMBOA	C9 H9 N O5	211.04848	210.0412	10.97	[M-H]-1	Full match	No results			Full match	11	No results	2.90E+06
+312	dihydroxyphenylalanine	C9 H11 N O4	197.06902	196.06182	4.743	[M-H]-1	Full match	No results			Full match	8	No results	1.98E+07
+313	dihydroxyphenylalanine	C9 H11 N O4	197.06911	196.06184	11.031	[M-H]-1	Full match	No results			Full match	8	No results	1.73E+06
+314	dihydroxybenzylamine	C7 H9 N O2	139.06335	140.07063	9.02	[M+H]+1	Full match	No results			Full match	5	No results	3.21E+07
+315	Dihydrokavain	C14 H16 O3	232.10997	233.11721	4.756	[M+H]+1	Full match	No results			Full match	7	No results	5.46E+06
+316	Dihydrokavain	C14 H16 O3	232.10985	233.11705	3.62	[M+H]+1	Full match	No results			Full match	7	No results	4.33E+06
+317	Diethyl iminodiacetate	C8 H15 N O4	207.11074	208.11789	6.04	[M+H]+1	No match	Invalid mass	75.9	47.7	No match	4	No results	3.50E+06
+318	Diethanolamine	C4 H11 N O2	105.07902	106.0863	19.152	[M+H]+1	Full match	No results			Full match	2	No results	5.32E+07
+319	DIBUTYRIN	C11 H20 O5	232.1311	231.12382	3.71	[M-H]-1	Full match	No results			Full match	2	No results	4.71E+07
+320	DIBOA	C8 H7 N O4	181.03784	180.03057	4.513	[M-H]-1	Full match	No results			Full match	3	No results	5.26E+06
+321	DIBEHENIN	C12 H14 O3	206.09448	207.10173	4.761	[M+H]+1	Full match	No results			Full match	18	No results	1.00E+07
+322	Demethoxyencecalin	C13 H14 O2	202.09948	203.10675	3.465	[M+H]+1	Full match	No results			Full match	5	No results	5.51E+06
+323	Deferiprone	C7 H9 N O2	139.06352	138.05641	7.465	[M-H]-1	Full match	No results			Full match	5	No results	2.66E+07
+324	Deferiprone	C7 H9 N O2	139.06356	138.05638	4.749	[M-H]-1	Full match	No results			Full match	5	No results	6.97E+06
+325	Deferiprone	C7 H9 N O2	139.06368	138.0564	8.783	[M-H]-1	Full match	No results			Full match	5	No results	5.92E+06
+326	Decanoylcarnitine	C17 H33 N O4	315.24087	316.24814	10.152	[M+H]+1	Full match	Full match	73.7	46.4	Full match	2	No results	5.14E+05
+327	D-PANTOTHENIC ACID	C9 H17 N O5	219.11071	220.11798	10.494	[M+H]+1	Full match	No results			Full match	2	No results	1.75E+07
+328	D-Mannose 6-phosphate	C6 H13 O9 P	260.02956	259.02223	13.758	[M-H]-1	Full match	Full match	87.2	67	Not the top hit	58	Full match	1.52E+05
+329	D-(-)-Quinic acid	C7 H12 O6	192.06366	191.05639	10.86	[M-H]-1	Full match	Full match	95.7	9.8	Full match	10	No results	4.72E+07
+330	D-(+)-Pyroglutamic Acid	C5 H7 N O3	129.04265	130.04992	12.333	[M+H]+1	Full match	No results			Full match	12	No results	4.20E+07
+331	D-(+)-Malic acid	C4 H6 O5	134.02182	133.01455	13.61	[M-H]-1	Full match	Full match	87.9	50.8	Full match	6	No results	3.23E+07
+332	Cytosine	C4 H5 N3 O	111.04328	112.05055	10.59	[M+H]+1	Full match	Full match	59.7	8	Partial match	3	Full match	5.85E+06
+333	Cyclopentadecanolide	C15 H28 O2	240.20905	239.20177	3.463	[M-H]-1	Full match	No results			Full match	11	No results	3.30E+07
+334	Creatinine	C4 H7 N3 O	113.05894	114.06621	10.181	[M+H]+1	Full match	No results			Full match	2	Full match	4.73E+06
+335	Coumarone	C8 H6 O	118.04216	117.03488	7.442	[M-H]-1	Full match	No results			Full match	4	No results	5.22E+05
+336	CONDELPHINE	C25 H39 N O6	449.27784	450.28506	3.463	[M+H]+1	No results	No results			Full match	2	No results	3.65E+06
+337	Citrate	C6 H8 O7	192.0272	173.00938	14.709	[M-H-H2O]-1	Full match	No results			Full match	18	Full match	1.78E+07
+338	Cilazapril	C22 H31 N3 O5	417.22595	418.23323	3.459	[M+H]+1	Full match	No results			Full match	1	No results	6.75E+06
+339	CHLORIC ACID	H Cl O3	83.96139	82.95411	7.371	[M-H]-1	No results	No results			Full match	1	No results	4.78E+08
+340	Cerotic acid	C26 H52 O2	396.39689	395.38961	3.354	[M-H]-1	Full match	No results			Full match	2	No results	1.00E+07
+341	Carnosic acid	C20 H28 O4	332.19842	333.20548	3.528	[M+H]+1	Full match	No results			Full match	30	No results	1.89E+07
+342	Carlinoside	C26 H28 O15	580.14287	579.13614	9.082	[M-H]-1	Full match	No results			Full match	5	No results	1.92E+05
+343	Capsi-amide	C17 H35 N O	269.27224	270.27916	4.919	[M+H]+1	Full match	No results			Full match	1	No results	9.28E+06
+344	Capryloylglycine	C10 H19 N O3	201.13655	202.14383	11.591	[M+H]+1	Full match	Full match	56.1	41.9	Full match	5	No results	1.72E+09
+345	Capryloylglycine	C10 H19 N O3	201.1366	202.14388	12.314	[M+H]+1	Full match	No results			Full match	5	No results	1.14E+07
+346	Capryloylglycine	C10 H19 N O3	201.13655	260.1503	7.49	[M-H+HAc]-1	Full match	No results			Full match	5	No results	5.23E+06
+347	Cantharidin	C10 H12 O4	196.07374	195.06639	4.758	[M-H]-1	No results	No results			Full match	32	No results	2.13E+06
+348	Cammaconine	C23 H37 N O5	407.26664	408.27391	3.543	[M+H]+1	No results	No results			Full match	2	No results	4.21E+06
+349	Callistephin	C21 H21 O10	433.11461	434.12177	10.013	[M+H]+1	No results	No results			Full match	1	No results	2.18E+05
+350	Caffeoylmalic acid	C13 H12 O8	296.05333	295.04605	14.22	[M-H]-1	Full match	No results			Full match	5	No results	2.94E+05
+351	C8-HSL	C12 H21 N O3	227.15219	228.15942	11.758	[M+H]+1	Full match	No results			Full match	2	No results	4.82E+06
+352	C8-HSL	C12 H21 N O3	227.15217	228.15944	11.037	[M+H]+1	Full match	No results			Full match	2	No results	1.38E+07
+353	C8-HSL	C12 H21 N O3	227.15207	228.15934	10.758	[M+H]+1	Full match	No results			Full match	2	No results	9.12E+06
+354	C8-Carnitine	C15 H29 N O4	287.20969	288.21697	11.095	[M+H]+1	Full match	No results			Full match	2	No results	3.29E+06
+355	Butenylcarnitine	C11 H19 N O4	229.1315	230.13878	11.199	[M+H]+1	Full match	No results			Full match	1	No results	7.58E+07
+356	but-1-ene-1,2,4-tricarboxylic acid	C7 H8 O6	188.03234	187.02507	12.081	[M-H]-1	Full match	No results			Full match	8	No results	6.18E+06
+357	Buchananine	C12 H15 N O7	285.08493	286.0922	13.117	[M+H]+1	Full match	No results			Full match	3	No results	1.26E+06
+358	Bis(methylbenzylidene)sorbitol	C22 H26 O6	386.17251	387.17978	4.03	[M+H]+1	Not the top hit	Full match	98.3	9.9	Partial match	6	No results	1.03E+06
+359	Bicine	C6 H13 N O4	163.08449	164.09177	11.021	[M+H]+1	Full match	Full match	98.8	98.4	Full match	11	No results	3.46E+07
+360	Bicine	C6 H13 N O4	181.09503	182.10235	10.903	[M+H]+1	No match	Invalid mass	98.8	98.4	No results	0	No results	1.28E+07
+361	beta-D-Ethyl glucuronide	C8 H14 O7	222.07402	221.06674	12.053	[M-H]-1	Full match	No results			Full match	4	No results	1.80E+07
+362	Benzoic acid	C7 H6 O2	122.03677	123.04405	3.464	[M+H]+1	Full match	No results			Full match	7	No results	3.39E+06
+363	b-Angelica lactone	C5 H6 O2	98.03682	97.0297	4.163	[M-H]-1	Full match	No results			Full match	4	No results	2.77E+06
+364	Azelaic acid	C9 H16 O4	188.10514	187.09786	4.328	[M-H]-1	Full match	No results			Full match	11	No results	6.90E+06
+365	Atagabalin	C10 H19 N O2	185.14157	186.14882	3.967	[M+H]+1	Full match	No results			Full match	1	No results	2.61E+07
+366	Aspartic acid, N-salicyloyl-	C11 H11 N O6	253.05857	252.05129	12.437	[M-H]-1	Full match	No results			Full match	2	No results	3.37E+06
+367	Asp-Glu	C9 H14 N2 O7	262.08018	261.07261	12.38	[M-H]-1	Full match	No results			Full match	5	No results	2.29E+07
+368	asp-gln	C9 H15 N3 O6	261.09629	262.10356	12.728	[M+H]+1	Full match	No results			Full match	6	No results	8.92E+06
+369	Artemotil	C17 H28 O5	312.19361	311.18646	3.479	[M-H]-1	Full match	No results			Not the top hit	3	No results	1.86E+07
+370	Artemether	C16 H26 O5	298.17741	335.12533	7.473	[M-2H+K]-1	Full match	No results			Full match	1	No results	1.90E+07
+371	Arbusculin A	C15 H22 O3	250.1569	251.16417	4.331	[M+H]+1	Full match	No results			Full match	39	No results	6.42E+07
+372	Arachidic acid	C20 H40 O2	312.3029	311.29562	3.391	[M-H]-1	Full match	No results			Full match	9	No results	4.78E+07
+373	Arachidic acid	C20 H40 O2	312.30291	311.29563	3.85	[M-H]-1	Full match	No results			Full match	9	No results	5.87E+06
+374	Arachidic Acid	C20 H40 O2	312.30287	311.29559	4.392	[M-H]-1	Full match	Full match	54.8	7.7	Full match	9	No results	3.82E+06
+375	Arabic acid	C5 H10 O6	166.04797	165.04069	11.816	[M-H]-1	Full match	No results			Full match	9	No results	9.01E+07
+376	Arabic acid	C5 H10 O6	166.04796	165.04069	10.552	[M-H]-1	Full match	No results			Full match	9	No results	4.47E+06
+377	APM	C7 H13 N O4	175.08447	176.09175	7.639	[M+H]+1	Full match	No results			Full match	7	No results	1.03E+07
+378	anticapsin	C9 H13 N O4	199.08454	200.09181	5.952	[M+H]+1	Full match	No results			Full match	2	No results	1.93E+07
+379	anticapsin	C9 H13 N O4	199.08454	200.09166	4.756	[M+H]+1	No results	No results			Full match	2	No results	2.77E+07
+380	anticapsin	C9 H13 N O4	199.08454	182.08125	6.788	[M+H-H2O]+1	Full match	No results			Full match	2	No results	8.92E+06
+381	Aniracetam	C12 H13 N O3	219.08961	220.09684	7.8	[M+H]+1	Full match	No results			Full match	6	No results	2.64E+05
+382	Amrinone	C10 H9 N3 O	187.07473	188.082	7.594	[M+H]+1	No results	No results			Full match	1	No results	1.71E+06
+383	Aminolevulinic acid	C5 H9 N O3	131.05825	114.05496	4.775	[M+H-H2O]+1	Full match	No results			Full match	21	No results	2.10E+07
+384	Aminolevulinic acid	C5 H9 N O3	131.05853	130.05125	13.505	[M-H]-1	Full match	No results			Full match	21	No results	1.37E+07
+385	Aminolevulinic acid	C5 H9 N O3	131.05854	130.05126	13.24	[M-H]-1	Full match	No results			Full match	21	No results	1.25E+07
+386	AM9627000	C8 H7 N O3	165.0429	164.03562	4.265	[M-H]-1	Full match	No results			Full match	10	No results	9.03E+06
+387	Adenosine	C10 H13 N5 O4	267.09674	268.10401	8.962	[M+H]+1	Full match	No results			Not the top hit	7	Full match	3.77E+06
+388	Adenine	C5 H5 N5	135.05455	136.06182	9.349	[M+H]+1	Full match	No results			Full match	2	No results	4.55E+07
+389	ACETYL PROLINE	C7 H11 N O3	157.07396	158.08122	6.517	[M+H]+1	Full match	No results			Full match	6	No results	1.70E+07
+390	ACETYL PROLINE	C7 H11 N O3	157.07398	158.08122	6.776	[M+H]+1	Full match	No results			Full match	6	No results	1.30E+07
+391	Aceturic acid	C4 H7 N O3	117.04287	116.03559	13.082	[M-H]-1	Full match	No results			Full match	6	No results	2.04E+07
+392	Aceglutamide	C7 H12 N2 O4	188.07984	189.08704	5.952	[M+H]+1	Full match	No results			Full match	5	No results	1.07E+07
+393	Ac-Ala-OH	C5 H9 N O3	131.0583	149.09214	8.939	[M+NH4]+1	Full match	Invalid mass			Full match	21	No results	6.34E+05
+394	[Similar to: NP-006274; ΔMass: 22.0271 Da]	C21 H13 P	296.07486	297.0823	3.774	[M+H]+1	Full match	Invalid mass			No results	0	No results	6.39E+05
+395	[Similar to: ethyl 3-[(4-chlorophenethyl)amino]-2-cyanoacrylate; ΔMass: 0.1059 Da]	C10 H26 N6 O S	278.18808	277.18083	3.493	[M-H]-1	Full match	Invalid mass			No match	6	No results	2.60E+07
+396	[Similar to: 3-[(2-pyridylthio)methyl]-4,5-dihydro-1H-pyrazol-5-one; ΔMass: 38.1889 Da]	C14 H31 N O2	245.23554	246.24282	6.924	[M+H]+1	Full match	Invalid mass			No results	0	No results	1.49E+06
+397	[Similar to: 2-[3-chloro-2-hydroxy-4-methoxy-6-(methoxycarbonyl)phenoxy]-6-hydroxy-4-methylbenzoic acid; ΔMass: 10.2329 Da]	C21 H36 N4 O3	392.2784	393.28567	3.908	[M+H]+1	Full match	Invalid mass			No results	0	No results	2.88E+07
+398	[Similar to: 2-[3-chloro-2-hydroxy-4-methoxy-6-(methoxycarbonyl)phenoxy]-6-hydroxy-4-methylbenzoic acid; ΔMass: -6.7937 Da]	C21 H33 N3 O3	375.25189	376.25903	3.91	[M+H]+1	Full match	Invalid mass			No results	0	No results	9.14E+06
+399	[Similar to: (2S,3R,4S,5S,6R)-6-({[(2R,3R,4R,5S,6R)-3,4-dihydroxy-6-(hydroxymethyl)-5-{[(2S,3R,4R,5R,6S)-3,4,5-trihydroxy-6-methyloxan-2-yl]oxy}oxan-2-yl]oxy}methyl)-3,4,5-trihydroxyoxan-2-yl (4aS,6aS,6bR,8R,9R,10R,11R,12aR,14bS)-8,10,11-trihydroxy-9-(hydroxymethyl)-2,2,6a,6b,9,12a-hexamethyl-1,2,3,4,4a,5,6,6a,6b,7,8,8a,9,10,11,12,12a,12b,13,14b-icosahydropicene-4a-carboxylate; ΔMass: -599.3407 Da]	C21 H21 N5 O2	375.16791	376.17518	4.168	[M+H]+1	Full match	Invalid mass			No match	2	No results	4.81E+06
+400	9-Oxononanoic acid	C9 H16 O3	172.11005	217.10823	4.751	[M+FA-H]-1	Full match	No results			Full match	10	No results	3.07E+07
+401	9-Nitrooleate	C18 H33 N O4	327.24082	328.24809	9.596	[M+H]+1	Full match	No results			Full match	2	No results	2.04E+06
+402	9-(3-Methyl-5-pentyl-2-furyl)nonanoic acid	C19 H32 O3	308.23502	309.24242	3.468	[M+H]+1	Full match	No results			Full match	10	No results	2.83E+06
+403	9,12-Hexadecadienoylcarnitine	C23 H41 N O4	395.30285	396.31012	3.87	[M+H]+1	No results	No results			Full match	1	No results	5.68E+05
+404	9,12-Hexadecadienoylcarnitine	C23 H41 N O4	395.3029	396.31	3.393	[M+H]+1	No results	No results			Full match	1	No results	2.22E+06
+405	9,10-epoxyoctadecenoic acid	C18 H32 O3	296.23515	297.24303	4.039	[M+H]+1	Full match	Invalid mass			Full match	15	No results	1.25E+07
+406	9,10-Dihydroxystearic acid	C18 H36 O4	316.2615	315.25431	3.509	[M-H]-1	Full match	No results			Full match	11	No results	1.38E+07
+407	8-Isopropyl-10a,12a-dimethyl-3,3a,5a,6,7,7a,9,10,10a,11,12,12a,12b,13c-tetradecahydro-2H,5H-1,4,13-trioxaindeno[4',5':6,7]cyclohepta[1,2,3-bc]acenaphthylene-3,5,13b(13aH)-triol	C25 H38 O6	434.26669	435.27393	3.554	[M+H]+1	Full match	No results			Full match	1	No results	7.58E+06
+408	7-Aminomethyl-7-deazaguanine	C7 H9 N5 O	179.08076	180.08799	7.776	[M+H]+1	Full match	No results			Full match	2	No results	3.84E+05
+409	6-{4-Oxo-5-[(2E)-2-penten-1-yl]-2-cyclopenten-1-yl}hexanoic acid	C16 H24 O3	264.1726	265.17989	3.575	[M+H]+1	Full match	No results			Full match	5	No results	2.16E+08
+410	6-Hydroxy-8-methoxy-3-methyl-3,4-dihydro-1H-isochromen-1-one	C11 H12 O4	226.08412	227.09132	10.474	[M+H]+1	No match	Invalid mass	58	64.4	No match	14	No results	1.78E+07
+411	6-Hydroxy-5-methyl-4,11-dioxoundecanoic acid	C12 H20 O5	244.13111	243.12375	4.749	[M-H]-1	Full match	No results			Full match	1	No results	1.55E+07
+412	6-Deoxy-3-O-methyl-beta-D-galactopyranose	C7 H14 O5	178.0843	177.07709	10.156	[M-H]-1	Full match	No results			Full match	3	No results	1.59E+06
+413	6-Butyryl-2,2,4,4-tetramethyl-1,3,5-cyclohexanetrione	C14 H20 O4	252.13621	251.12888	3.99	[M-H]-1	Full match	No results			Full match	3	No results	5.10E+06
+414	6-Aminonicotinic acid	C6 H6 N2 O2	121.01641	122.02364	8.632	[M+H]+1	No match	Invalid mass	81.2	50.7	No results	0	No results	3.23E+06
+415	6-Aminocaproic acid	C6 H13 N O2	131.09467	132.10194	10.45	[M+H]+1	Full match	Full match	63.7	43.2	Partial match	20	Full match	2.66E+07
+416	6-Aminocaproic acid	C6 H13 N O2	131.09465	132.10193	10.787	[M+H]+1	Full match	Full match	63.7	43.2	Partial match	20	Full match	2.71E+07
+417	6-Acetamido-2-oxohexanoic acid	C8 H13 N O4	187.08449	188.09176	8.804	[M+H]+1	Full match	No results			Full match	6	No results	1.22E+08
+418	6-Acetamido-2-oxohexanoic acid	C8 H13 N O4	187.08453	188.0918	9.808	[M+H]+1	Full match	No results			Full match	6	No results	3.62E+07
+419	6-(3-Methylpiperidino)[1,2,4]triazolo[4,3-b]pyridazine	C11 H15 N5	217.13151	218.13878	11.975	[M+H]+1	No match	Invalid mass	87.6	54.5	No match	2	No results	2.15E+08
+420	6-(3-Methylpiperidino)[1,2,4]triazolo[4,3-b]pyridazine	C11 H15 N5	217.13149	218.13877	11.767	[M+H]+1	No match	Invalid mass	91.7	61.9	No match	2	No results	2.11E+08
+421	5-phenylpentanol	C11 H16 O	164.12039	209.11863	3.717	[M+FA-H]-1	Full match	No results			Full match	17	No results	6.00E+06
+422	5-methylthioribose	C6 H12 O4 S	180.04562	181.0529	7.892	[M+H]+1	Full match	No results			Full match	2	No results	2.66E+08
+423	5-methylthioribose	C6 H12 O4 S	180.0456	181.05288	8.13	[M+H]+1	Full match	No results			Full match	2	No results	2.27E+08
+424	5-methylthioribose	C6 H12 O4 S	180.04561	181.05288	9.511	[M+H]+1	Full match	No results			Full match	2	No results	2.76E+07
+425	5-Methylcytosine	C5 H7 N3 O	125.0589	126.06617	7.891	[M+H]+1	Full match	No results			Full match	3	No results	7.52E+06
+426	5-Methylcytosine	C5 H7 N3 O	125.05897	126.06625	12.076	[M+H]+1	Full match	No results			Full match	3	No results	1.96E+07
+427	5-Indolol	C8 H7 N O	133.05301	132.04573	7.46	[M-H]-1	Full match	No results			Full match	11	No results	2.11E+06
+428	5-Hydroxy-3-(4-hydroxyphenyl)-4-oxo-4H-chromen-7-yl hexopyranoside	C21 H20 O10	432.10544	433.1126	8.583	[M+H]+1	Full match	No results			Full match	20	No results	4.80E+05
+429	5-Hydroxy-2-(4-hydroxyphenyl)-4-oxo-4H-chromen-7-yl 6-O-(carboxyacetyl)-beta-D-glucopyranoside	C24 H22 O13	518.10603	519.11339	9.738	[M+H]+1	Full match	No results			Full match	5	No results	4.51E+05
+430	5-Hydantoinpropionic acid	C6 H8 N2 O4	172.04845	173.05571	10.783	[M+H]+1	Full match	No results			Full match	7	No results	1.65E+07
+431	5-Hydantoinpropionic acid	C6 H8 N2 O4	172.04856	173.05575	10.241	[M+H]+1	Full match	No results			Full match	7	No results	6.01E+06
+432	5-Hexyl-2-oxotetrahydro-3-furancarboxylic acid	C11 H18 O4	214.12061	213.11343	3.887	[M-H]-1	Full match	Invalid mass			Full match	3	No results	2.54E+07
+433	5-guanidino-2-oxopentanoic acid	C6 H11 N3 O3	173.08012	174.08739	12.271	[M+H]+1	Full match	No results			Full match	1	No results	6.30E+05
+434	5-Formyl-2-furoic acid	C6 H4 O4	140.01126	139.00399	12.311	[M-H]-1	Full match	No results			Full match	4	No results	1.03E+05
+435	5-(4-Hydroxyphenyl)pentanoic acid	C11 H14 O3	194.09449	193.08724	4.056	[M-H]-1	Full match	No results			Full match	39	No results	5.48E+07
+436	5-(4-Hydroxyphenyl)pentanoic acid	C11 H14 O3	194.09436	193.08711	4.555	[M-H]-1	Full match	No results			Full match	39	No results	1.02E+07
+437	5-(4-Carboxy-3-methylbutyl)-1,5,6-trimethyl-1,2,3,5,6,7,8,8a-octahydro-1-naphthalenecarboxylic acid	C20 H32 O4	336.22923	337.23715	3.546	[M+H]+1	Full match	No results			Full match	57	No results	1.08E+07
+438	5,8,12-Trihydroxy-2-oxododecanoic acid	C12 H22 O6	262.14146	261.13417	4.328	[M-H]-1	Full match	No results			Full match	2	No results	4.00E+06
+439	5,5'-Dihydroxy-4,4',8',8'-tetramethyl-4,5-dihydro-2'H,3H-spiro[furan-2,6'-[7]oxabicyclo[3.2.1]oct[3]en]-2'-one	C14 H20 O5	268.13119	267.12374	4.753	[M-H]-1	Full match	No results			Full match	3	No results	9.14E+06
+440	5'-O-beta-D-Glucosylpyridoxine	C14 H21 N O8	331.12661	332.13389	10.301	[M+H]+1	Full match	No results			Full match	1	No results	4.24E+05
+441	4-vinylphenol sulfate	C8 H8 O4 S	200.0146	199.00732	4.407	[M-H]-1	Full match	No results			Full match	2	No results	2.73E+06
+442	4-Nitrophenol	C6 H5 N O3	139.02697	140.03424	8.645	[M+H]+1	Full match	No results			Full match	6	No results	5.60E+06
+443	4-nitrocatechol	C6 H5 N O4	155.0222	154.01492	7.386	[M-H]-1	Full match	No results			Full match	4	No results	3.27E+07
+444	4-Nitrobenzoic acid	C7 H5 N O4	167.02232	212.02052	13.6	[M+FA-H]-1	Full match	No results			Full match	6	No results	2.28E+07
+445	4-Methyleneglutamic acid	C6 H9 N O4	159.05317	160.06045	5.956	[M+H]+1	Full match	No results			Full match	5	No results	7.87E+05
+446	4-Methyleneglutamic acid	C6 H9 N O4	159.05329	160.06045	6.531	[M+H]+1	Full match	No results			Full match	5	No results	3.00E+05
+447	4-Methyleneglutamic acid	C6 H9 N O4	159.05334	158.04616	6.768	[M-H]-1	Full match	No results			Full match	5	No results	3.03E+05
+448	4-Methyleneglutamic acid	C6 H9 N O4	159.05341	158.04614	5.636	[M-H]-1	Full match	No results			Full match	5	No results	8.09E+05
+449	4-Methoxyaniline	C7 H9 N O	123.06862	122.06151	7.469	[M-H]-1	Full match	No results			Full match	11	No results	1.30E+07
+450	4-Indolecarbaldehyde	C9 H7 N O	145.05307	144.0458	7.44	[M-H]-1	Full match	Full match	66	8.3	Partial match	9	No results	3.83E+07
+451	4-Indolecarbaldehyde	C9 H7 N O	163.06356	164.07064	7.452	[M+H]+1	No results	Invalid mass	66	8.3	No match	7	No results	1.39E+07
+452	4-hydroxy-L-glutamate dianion	C5 H7 N O5	161.0327	160.02544	13.08	[M-H]-1	Full match	No results			Full match	4	No results	2.20E+08
+453	4-Hydroxy-3-nitrophenylacetic acid	C8 H7 N O5	197.03269	196.02541	4.31	[M-H]-1	Full match	No results			Full match	6	No results	9.43E+06
+454	4-Hydroxy-3-nitrophenylacetic acid	C8 H7 N O5	197.03264	230.06613	12.868	[M+H+MeOH]+1	Full match	No results			Full match	6	No results	9.14E+06
+455	4-Hydroxy-3-nitrophenylacetic acid	C8 H7 N O5	197.03275	196.02547	11.678	[M-H]-1	Full match	No results			Full match	6	No results	1.11E+06
+456	4-Hydroxy-2-oxoheptanedioic acid	C7 H10 O6	190.04804	189.04076	12.789	[M-H]-1	Full match	No results			Full match	7	No results	4.16E+07
+457	4-Hydroxy-2-oxoglutaric acid	C5 H6 O6	162.01676	161.00948	15.012	[M-H]-1	Full match	No results			Full match	3	No results	4.43E+06
+458	4-aminocatechol	C6 H7 N O2	125.04794	124.0407	7.476	[M-H]-1	Full match	No results			Full match	7	No results	6.63E+06
+459	4-Aminobenzoate	C7 H7 N O2	137.04773	138.055	11.028	[M+H]+1	Full match	No results			Partial match	15	Full match	1.71E+07
+460	4-Amino-3-hydroxybenzoic acid	C7 H7 N O3	153.04259	154.04987	9.568	[M+H]+1	Full match	Full match	51	62.4	Partial match	16	No results	2.35E+07
+461	4-acetamidobutyrate	C6 H11 N O3	145.07391	146.0812	9.135	[M+H]+1	Full match	No results			Full match	17	No results	2.61E+07
+462	4-[(2-Isopropyl-5-methylcyclohexyl)oxy]-4-oxobutanoic acid	C14 H24 O4	256.16763	257.17491	4.56	[M+H]+1	No results	No results			Full match	4	No results	1.88E+06
+463	4-[(1S)-1-Cyclohexyl-2-(2-piperidinyl)ethyl]cyclohexanol	C19 H35 N O	293.27174	294.27906	4.454	[M+H]+1	Full match	No results			Full match	2	No results	8.27E+07
+464	4-(3-Phenylpropyl)phenyl hydrogen sulfate	C15 H16 O4 S	292.07685	291.06957	4.087	[M-H]-1	Full match	No results			Full match	4	No results	4.55E+05
+465	4-(3-Phenylpropyl)phenyl hydrogen sulfate	C15 H16 O4 S	292.07687	291.06959	4.664	[M-H]-1	Full match	No results			Full match	4	No results	1.21E+06
+466	4,5-Dihydroxy-3-oxo-1-cyclohexene-1-carboxylic acid	C7 H8 O5	172.03749	153.01966	7.464	[M-H-H2O]-1	Full match	No results			Full match	14	No results	1.48E+06
+467	4,4'-Dihydroxydiphenylsulfone	C12 H10 O4 S	250.02997	249.02265	6.907	[M-H]-1	Full match	Full match	75.3	47.3	Full match	1	No results	7.48E+05
+468	3-Succinoylpyridine	C9 H9 N O3	179.06165	180.06893	11.2	[M+H]+1	No match	Invalid mass	77.9	48.9	No match	6	No results	2.73E+07
+469	3-O-beta-D-galactosyl-sn-glycerol	C9 H18 O8	254.10018	277.0894	12.161	[M+Na]+1	Full match	No results			Full match	4	No results	9.49E+05
+470	3-Methyladenine	C6 H7 N5	149.06884	150.07614	9.744	[M+H]+1	No match	Invalid mass	55.4	41.8	No match	2	No results	9.30E+06
+471	3-Methyladenine	C6 H7 N5	149.0702	150.07747	8.272	[M+H]+1	Full match	No results			Full match	6	No results	5.46E+06
+472	3-Isopropylmalic acid	C7 H12 O5	176.06889	175.06162	7.475	[M-H]-1	Full match	Full match	62.4	62	Not the top hit	14	No results	3.75E+07
+473	3-Indoleacetamide	C10 H10 N2 O	174.07921	175.08645	7.492	[M+H]+1	No results	No results			Full match	6	No results	1.37E+07
+474	3-Hydroxytetradecanedioic acid	C14 H26 O5	274.17795	273.17064	3.685	[M-H]-1	Full match	No results			Full match	1	No results	1.08E+07
+475	3-Hydroxysebacic acid	C10 H18 O5	218.1155	217.10822	7.441	[M-H]-1	Full match	No results			Full match	3	No results	2.23E+07
+476	3-Hydroxysebacic acid	C10 H18 O5	218.11545	217.10817	5.888	[M-H]-1	Full match	No results			Full match	3	No results	6.46E+06
+477	3-hydroxyoctanoylcarnitine	C15 H29 N O5	303.20445	302.19732	4.159	[M-H]-1	No results	No results			Full match	1	No results	1.11E+06
+478	3-Hydroxy-N-(2-oxotetrahydro-3-furanyl)butanamide	C8 H13 N O4	187.08447	220.11794	4.755	[M+H+MeOH]+1	Full match	No results			Full match	6	No results	4.12E+06
+479	3-Hydroxy-3-[(3-methylbutanoyl)oxy]-4-(trimethylammonio)butanoate	C12 H23 N O5	261.15763	260.15019	4.725	[M-H]-1	Full match	No results			Full match	1	No results	7.67E+06
+480	3-Hydroxy-3-[(3-methylbutanoyl)oxy]-4-(trimethylammonio)butanoate	C12 H23 N O5	261.15757	260.1502	4.19	[M-H]-1	Full match	No results			Full match	1	No results	6.62E+06
+481	3-Hydroxy-3-[(3-methylbutanoyl)oxy]-4-(trimethylammonio)butanoate	C12 H23 N O5	261.15761	260.15027	7.454	[M-H]-1	Full match	No results			Full match	1	No results	5.23E+06
+482	3-Deoxy-D-manno-octulosonic acid	C8 H14 O8	238.06884	237.06156	11.916	[M-H]-1	Full match	No results			Full match	2	No results	6.14E+05
+483	3-Carbamoyl-2-phenylpropionic acid	C10 H11 N O4	209.06895	208.06179	4.75	[M-H]-1	No results	No results			Full match	6	No results	1.38E+06
+484	3-amino-4-{2-[4-(tert-butyl)phenyl]diaz-1-enyl}-4,5-dihydro-1H-pyrazol-5-one	C13 H17 N5 O	218.1155	217.10822	4.751	[M-H]-1	No match	Invalid mass	50.9	44.6	No match	3	No results	3.07E+07
+485	3-amino-4-{2-[4-(tert-butyl)phenyl]diaz-1-enyl}-4,5-dihydro-1H-pyrazol-5-one	C13 H17 N5 O	259.14188	258.13453	4.733	[M-H]-1	No match	Invalid mass	53.6	45.1	No results	0	No results	3.79E+06
+486	3-acetamidopropanal	C5 H9 N O2	115.06355	114.0563	4.755	[M-H]-1	Full match	No results			Full match	8	No results	1.59E+05
+487	3-[2-(Dimethylamino)ethyl]-5-(1H-1,2,4-triazol-1-ylmethyl)-1H-indol-6-ol	C15 H19 N5 O	285.15756	286.16485	4.766	[M+H]+1	No results	No results			Full match	1	No results	7.14E+06
+488	3-[2-(1,3-Benzodioxol-5-yl)-7-methoxy-1-benzofuran-5-yl]-3-hydroxypropyl hexopyranoside	C25 H28 O11	504.16879	503.16151	13.563	[M-H]-1	No match	Invalid mass	90.4	17.1	No match	48	No results	2.43E+05
+489	3-[(2Z)-1-Oxo-2-buten-2-yl]pentanedioic acid	C9 H12 O5	200.06877	199.06149	4.491	[M-H]-1	Full match	No results			Full match	1	No results	1.46E+08
+490	3-[(2,6-Dimethylheptanoyl)oxy]-4-(trimethylammonio)butanoate	C16 H31 N O4	301.22528	302.23256	10.696	[M+H]+1	Full match	No results			Full match	2	No results	6.90E+05
+491	3-(4-hydroxy-3-methoxyphenyl)propanoic acid	C10 H12 O4	181.07393	182.08126	5.916	[M+H]+1	No match	Invalid mass	53.4	63.1	No match	22	No results	1.94E+07
+492	3-(4-Hydroxy-3-methoxyphenyl)-2-methylpropanoic acid	C11 H14 O4	210.0895	209.08223	4.329	[M-H]-1	Full match	No results			Full match	22	No results	2.42E+07
+493	3-(3-methylthio)propylmalic acid	C8 H14 O5 S	222.05622	223.0635	3.804	[M+H]+1	No results	No results			Full match	6	No results	3.30E+06
+494	3-(3,4-dihydroxyphenyl)propanoic acid	C9 H10 O4	182.05795	165.05466	3.463	[M+H-H2O]+1	Full match	Full match	80.2	75.3	Not the top hit	39	No results	4.35E+06
+495	3-(3,4-dihydroxyphenyl)propanoic acid	C9 H10 O4	164.04742	165.05469	3.456	[M+H]+1	No match	Invalid mass	80.2	75.3	No match	20	No results	4.35E+06
+496	3-(2-Hydroxy-4-methoxy-phenyl)-acrylic acid	C10 H10 O4	194.05805	193.05082	10.737	[M-H]-1	Full match	No results			Full match	34	No results	1.90E+05
+497	3,6,9,12-tetraoxatridecan-1-ol	C9 H20 O5	208.13111	209.13837	4.688	[M+H]+1	Full match	No results			Full match	1	No results	9.79E+05
+498	3,4-Xylenol	C8 H10 O	122.07351	181.08736	4.085	[M-H+HAc]-1	Full match	No results			Full match	18	No results	9.16E+06
+499	3,4-Dimethyl-5-pentyl-2-furanpropanoic acid	C14 H22 O3	238.15689	239.16415	3.665	[M+H]+1	Full match	No results			Full match	2	No results	3.66E+07
+500	3,4-Dihydroxyphenylglycol	C8 H10 O4	170.05818	169.05092	4.592	[M-H]-1	Full match	No results			Full match	18	No results	8.23E+06
+501	3,4,15-Trihydroxy-12,13-epoxytrichothec-9-en-8-yl 3-methylbutanoate	C20 H30 O7	382.19866	383.20585	3.696	[M+H]+1	No results	No results			Full match	6	No results	7.97E+06
+502	3,4'-dihydroxy-5,5'-dimethoxybibenzyl	C16 H18 O4	274.12034	275.12765	3.599	[M+H]+1	Full match	No results			Full match	14	No results	3.13E+05
+503	3'-N-debenzoyl-2'-deoxytaxol	C40 H47 N O12	733.3084	734.31568	4.156	[M+H]+1	Full match	No results			Full match	1	No results	8.53E+05
+504	2S-Amino-tridecanoic acid	C13 H27 N O2	229.20429	262.23779	7.481	[M+H+MeOH]+1	Full match	No results			Full match	2	No results	1.70E+05
+505	2KHZ9ELM84	C13 H18 O3	222.12563	223.13288	3.645	[M+H]+1	Full match	No results			Full match	15	No results	1.51E+07
+506	2-{[(Hexadecyloxy)(hydroxy)phosphoryl]oxy}-N,N,N-trimethylethanaminium	C21 H47 N O4 P	408.32389	409.33125	3.449	[M+H]+1	No results	No results			Full match	1	No results	2.36E+06
+507	2-Quinolinecarboxylic acid	C10 H7 N O2	173.04764	174.05492	6.681	[M+H]+1	Full match	No results			Full match	5	No results	6.73E+05
+508	2-Piperazinecarboxylic acid	C5 H10 N2 O2	130.07426	131.08153	9.936	[M+H]+1	Full match	No results			Full match	9	No results	1.89E+07
+509	2-Oxoglutarate	C5 H6 O5	146.02176	145.01453	13.349	[M-H]-1	Full match	No results			Full match	15	Full match	2.52E+06
+510	2-Oxo-5-[(3E)-3-penten-1-yl]tetrahydro-3-furancarboxylic acid	C10 H14 O4	198.08928	243.08743	4.738	[M+FA-H]-1	Full match	No results			Full match	14	No results	1.78E+07
+511	2-O-ETHYL ASCORBIC ACID	C8 H12 O6	204.06368	203.05642	14.356	[M-H]-1	Full match	No results			Full match	3	No results	5.67E+06
+512	2-Methylpyrrolidine	C5 H11 N	85.08915	86.09643	17.412	[M+H]+1	Full match	No results			Full match	2	No results	2.57E+07
+513	2-Methylcitrate	C7 H10 O7	206.04288	205.0356	13.152	[M-H]-1	Full match	No results			Partial match	9	Full match	5.81E+06
+514	2-methylbutyrylcarnitine	C12 H23 N O4	245.1628	246.17008	12.05	[M+H]+1	Full match	No results			Full match	4	No results	4.41E+08
+515	2-Methyl-4-quinolinol	C10 H9 N O	159.0687	158.06143	7.452	[M-H]-1	Full match	No results			Full match	8	No results	5.57E+05
+516	2-Methoxynaphthalene	C11 H10 O	158.07323	191.10673	3.557	[M+H+MeOH]+1	Full match	No results			Full match	3	No results	1.20E+07
+517	2-Methoxy-phloroglucinol	C7 H8 O4	156.04245	139.03899	11.807	[M+H-H2O]+1	Full match	Invalid mass			Full match	21	No results	5.91E+06
+518	2-Methoxy-phloroglucinol	C7 H8 O4	156.04254	155.03531	12.534	[M-H]-1	Full match	No results			Full match	21	No results	5.34E+06
+519	2-Methoxy-7,7,8b-trimethyloctahydrocyclopropa[4,5]indeno[5,6-c]furan-4a,5(4H)-diol	C16 H26 O4	282.18314	281.17586	3.616	[M-H]-1	Full match	No results			Full match	5	No results	9.00E+07
+520	2-Methoxy-5-nitrophenol	C7 H7 N O4	169.03779	168.03052	13.604	[M-H]-1	Full match	No results			Full match	10	No results	3.84E+06
+521	2-Isopropylmalic acid	C7 H12 O5	176.06872	175.06145	10.622	[M-H]-1	Full match	Full match	77.6	47.9	Full match	14	No results	1.31E+08
+522	2-Isopropylmalic acid	C7 H12 O5	176.06872	175.06145	12.279	[M-H]-1	Full match	Full match	71.1	46.1	Full match	14	No results	7.99E+07
+523	2-Isopropylmalic acid	C7 H12 O5	176.06873	175.06145	11.805	[M-H]-1	Full match	Full match	71.1	46.1	Full match	14	No results	8.47E+07
+524	2-Hydroxymethyl-3,4-pyrrolidinediol	C5 H11 N O3	133.0739	134.08117	7.601	[M+H]+1	Full match	No results			Full match	6	No results	3.14E+07
+525	2-Hydroxyethylclavam	C7 H11 N O3	157.07393	158.08117	4.771	[M+H]+1	Full match	No results			Full match	6	No results	4.75E+07
+526	2-Hydroxy-N-(2-hydroxyethyl)propionamide	C5 H11 N O3	133.07394	134.08121	11.939	[M+H]+1	Full match	No results			Full match	6	No results	2.81E+07
+527	2-Hexenoylcarnitine	C13 H23 N O4	257.16285	258.17013	10.735	[M+H]+1	Full match	No results			Full match	1	No results	4.86E+06
+528	2-Furoic acid	C5 H4 O3	112.01637	171.03023	4.646	[M-H+HAc]-1	Full match	No results			Full match	5	No results	2.10E+07
+529	2-Furoic acid	C5 H4 O3	112.01638	171.03024	12.632	[M-H+HAc]-1	Full match	No results			Full match	5	No results	1.13E+07
+530	2-Furoic acid	C5 H4 O3	112.01633	157.01453	13.687	[M+FA-H]-1	Full match	No results			Full match	5	No results	2.29E+06
+531	2-Furoic acid	C5 H4 O3	112.01635	171.03019	7.448	[M-H+HAc]-1	Full match	No results			Full match	5	No results	4.41E+06
+532	2-Formyl-1H-pyrrole	C5 H5 N O	95.03731	154.05137	7.463	[M-H+HAc]-1	Full match	No results			Full match	3	No results	1.30E+07
+533	2-Deoxypentitol	C5 H12 O4	136.07361	137.08088	9.919	[M+H]+1	Full match	No results			Full match	6	No results	4.35E+07
+534	2-Deoxypentitol	C5 H12 O4	136.07358	137.0809	7.943	[M+H]+1	Full match	No results			Full match	6	No results	3.93E+05
+535	2-Deoxy-4-O-[(2E)-3-(4-hydroxyphenyl)-2-propenoyl]pentaric acid	C14 H14 O8	310.06887	309.0616	10.726	[M-H]-1	Full match	No results			Full match	1	No results	1.27E+05
+536	2-Deoxy-4-O-[(2E)-3-(4-hydroxyphenyl)-2-propenoyl]pentaric acid	C14 H14 O8	310.06894	309.06166	11.048	[M-H]-1	Full match	No results			Full match	1	No results	2.33E+05
+537	2-Deoxy-4-O-[(2E)-3-(4-hydroxyphenyl)-2-propenoyl]pentaric acid	C14 H14 O8	310.0689	309.06163	11.323	[M-H]-1	Full match	No results			Full match	1	No results	1.47E+05
+538	2-Aminomuconic acid	C6 H7 N O4	157.03781	202.036	12.781	[M+FA-H]-1	Full match	No results			Full match	6	No results	1.86E+06
+539	2-Amino-4-pentynoic acid	C5 H7 N O2	113.04794	112.04068	4.754	[M-H]-1	Full match	No results			Full match	10	No results	2.36E+06
+540	2-amino-3-oxoadipic acid	C6 H9 N O5	175.04815	158.04485	13.504	[M+H-H2O]+1	Full match	Invalid mass			Full match	6	No results	6.12E+06
+541	2-amino-3-oxoadipic acid	C6 H9 N O5	175.0483	174.04102	12.708	[M-H]-1	Full match	No results			Full match	7	No results	5.84E+06
+542	2-Acetamido-2-deoxy-D-gluconolactone	C8 H13 N O6	219.07427	218.06699	12.344	[M-H]-1	Full match	No results			Full match	4	No results	8.95E+06
+543	2-[Amino(carboxy)methyl]cyclopropanecarboxylic acid	C6 H9 N O4	159.05344	158.04617	7.329	[M-H]-1	Full match	No results			Full match	5	No results	2.97E+06
+544	2-[4-(3-Hydroxypropyl)-2-methoxyphenoxy]-1,3-propanediol	C13 H20 O5	256.13109	255.1238	3.955	[M-H]-1	Full match	No results			Full match	2	No results	4.10E+07
+545	2-(Hydroxymethyl)-1-methyl-3,4,5-piperidinetriol	C7 H15 N O4	177.10017	178.10745	11.224	[M+H]+1	Full match	No results			Full match	3	No results	1.29E+07
+546	2-(Hydroxymethyl)-1-methyl-3,4,5-piperidinetriol	C7 H15 N O4	177.10018	178.10748	11.743	[M+H]+1	Full match	No results			Full match	3	No results	1.21E+07
+547	2-(Hydroxymethyl)-1-methyl-3,4,5-piperidinetriol	C7 H15 N O4	177.10018	178.10745	7.724	[M+H]+1	Full match	No results			Full match	3	No results	1.79E+06
+548	2-(benzyl{2-[(1-methyl-1H-pyrazol-5-yl)amino]-2-oxoethyl}amino)acetic acid	C15 H18 N4 O3	302.13663	301.12939	4.752	[M-H]-1	Not the top hit	Full match	62.7	65.6	Partial match	3	No results	1.02E+07
+549	2-((4-Nitrophenoxy)methyl)oxirane	C9 H9 N O4	195.05358	194.0463	12.425	[M-H]-1	Full match	No results			Full match	15	No results	2.26E+07
+550	2,6-Dideoxy-3-O-methyl-L-arabino-hexopyranose	C7 H14 O4	162.08949	161.08221	4.412	[M-H]-1	Full match	No results			Full match	7	No results	3.84E+06
+551	2,5-di-tert-Butylhydroquinone	C14 H22 O2	222.16208	221.15481	3.46	[M-H]-1	Full match	Full match	99.5	10	Partial match	9	No results	2.52E+07
+552	2,4-Dihydroxy-2-(hydroxymethyl)-3-oxobutanoic acid	C5 H8 O6	164.03242	163.02514	13.59	[M-H]-1	Full match	No results			Full match	3	No results	1.67E+07
+553	2,3-Dihydroxypropyl stearate	C21 H42 O4	358.30801	359.31538	4.905	[M+H]+1	Full match	No results			Full match	5	No results	1.83E+06
+554	2,3-Dihydroxypropyl stearate	C21 H42 O4	358.30836	357.30109	4.464	[M-H]-1	Full match	No results			Full match	5	No results	1.66E+06
+555	2,3-Dihydroxypropyl 3,4,5-trihydroxybenzoate	C10 H12 O7	244.05838	262.09223	13.431	[M+NH4]+1	Full match	No results			Full match	1	No results	3.00E+05
+556	2,3-Dihydro-1-benzofuran-2-carboxylic acid	C9 H8 O3	164.04765	163.04037	11.821	[M-H]-1	Full match	Full match	95.5	9.8	Partial match	20	No results	1.08E+05
+557	2,3,6-Pyridinetriol	C5 H5 N O3	127.02727	126.01996	7.474	[M-H]-1	Full match	No results			Full match	3	No results	1.56E+06
+558	2,3,4,5-Tetrahydroxypentanal	C5 H10 O5	150.0531	149.04583	10.462	[M-H]-1	Full match	No results			Full match	60	No results	3.17E+07
+559	2,3,4,5-Tetrahydroxypentanal	C5 H10 O5	150.05309	149.04581	9.94	[M-H]-1	Full match	No results			Full match	60	No results	3.62E+06
+560	2,3,4,5-Tetrahydroxypentanal	C5 H10 O5	150.05314	149.04583	10.186	[M-H]-1	Full match	No results			Full match	60	No results	3.61E+06
+561	2,3,4,5-Tetrahydroxypentanal	C5 H10 O5	150.05307	149.04579	10.908	[M-H]-1	Full match	No results			Full match	60	No results	6.45E+06
+562	2,3,4,5,6-Pentahydroxy-N-(2-hydroxyethyl)hexanamide	C8 H17 N O7	239.10059	240.10786	12.036	[M+H]+1	Full match	No results			Full match	1	No results	9.82E+06
+563	2(3H)-Furanone, dihydro-3,4-divanillyl-	C20 H22 O6	358.14135	376.17517	4.158	[M+NH4]+1	Full match	No results			Full match	38	No results	6.68E+06
+564	17,21-Dihydroxypregnenolone	C21 H32 O4	348.22954	349.23699	3.491	[M+H]+1	No results	No results			Full match	17	No results	4.61E+06
+565	1228222	C13 H14 N2 O4	262.0951	261.08783	12.452	[M-H]-1	Full match	No results			Full match	1	No results	3.45E+06
+566	12-HSA	C18 H36 O3	300.26615	299.25888	3.942	[M-H]-1	Full match	No results			Full match	16	No results	2.60E+06
+567	11(Z),14(Z)-Eicosadienoic Acid	C20 H36 O2	308.27155	307.26429	3.407	[M-H]-1	Full match	Full match	68.2	8.4	Not the top hit	8	No results	6.20E+06
+568	1-Thio-beta-D-glucopyranose	C6 H12 O5 S	196.04082	195.03354	7.47	[M-H]-1	Full match	No results			Full match	3	No results	1.37E+06
+569	1-Stearoylglycerol	C21 H42 O4	358.30807	359.31526	3.852	[M+H]+1	Full match	Full match	84.4	78.4	Full match	5	No results	1.02E+06
+570	1-pyrroline-5-carboxylic acid	C5 H7 N O2	113.0479	158.04613	5.96	[M+FA-H]-1	Full match	No results			Full match	10	No results	5.83E+05
+571	1-Oleoyl-rac-glycerol	C21 H40 O4	356.29273	355.28544	3.334	[M-H]-1	Full match	No results			Full match	7	No results	1.40E+06
+572	1-Nitrosonaphthalene	C10 H7 N O	157.05283	199.08664	7.428	[M+ACN+H]+1	No results	No results			Full match	1	No results	5.15E+06
+573	1-Methyl-N-(9-methyl-9-azabicyclo[3.3.1]non-3-yl)-1H-indazole-3-carboxamide	C18 H24 N4 O	312.19371	311.18648	3.722	[M-H]-1	Full match	No results			Full match	3	No results	1.12E+07
+574	1-Methyl-4-(1-pyrrolidinyl)-1H-pyrazolo[3,4-d]pyrimidine	C10 H13 N5	203.11597	204.12325	12.057	[M+H]+1	No match	Invalid mass	67.8	8.4	No match	3	No match	2.62E+07
+575	1-Deoxy-L-mannitol	C6 H14 O5	166.08413	167.09141	9.684	[M+H]+1	Full match	No results			Full match	3	No results	4.92E+06
+576	1-Acetylcyclohexyl acetate	C10 H16 O3	184.10999	183.10291	4.746	[M-H]-1	Full match	No results			Full match	18	No results	4.08E+06
+577	1-(Propyldisulfanyl)-1-(propylsulfinyl)propane	C9 H20 O S3	240.06698	239.05971	3.682	[M-H]-1	No results	No results			Full match	2	No results	2.25E+06
+578	1-(Propyldisulfanyl)-1-(propylsulfinyl)propane	C9 H20 O S3	240.06707	239.0598	3.97	[M-H]-1	Full match	No results			Full match	1	No results	3.71E+06
+579	1-(Methylthio)-1-hexanethiol	C7 H16 S2	164.06858	182.1024	10.868	[M+NH4]+1	Full match	No results			Full match	51	No results	1.28E+07
+580	1-(malonylamino)cyclopropane-1-carboxylic acid	C7 H9 N O5	187.04835	186.04107	9.952	[M-H]-1	Full match	No results			Full match	6	No results	2.94E+06
+581	1-(alpha-D-Glucopyranosyluronosyl)-3-[(2S)-1-methyl-5-oxo-2-pyrrolidinyl]pyridinium	C16 H20 N2 O7	352.12718	351.11985	4.746	[M-H]-1	No results	No results			Full match	1	No results	1.24E+06
+582	1-(4-Hydroxyphenyl)-1,2,3-propanetriol	C9 H12 O4	184.07363	185.08087	4.359	[M+H]+1	Full match	No results			Full match	20	No results	3.04E+07
+583	1-(4-Hydroxy-3,5-dimethoxyphenyl)-1,2,3-propanetriol	C11 H16 O6	244.09464	243.08735	4.743	[M-H]-1	Full match	No results			Full match	1	No results	1.77E+07
+584	1-(3-phenylpropanoyl)-4-piperidinecarboxylic acid	C15 H19 N O3	261.13633	260.12906	7.409	[M-H]-1	No results	Full match	57.9	44.2	Partial match	3	No results	7.01E+06
+585	1-(3,4-Dimethoxyphenyl)-3,5-decanediyl diacetate	C22 H34 O6	394.23535	395.24258	3.579	[M+H]+1	No results	No results			Full match	2	No results	1.42E+07
+586	1-(2-Furyl)-1-butanone	C8 H10 O2	138.06815	139.07535	4.392	[M+H]+1	Full match	No results			Full match	28	No results	2.76E+07
+587	1,4-D-xylobiose	C10 H18 O9	282.09503	281.08776	11.161	[M-H]-1	Full match	No results			Full match	10	No results	1.41E+06
+588	1,4,5-Trihydroxy-5-hydroxymethyl-2-methoxycyclohex-1-en-3-one	C8 H12 O6	204.06374	203.05646	13.586	[M-H]-1	Full match	No results			Full match	3	No results	1.21E+07
+589	1,4,5,6-tetrahydro-6-oxonicotinic acid	C6 H7 N O3	141.0429	140.03569	7.482	[M-H]-1	Full match	No results			Full match	5	No results	3.97E+06
+590	1,3,7-Trimethyluric acid	C8 H10 N4 O3	210.07429	209.06701	10.139	[M-H]-1	Not the top hit	Full match	62.8	44.9	Full match	9	No results	1.34E+06
+591	1,3,7-Trimethyluric acid	C8 H10 N4 O3	210.07433	209.06705	12.039	[M-H]-1	Full match	No results			Full match	9	No results	2.47E+05
+592	.alpha.-Aminoadipic acid	C6 H11 N O4	161.06887	162.07612	7.715	[M+H]+1	Full match	No results			Full match	21	No results	2.42E+06
+593	(±)-Menthol	C10 H20 O	156.15154	311.29579	3.392	[2M-H]-1	Full match	No results			Full match	25	No results	4.78E+07
+594	(Z)-2-Butene-1,2,3-tricarboxylic acid	C7 H8 O6	188.03235	187.02508	14.041	[M-H]-1	Full match	No results			Full match	8	No results	1.16E+07
+595	(RS)-3,5-DHPG	C8 H9 N O4	183.05333	182.04605	4.084	[M-H]-1	Full match	No results			Full match	6	No results	5.64E+05
+596	(R)-3-hydroxybutyrylcarnitine	C11 H21 N O5	247.1421	248.14938	12.453	[M+H]+1	Full match	No results			Full match	2	No results	1.81E+07
+597	(R)-3-hydroxybutyrylcarnitine	C11 H21 N O5	247.1421	248.14938	12.819	[M+H]+1	Full match	No results			Full match	2	No results	3.36E+07
+598	(R)-3-hydroxybutyrylcarnitine	C11 H21 N O5	247.14195	246.13464	4.581	[M-H]-1	Full match	No results			Full match	2	No results	1.48E+07
+599	(e,z,z)-2,4,7-decatrienal	C10 H14 O	150.10449	149.09748	4.048	[M-H]-1	Full match	No results			Full match	47	No results	1.79E+07
+600	(8E)-2-Amino-8-octadecene-1,3,4-triol	C18 H37 N O3	315.27741	299.2581	3.434	[M+H-NH3]+1	Full match	No results			Full match	1	No results	4.63E+07
+601	(6R,8Z)-6-Hydroxy-3-oxo-8-tetradecenoic acid	C14 H24 O4	256.16744	257.17464	3.652	[M+H]+1	Full match	No results			Full match	4	No results	1.14E+07
+602	(5R,6R)-2,6-Dihydroxy-5-(hydroxymethyl)-2-cyclohexen-1-one	C7 H10 O4	158.05819	157.05092	7.335	[M-H]-1	Full match	No results			Full match	10	No results	1.41E+08
+603	(4S,5R,8S,9R,12R,13R)-1,5,9-Trimethyl-11,14,15-trioxatetracyclo[10.2.1.0~4,13~.0~8,13~]pentadecan-10-ol	C15 H24 O4	268.16751	269.17488	3.593	[M+H]+1	Full match	No results			Full match	8	No results	8.08E+07
+604	(4S)-4-[(2E,4Z)-2,4-Decadienoyloxy]-4-(trimethylammonio)butanoate	C17 H29 N O4	311.20959	312.21685	3.65	[M+H]+1	Full match	No results			Full match	1	No results	2.21E+07
+605	(4R,5S,9S,10R,12S,13S)-1,5,9-Trimethyl-11,14,15,16-tetraoxatetracyclo[10.3.1.0~4,13~.0~8,13~]hexadecan-10-ol	C15 H24 O5	284.1624	285.16966	3.74	[M+H]+1	Full match	No results			Full match	1	No results	2.95E+07
+606	(4E)-5-Hydroxy-4-{(2E,4E,6R)-1-hydroxy-6-[(3R,4R,6R)-6-hydroxy-1,4,8-trimethyl-2,9-dioxabicyclo[3.3.1]non-7-en-3-yl]-4-methyl-2,4-heptadien-1-ylidene}-2,4-dihydro-3H-pyrrol-3-one	C22 H29 N O6	403.19912	404.2064	4.144	[M+H]+1	Full match	No results			Full match	3	No results	2.05E+06
+607	(4E)-5-Hydroxy-4-{(2E,4E,6R)-1-hydroxy-6-[(3R,4R,6R)-6-hydroxy-1,4,8-trimethyl-2,9-dioxabicyclo[3.3.1]non-7-en-3-yl]-4-methyl-2,4-heptadien-1-ylidene}-2,4-dihydro-3H-pyrrol-3-one	C22 H29 N O6	403.19918	404.20646	4.976	[M+H]+1	Full match	No results			Full match	3	No results	5.66E+06
+608	(4-Ethoxyphenyl)urea	C9 H12 N2 O2	180.08955	405.17716	4.754	[2M+FA-H]-1	Full match	No results			Full match	7	No results	2.42E+06
+609	(3E)-4,8-Dimethyl-1,3,7-nonatriene	C11 H18	150.14086	151.14814	4.19	[M+H]+1	No results	No results			Full match	3	No results	2.07E+06
+610	(2Z)-2-(3-Hydroxybenzylidene)heptanoic acid	C14 H18 O3	234.12554	235.13281	4.016	[M+H]+1	Full match	No results			Full match	13	No results	7.29E+05
+611	(2S,3S)-2,3-dihydro-3-hydroxyanthranilic acid zwitterion	C7 H9 N O3	155.05822	156.0655	9.045	[M+H]+1	Full match	No results			Full match	7	No results	4.02E+07
+612	(2S)-3-Hydroxy-2-(octanoyloxy)propyl decanoate	C21 H40 O5	372.28777	371.28049	3.309	[M-H]-1	Full match	No results			Full match	7	No results	9.94E+05
+613	(2S)-2-Amino-8-hydroxyoctanoic acid	C8 H17 N O3	175.12082	176.1281	9.182	[M+H]+1	Full match	No results			Full match	1	No results	2.84E+07
+614	(2R)-2,3-Dihydroxypropanoic acid	C3 H6 O4	106.02682	105.01955	10.456	[M-H]-1	Full match	Full match	58	7.9	Full match	3	No results	6.50E+06
+615	(2E,6E)-Farnesol	C15 H26 O	222.1977	467.38419	3.279	[2M+Na]+1	Full match	No results			Full match	87	No results	1.80E+05
+616	(2-Hydroxyphenyl)oxidanyl	C6 H5 O2	109.02921	108.02193	7.463	[M-H]-1	No results	No results			Full match	2	No results	4.92E+06
+617	(1Z)-N-[(2S,3S,4R,8E)-1,3,4-Trihydroxy-8-octadecen-2-yl]hexadecanimidic acid	C34 H67 N O4	553.50641	586.53988	3.791	[M+H+MeOH]+1	Full match	No results			Full match	2	No results	1.03E+06
+618	(1Z)-2-Hydroxy-N-[(2S,3S,4R)-1,3,4-trihydroxy-2-octadecanyl]nonadecanimidic acid	C37 H75 N O5	613.5633	614.57058	3.782	[M+H]+1	Full match	No results			Full match	1	No results	1.64E+06
+619	(1S,6R,11aR,13R,14aS)-1,13-dihydroxy-6-methyl-1H,4H,6H,7H,8H,9H,11aH,12H,13H,14H,14aH-cyclopenta[f]oxacyclotridecan-4-one	C16 H24 O4	280.16749	281.1748	3.52	[M+H]+1	Full match	Full match	56.7	64	Partial match	7	No results	1.21E+08
+620	(-)-Rhododendrin	C16 H24 O7	328.15245	327.14518	4.748	[M-H]-1	Full match	No results			Full match	1	No results	9.56E+06
+621	(-)-enniatin B	C33 H57 N3 O9	639.41254	640.41982	4.376	[M+H]+1	Full match	No results			Full match	1	No results	4.10E+06
+622	(-)-Ecgonine methyl ester	C10 H17 N O3	199.12092	200.1282	10.238	[M+H]+1	Full match	No results			Full match	13	No results	1.10E+07
+623	(-)-Ecgonine methyl ester	C10 H17 N O3	199.12097	200.12825	10.641	[M+H]+1	Full match	No results			Full match	13	No results	9.34E+06
+624	(-)-Ecgonine methyl ester	C10 H17 N O3	199.12104	200.12832	11.1	[M+H]+1	Full match	No results			Full match	13	No results	9.39E+06
+625	(+/-)-Methoprene	C19 H34 O3	310.25046	311.25826	3.422	[M+H]+1	No results	No results			Full match	2	No results	2.48E+06
+626	(+/-)-C75	C14 H22 O4	236.14131	237.14855	3.518	[M+H]+1	No match	Invalid mass	71.7	69.1	No match	3	No results	1.68E+08
+627	(+)-Simvastatin	C25 H38 O5	418.2718	419.27912	3.546	[M+H]+1	No results	No results			Full match	3	No results	5.78E+06
+628	(+)-Nootkatone	C15 H22 O	218.16712	219.17439	3.609	[M+H]+1	Full match	No results			Full match	55	No results	1.46E+07
+629	(+)-10-Deoxymethynolide	C17 H28 O4	296.19873	297.20605	3.492	[M+H]+1	Full match	Invalid mass			Full match	3	No results	2.61E+07
+630		C12 H27 N O2	217.20426	218.21154	7.513	[M+H]+1	Full match	No results			No results	0	No results	6.29E+06
+631		C14 H31 N O2	245.23556	246.24284	7.471	[M+H]+1	Full match	No results			No results	0	No results	2.57E+06
+632		C12 H27 N O2	217.20423	218.21151	8.435	[M+H]+1	Full match	No results			No results	0	No results	1.18E+06
+633		C12 H27 N O3	233.19907	234.20635	4.737	[M+H]+1	Full match	No results			No results	0	No results	4.72E+05
+634		C12 H27 N O3	233.19915	234.20642	7.359	[M+H]+1	Full match	No results			No results	0	No results	1.56E+06
+635		C4 H6 N6 O4	202.04539	203.05267	12.226	[M+H]+1	Full match	No results			No match	1	No results	3.01E+06
+636		C17 H37 N O3	303.27724	304.28451	4.318	[M+H]+1	Full match	No results			No results	0	No results	1.34E+06
+637		C16 H35 N O3	289.26165	290.26893	4.401	[M+H]+1	Full match	No results			No results	0	No results	1.34E+06
+638		C19 H41 N O2	315.31362	316.3209	5.994	[M+H]+1	Full match	No results			No results	0	No results	2.33E+06
+639		C37 H30 Cl N5 O S	627.18629	628.19357	3.696	[M+H]+1	Full match	No results			No results	0	No results	5.41E+05
+640		C12 H27 N O3	233.1991	234.20638	5.88	[M+H]+1	Full match	No results			No results	0	No results	2.66E+06
+641		C9 H18 O5	206.11543	205.10831	4.712	[M-H]-1	Full match	No results			No results	0	No results	1.41E+07
+642		C49 H33 Cl N P	701.2045	702.21178	3.685	[M+H]+1	Full match	No results			No results	0	No results	3.88E+05
+643		C11 H19 N O5	245.12638	246.13366	10.529	[M+H]+1	Full match	No results			No results	0	No results	1.10E+08
+644		C52 H39 Cl N P S	775.22284	776.23011	3.67	[M+H]+1	Full match	No results			No results	0	No results	3.88E+05
+645		C12 H21 N O5	259.14208	260.14936	9.986	[M+H]+1	Full match	No results			No results	0	No results	9.16E+07
+646		C5 H9 N3 O2	143.06955	144.07681	11.509	[M+H]+1	Full match	No results			No results	0	No results	5.65E+05
+647		C14 H31 N O3	261.2305	262.23776	7.48	[M+H]+1	Full match	No results			No results	0	No results	2.07E+05
+648		C55 H41 Cl2 N O4	849.24123	850.24848	3.659	[M+H]+1	Full match	No results			No results	0	No results	3.34E+05
+649		C3 H5 N3 O	99.04325	100.05052	11.455	[M+H]+1	Full match	No results			No results	0	No results	3.27E+06
+650		C32 H57 N4 O6 P	624.40158	625.40845	3.702	[M+H]+1	Full match	No results			No match	4	No results	5.04E+05
+651		C31 H36 Cl N S3	553.16819	554.17526	3.731	[M+H]+1	Full match	No results			No results	0	No results	6.03E+05
+652		C13 H32 N9 O P	361.2464	344.24307	7.476	[M+H-H2O]+1	Full match	No results			No results	0	No results	7.37E+06
+653		C18 H32 N2 O3	324.24114	325.24836	4.257	[M+H]+1	Full match	No results			No results	0	No results	1.24E+08
+654		C17 H35 N O3	301.26155	302.26891	7.451	[M+H]+1	Full match	No results			No results	0	No results	6.08E+05
+655		C19 H29 N5 O	343.23577	344.24303	7.482	[M+H]+1	Full match	No results			No results	0	No results	7.37E+06
+656		C58 H49 Cl2 N O2 P2	923.2609	924.26818	3.658	[M+H]+1	Full match	No results			No results	0	No results	3.34E+05
+657		C19 H38 N2 O3	342.28799	343.29523	4.616	[M+H]+1	Full match	No results			No results	0	No results	6.18E+07
+658		C16 H24 N4 O9	416.15279	415.14572	13.169	[M-H]-1	Full match	No results			No results	0	No results	1.08E+05
+659		C17 H37 N O3	303.27736	304.28463	7.484	[M+H]+1	Full match	No results			No results	0	No results	2.28E+05
+660		C13 H22 N8 O2 S	354.15714	355.16442	11.689	[M+H]+1	Full match	No results			No match	2	No results	5.65E+05
+661		C39 H55 N5 O3	641.42825	642.43553	3.703	[M+H]+1	Full match	No results			No results	0	No results	8.10E+05
+662		C12 H25 N O3	231.18345	232.19073	4.755	[M+H]+1	Full match	No results			No results	0	No results	3.58E+06
+663		C28 H50 N O5 P3	573.29328	574.30055	4.142	[M+H]+1	Invalid mass	No results			No results	0	No results	4.88E+05
+664		C10 H11 N5 O3	249.08621	250.09349	8.607	[M+H]+1	Full match	No results			No match	2	No results	9.80E+07
+665		C19 H31 N O4	337.22495	338.23233	3.602	[M+H]+1	Full match	No results			No results	0	No results	6.63E+06
+666		C61 H53 Cl2 N O4 S2	997.27933	998.28661	3.663	[M+H]+1	Full match	No results			No results	0	No results	3.97E+05
+667		C6 H15 N O6	197.09001	198.09733	12.223	[M+H]+1	Full match	No results			No results	0	No results	4.10E+05
+668		C39 H55 N5 O3	641.428	642.43528	4.316	[M+H]+1	Full match	No results			No results	0	No results	3.67E+06
+669		C16 H20 N10 O2	384.17863	429.17688	4.752	[M+FA-H]-1	Full match	No results			No match	2	No results	2.32E+07
+670		C19 H34 N2 O3	338.25657	339.26379	4.198	[M+H]+1	Full match	No results			No results	0	No results	5.18E+07
+671		C11 H17 N3 O2	223.13205	241.16586	7.919	[M+NH4]+1	Full match	No results			No results	0	No results	1.70E+06
+672		C35 H71 N O3	553.5427	554.54997	4.431	[M+H]+1	Full match	No results			No results	0	No results	3.88E+06
+673		C5 H2 N4	118.02799	136.06181	9.351	[M+NH4]+1	Full match	No results			No results	0	No results	4.55E+07
+674		C35 H75 N7 O3	641.5948	642.60207	3.852	[M+H]+1	Full match	No results			No results	0	No results	2.30E+06
+675		C20 H35 N O11	465.22098	448.21764	4.753	[M+H-H2O]+1	Full match	No results			No results	0	No results	2.22E+07
+676		C12 H27 N2 O P S2	310.13104	311.13831	11.443	[M+H]+1	Full match	No results			No match	3	No results	1.33E+06
+677		C21 H45 N O4	375.33466	376.34194	3.809	[M+H]+1	Full match	No results			No results	0	No results	6.69E+05
+678		C17 H24 N10 O5	448.19472	447.18732	4.749	[M-H]-1	Full match	No results			No results	0	No results	4.05E+06
+679		C17 H22 N10 O4	430.18405	429.17678	4.755	[M-H]-1	Full match	No results			No results	0	No results	2.32E+07
+680		C16 H35 N O3	289.2617	290.26897	5.432	[M+H]+1	Full match	No results			No results	0	No results	2.88E+06
+681		C9 H19 N O3	189.13651	190.14379	11.644	[M+H]+1	Full match	No results			No results	0	No results	6.34E+05
+682		C37 H51 N5 O3	613.39679	614.40407	3.723	[M+H]+1	Full match	No results			No results	0	No results	7.86E+05
+683		C17 H30 N2 O3	310.22558	309.21848	4.336	[M-H]-1	Full match	No results			No results	0	No results	7.06E+06
+684		C5 H15 N5 O2 S2	241.06577	240.05849	3.68	[M-H]-1	Full match	No results			No results	0	No results	5.85E+05
+685		C22 H36 N4 O	372.28727	390.32108	3.882	[M+NH4]+1	Full match	No results			No match	7	No results	9.17E+05
+686		C15 H27 N8 O5 P	430.18386	429.17676	10.238	[M-H]-1	Full match	No results			No results	0	No results	2.15E+07
+687		C28 H47 N O14 P2	683.2468	684.25408	14.011	[M+H]+1	Full match	No results			No results	0	No results	2.30E+05
+688		C21 H45 N O4	375.3344	376.34167	5.19	[M+H]+1	Full match	No results			No results	0	No results	1.51E+06
+689		C20 H37 N O6	387.26185	388.26913	4.76	[M+H]+1	Full match	No results			No results	0	No results	3.56E+05
+690		C41 H71 O4 P	658.51228	659.51956	4.503	[M+H]+1	Full match	No results			No results	0	No results	2.53E+06
+691		C19 H41 N O4	347.30321	348.31049	5.008	[M+H]+1	Full match	No results			No results	0	No results	3.98E+06
+692		C35 H64 N O6 P3	687.39625	688.40352	4.137	[M+H]+1	Full match	No results			No results	0	No results	2.09E+06
+693		C16 H18 N4	266.15193	267.15922	3.839	[M+H]+1	Full match	No results			No match	26	No results	1.22E+08
+694		C18 H30 N2 O2	306.23013	339.26359	4.191	[M+H+MeOH]+1	Full match	No results			No results	0	No results	5.18E+07
+695		C45 H33 Cl2 N7 O	757.2121	758.2194	3.692	[M+H]+1	Full match	No results			No results	0	No results	7.84E+05
+696		C23 H47 O17 P3	688.20238	689.20966	14.007	[M+H]+1	Full match	No results			No results	1	No results	2.27E+05
+697		C15 H33 N O	243.25629	244.26357	14.156	[M+H]+1	Full match	No results			No results	0	No results	1.92E+06
+698		C30 H56 N5 O6 P	613.39659	614.40387	4.354	[M+H]+1	Full match	No results			No results	0	No results	4.04E+06
+699		C40 H75 N5 O	641.59499	642.60227	4.465	[M+H]+1	Full match	No results			No results	0	No results	3.39E+06
+700		C13 H24 N2 O3	256.17873	257.18601	11.359	[M+H]+1	Full match	No results			No results	0	No results	5.85E+05
+701		C17 H24 N2 O S2	336.13222	335.12518	4.748	[M-H]-1	Full match	No results			No results	0	No results	8.51E+06
+702		C33 H67 N O3	525.51214	526.51941	3.813	[M+H]+1	Full match	No results			No results	0	No results	1.69E+06
+703		C6 H15 N8 P	230.11545	229.10822	4.747	[M-H]-1	Full match	No results			No match	1	No results	2.56E+07
+704		C7 H12 N2 O2	156.08995	157.09722	21.434	[M+H]+1	Full match	No results			No results	0	No results	3.41E+06
+705		C9 H9 N7	215.09206	429.17679	10.232	[2M-H]-1	Full match	No results			No results	0	No results	2.15E+07
+706		C11 H20 O6	248.12595	247.11867	4.503	[M-H]-1	Full match	No results			No results	0	No results	3.59E+07
+707		C29 H32 Cl N7 O2 S2	609.17553	610.1828	4.334	[M+H]+1	Full match	No results			No results	0	No results	3.56E+06
+708		C25 H38 N4 O17	666.22302	665.2159	14.009	[M-H]-1	Full match	No results			No match	32	No results	9.67E+04
+709		C15 H18 N4 O2	286.14169	285.13434	4.748	[M-H]-1	Full match	No results			No results	0	No results	1.64E+07
+710		C9 H15 N O5	217.09514	218.10242	4.496	[M+H]+1	Full match	No results			No match	1	No results	2.10E+07
+711		C6 H14 O5 S	198.05639	199.06367	10.901	[M+H]+1	Full match	No results			No match	1	No results	2.14E+07
+712		C28 H43 O4 P	474.28989	473.28261	3.266	[M-H]-1	Full match	No results			No results	0	No results	6.04E+07
+713		C11 H19 N O5	245.1265	246.13378	12.055	[M+H]+1	Full match	No results			No results	0	No results	2.10E+07
+714		C41 H75 N S	613.56338	614.57065	4.414	[M+H]+1	Full match	No results			No match	1	No results	3.56E+06
+715		C7 H20 N6 O2 S	252.13614	253.14341	3.633	[M+H]+1	Full match	No results			No match	3	No results	4.41E+07
+716		C10 H21 N S2	219.11067	220.11794	11.14	[M+H]+1	Full match	No results			No match	2	No results	2.88E+07
+717		C28 H64 N7 O2 P3 S	655.40757	656.41498	4.132	[M+H]+1	Full match	No results			No results	0	No results	1.12E+06
+718		C20 H31 N5 O	357.25143	358.2587	4.772	[M+H]+1	Full match	No results			No match	1	No results	8.35E+06
+719		C20 H17 N2 O3 P	364.09797	365.10525	13.002	[M+H]+1	Full match	No results			No results	0	No results	1.39E+07
+720		C5 H13 O6 P	200.04519	199.03797	9.99	[M-H]-1	Full match	No results			No results	0	No results	2.85E+06
+721		C22 H44 N6 O3 S	472.319	235.15223	3.337	[M-2H]-2	Full match	No results			No results	0	No results	1.98E+07
+722		C37 H75 N O3	581.57426	582.58154	3.951	[M+H]+1	Full match	No results			No results	0	No results	3.51E+06
+723		C7 H5 N O3 S2	214.97124	213.96396	4.405	[M-H]-1	Full match	No results			No results	0	No results	3.87E+06
+724		C33 H67 N O3	525.51197	526.51925	4.438	[M+H]+1	Full match	No results			No results	0	No results	3.48E+06
+725		C8 H7 N O6	213.02788	212.0206	13.602	[M-H]-1	Full match	No results			No results	0	No results	2.28E+07
+726		C12 H27 N O4	249.19404	232.19078	7.466	[M+H-H2O]+1	Full match	No results			No results	0	No results	1.98E+06
+727		C39 H72 N O3 P3	695.47426	696.48153	4.252	[M+H]+1	Full match	No results			No results	0	No results	2.59E+06
+728		C55 H39 Cl2 N O3	831.23159	832.23887	3.733	[M+H]+1	Full match	No results			No results	0	No results	6.17E+05
+729		C22 H45 N O3	371.33965	372.3469	3.895	[M+H]+1	Full match	No results			No results	0	No results	3.05E+06
+730		C21 H43 Cl O4	394.28506	393.27778	4.451	[M-H]-1	Full match	No results			No results	0	No results	8.83E+05
+731		C19 H33 N O3	323.2458	324.25309	4.016	[M+H]+1	Full match	No results			No results	0	No results	4.84E+07
+732		C16 H37 N4 O7 P	428.24069	427.23382	4.05	[M-H]-1	Full match	No results			No match	1	No results	6.21E+06
+733		C18 H36 N2 O3	328.27225	329.27954	3.964	[M+H]+1	Full match	No results			No results	0	No results	1.38E+06
+734		C7 H12 O7	208.05866	207.05137	9.784	[M-H]-1	Full match	No results			No match	3	No results	3.33E+05
+735		C26 H57 N9 O9 S	671.40225	672.4096	4.135	[M+H]+1	Full match	No results			No results	0	No results	8.78E+05
+736		C13 H35 N6 O2 P	338.25645	339.26373	3.947	[M+H]+1	Full match	No results			No results	0	No results	1.36E+07
+737		C9 H23 Cl N8 O3 P2	388.10421	389.11147	3.797	[M+H]+1	Full match	No results			No match	2	No results	1.05E+06
+738		C16 H20 N2 O6	336.13234	335.12508	7.467	[M-H]-1	Full match	No results			No results	0	No results	1.90E+07
+739		C5 H4 N2	92.03732	93.04474	7.479	[M+H]+1	Full match	No results			No results	0	No results	2.81E+06
+740		C8 H6	102.04693	120.08075	9.988	[M+NH4]+1	Full match	No results			No results	0	No results	1.03E+07
+741		C7 H12 O7	208.05863	207.05135	10.726	[M-H]-1	Full match	No results			No match	2	No results	4.13E+06
+742		C39 H79 N O5	641.59509	642.60237	6.186	[M+H]+1	Full match	No results			No results	0	No results	9.17E+05
+743		C10 H22 N2 O5	250.15277	251.16005	8.354	[M+H]+1	Full match	No results			No results	0	No results	9.74E+05
+744		C13 H22 O5	258.1467	257.13941	3.856	[M-H]-1	Full match	No results			No results	0	No results	2.98E+07
+745		C23 H38 N4 O2	402.29825	401.29098	3.897	[M-H]-1	Full match	No results			No match	2	No results	7.83E+05
+746		C33 H71 N7 O3	613.56361	614.57088	5.315	[M+H]+1	Full match	No results			No match	1	No results	4.66E+06
+747		C13 H29 N2 O2 P S2	340.14154	341.14882	12.639	[M+H]+1	Full match	No results			No match	2	No results	4.33E+05
+748		C36 H64 N2 O3	572.49114	573.49841	3.809	[M+H]+1	Full match	No results			No results	0	No results	2.31E+07
+749		C10 H14 N4 O	206.11572	205.10844	7.408	[M-H]-1	Invalid mass	No results			No results	0	No results	1.29E+07
+750		C42 H65 N O10	743.45928	744.46656	4.2	[M+H]+1	Full match	No results			No results	0	No results	2.20E+06
+751		C7 H13 N O5 S	223.0516	222.04432	4.744	[M-H]-1	Full match	No results			No match	2	No results	1.79E+05
+752		C23 H51 N3 O P2 S	479.32489	480.33214	3.45	[M+H]+1	Full match	No results			No results	0	No results	1.57E+07
+753		C23 H51 N6 P	442.39373	443.40101	7.523	[M+H]+1	Invalid mass	No results			No results	0	No results	1.78E+05
+754		C11 H25 N O2	203.18852	204.19579	7.539	[M+H]+1	Full match	No results			No results	0	No results	2.17E+05
+755		C8 H9 N3 O3	195.06469	196.07202	10.238	[M+H]+1	Full match	No results			No results	0	No results	2.79E+06
+756		C30 H41 N O9	559.27743	560.28471	4.441	[M+H]+1	Full match	No results			No results	0	No results	7.17E+05
+757		C9 H13 P	152.07624	363.16614	4.744	[2M-H+HAc]-1	Full match	No results			No results	0	No results	1.24E+06
+758		C29 H47 N3 S	469.35126	470.35854	4.17	[M+H]+1	Full match	No results			No results	0	No results	1.22E+06
+759		C15 H16 N4 O2	284.12608	283.11879	4.747	[M-H]-1	Full match	No results			No match	2	No results	9.57E+06
+760		C28 H33 N O S2	463.19919	464.20647	4.436	[M+H]+1	Full match	No results			No results	0	No results	3.50E+06
+761		C20 H44 N9 O P	457.3404	458.34763	3.885	[M+H]+1	Full match	No results			No results	0	No results	8.16E+05
+762		C22 H45 N O3	371.33985	372.34711	4.575	[M+H]+1	Full match	No results			No results	0	No results	4.18E+06
+763		C19 H41 N O3	331.3086	332.31586	7.464	[M+H]+1	Full match	No results			No results	0	No results	2.09E+05
+764		C7 H15 N O5	193.09511	194.10239	10.224	[M+H]+1	Full match	No results			No results	0	No results	1.32E+07
+765		C13 H30 N2 O S3	326.15096	327.15824	11.708	[M+H]+1	Full match	No results			No match	18	No results	6.56E+06
+766		C14 H20 O2 S	252.11941	546.2701	4.692	[2M+ACN+H]+1	Full match	No results			No results	0	No results	5.71E+05
+767		C29 H62 N5 O P3	589.4185	590.42578	3.842	[M+H]+1	Full match	No results			No results	0	No results	8.13E+05
+768		C21 H43 Cl O4	394.28509	393.27781	3.881	[M-H]-1	Full match	No results			No results	0	No results	4.03E+05
+769		C6 H13 Cl O6	216.04007	215.03279	12.225	[M-H]-1	Full match	No results			No match	2	No results	1.36E+05
+770		C31 H64 O3	484.48543	485.49284	3.798	[M+H]+1	Full match	No results			No results	0	No results	3.37E+07
+771		C6 H7 N5 O S	197.03721	198.04449	9.029	[M+H]+1	Full match	No results			No results	0	No results	1.62E+07
+772		C14 H29 N O3	259.21483	260.22211	7.428	[M+H]+1	Full match	No results			No results	0	No results	2.95E+05
+773		C42 H74 N2 O3 S	686.54239	687.54966	3.895	[M+H]+1	Full match	No results			No results	0	No results	9.27E+05
+774		C27 H48 O2 P2	466.31179	465.30452	3.291	[M-H]-1	Full match	No results			No match	2	No results	3.41E+06
+775		C11 H19 N3 O3 S	273.11485	274.12213	10.575	[M+H]+1	Full match	No results			No results	0	No results	1.35E+07
+776		C5 H2 O8 S	221.94689	220.93961	14.681	[M-H]-1	Full match	No results			No results	0	No results	5.94E+04
+777		C24 H52 N9 O3 P	545.39275	546.40003	3.861	[M+H]+1	Full match	No results			No results	0	No results	1.04E+06
+778		C37 H75 N O3	581.57441	582.58169	4.386	[M+H]+1	Full match	No results			No results	0	No results	5.46E+06
+779		C5 H7 N9 O2	225.07258	226.07986	12.906	[M+H]+1	Full match	No results			No results	0	No results	3.06E+05
+780		C10 H25 N4 O P	248.17764	247.1703	4.155	[M-H]-1	Full match	No results			No match	5	No results	3.88E+05
+781		C27 H50 N2 O3	450.38186	451.38928	3.926	[M+H]+1	Full match	No results			No results	0	No results	1.56E+07
+782		C14 H31 N O4	277.2254	260.22211	7.429	[M+H-H2O]+1	Full match	No results			No results	0	No results	3.85E+05
+783		C24 H18 N4 O7	474.11607	236.05082	9.738	[M-2H]-2	Full match	No results			No match	2	No results	1.75E+05
+784		C21 H41 N O2	339.31332	372.34679	3.894	[M+H+MeOH]+1	Full match	No results			No results	0	No results	3.27E+06
+785		C15 H32 N9 O2 P	401.24073	402.24801	4.084	[M+H]+1	Full match	No results			No match	4	No results	1.44E+07
+786		C6 H12 N2	112.10007	113.10734	18.417	[M+H]+1	Full match	No results			No results	0	No results	2.56E+07
+787		C4 H2 N2 O	94.01675	136.0506	8.98	[M+ACN+H]+1	Full match	No results			No results	0	No results	1.25E+07
+788		C5 H16 N5 O3 P	225.10026	258.13383	4.748	[M+H+MeOH]+1	Invalid mass	No results			No match	3	No results	1.24E+07
+789		C23 H38 N4 O2	402.29821	401.29093	4.48	[M-H]-1	Full match	No results			No match	2	No results	1.56E+06
+790		C12 H25 N O3	231.18347	232.19075	6.433	[M+H]+1	Full match	No results			No results	0	No results	3.85E+06
+791		C35 H71 N O3	553.54283	554.5501	5.255	[M+H]+1	Full match	No results			No results	0	No results	4.78E+06
+792		C13 H19 N5 O10	405.11188	404.1046	13.012	[M-H]-1	Full match	No results			No results	0	No results	1.41E+06
+793		C7 H6	90.04696	91.05424	7.468	[M+H]+1	Full match	No results			No results	0	No results	2.65E+07
+794		C17 H41 N4 O3 P	380.29007	381.29735	3.914	[M+H]+1	Full match	No results			No results	0	No results	1.22E+06
+795		C11 H19 N8 P	294.14672	295.15411	4.743	[M+H]+1	Full match	No results			No match	3	No results	9.17E+06
+796		C6 H15 N O6	197.09014	198.09742	12.967	[M+H]+1	Full match	No results			No results	0	No results	2.72E+06
+797		C4 H14 N4 O P2	196.06379	197.07105	7.486	[M+H]+1	Full match	No results			No match	3	No results	1.15E+07
+798		C8 H11 N2 P	166.06643	167.07371	7.502	[M+H]+1	Full match	No results			No results	0	No results	2.03E+07
+799		C21 H44 N6 O3 S	460.3187	229.15214	3.371	[M-2H]-2	Full match	No results			No match	1	No results	8.49E+06
+800		C16 H21 N4 P	300.14901	301.15646	3.381	[M+H]+1	Full match	No results			No match	1	No results	4.35E+06
+801		C16 H28 N2 O3	296.2099	297.21719	4.424	[M+H]+1	Full match	No results			No results	0	No results	1.53E+07
+802		C7 H21 N4 O3 P	240.13619	239.12891	3.987	[M-H]-1	Full match	No results			No results	0	No results	1.06E+07
+803		C19 H35 N O3	325.26142	343.29513	4.634	[M+NH4]+1	Full match	No results			No results	0	No results	6.18E+07
+804		C15 H33 N O2	259.2512	260.25848	7.418	[M+H]+1	Full match	No results			No results	0	No results	3.99E+05
+805		C11 H23 N O	185.17801	186.18529	4.735	[M+H]+1	Full match	No results			No results	0	No results	8.36E+06
+806		C14 H14 N4 O	254.11545	255.12276	4.753	[M+H]+1	Invalid mass	No results			No match	2	No results	1.14E+07
+807		C9 H27 N7 O2 P2 S	359.14261	360.1499	13.002	[M+H]+1	Full match	No results			No results	0	No results	5.06E+06
+808		C14 H22 O5	270.14678	269.13932	4.723	[M-H]-1	Full match	No results			No results	0	No results	1.58E+07
+809		C17 H35 N O3	301.26151	302.26881	4.542	[M+H]+1	Full match	No results			No results	0	No results	4.20E+06
+810		C14 H31 N O3	261.23055	262.23783	6.716	[M+H]+1	Full match	No results			No results	0	No results	1.39E+06
+811		C13 H32 N6 O3 S	352.22472	353.23197	3.571	[M+H]+1	Full match	No results			No match	39	No results	1.44E+07
+812		C25 H56 N6 O	456.45388	457.46121	3.783	[M+H]+1	Invalid mass	No results			No results	0	No results	2.81E+07
+813		C16 H29 N4 P3 S	402.1316	401.12432	4.16	[M-H]-1	Full match	No results			No match	10	No results	4.39E+05
+814		C6 H18 N5 O P	207.12599	208.13327	4.694	[M+H]+1	Invalid mass	No results			No match	11	No results	9.61E+05
+815		C14 H33 N4 O6 P	384.21472	383.20782	3.759	[M-H]-1	Full match	No results			No match	2	No results	1.05E+07
+816		C15 H28 S2	272.16246	271.15499	4.729	[M-H]-1	Full match	No results			No results	0	No results	1.59E+07
+817		C18 H34 N2 O5	358.24668	357.23957	3.716	[M-H]-1	Full match	No results			No results	0	No results	2.68E+05
+818		C19 H31 N O S2	353.18395	352.17667	4.669	[M-H]-1	Full match	No results			No match	2	No results	2.03E+05
+819		C13 H18 O6	270.11034	269.10295	4.749	[M-H]-1	Full match	No results			No results	0	No results	7.67E+06
+820		C17 H38 N2 O5 P2 S	444.19963	443.19235	3.808	[M-H]-1	Full match	No results			No match	1	No results	9.71E+05
+821		C10 H23 N8 P	286.17797	285.17069	3.871	[M-H]-1	Full match	No results			No match	2	No results	2.94E+07
+822		C6 H16 N6 O2 S	236.10673	254.14057	9.932	[M+NH4]+1	Invalid mass	No results			No match	2	No results	1.17E+06
+823		C11 H19 N O5	245.12642	246.13369	7.511	[M+H]+1	Full match	No results			No results	0	No results	3.63E+07
+824		C24 H35 N O3 P2	447.21049	448.21776	4.752	[M+H]+1	Full match	No results			No results	0	No results	2.22E+07
+825		C20 H30 O10	430.18408	429.17681	9.961	[M-H]-1	Full match	No results			No results	0	No results	7.36E+06
+826		C15 H27 N O S2	301.15247	302.15984	3.541	[M+H]+1	Full match	No results			No results	0	No results	1.21E+07
+827		C17 H35 N O2	285.2672	286.27401	4.032	[M+H]+1	Full match	No results			No results	0	No results	1.30E+06
+828		C26 H29 N8 O3 P3	594.15845	593.15167	10.047	[M-H]-1	Full match	No results			No match	29	No results	1.33E+05
+829		C15 H18 N10 O2	370.16291	429.1767	4.759	[M-H+HAc]-1	Full match	No results			No results	0	No results	2.32E+07
+830		C13 H13 N3 O5	291.08553	292.09283	9.911	[M+H]+1	Full match	No results			No results	0	No results	3.71E+06
+831		C16 H35 N O3	289.26181	290.26908	7.426	[M+H]+1	Full match	No results			No results	0	No results	6.03E+05
+832		C9 H26 N9 O6 P	387.17381	388.18109	13.011	[M+H]+1	Full match	No results			No results	0	No results	3.28E+05
+833		C17 H35 N O2	285.2669	286.27405	4.583	[M+H]+1	Full match	No results			No results	0	No results	4.49E+06
+834		C24 H30 N2 O6	442.21051	441.20323	3.258	[M-H]-1	Full match	No results			No results	0	No results	9.50E+05
+835		C13 H27 N O3	245.19908	246.20637	4.744	[M+H]+1	Full match	No results			No results	0	No results	3.76E+05
+836		C10 H24 N6 O2 S	292.16736	291.15998	4.166	[M-H]-1	Full match	No results			No match	11	No results	5.20E+05
+837		C12 H24 S2	232.13126	231.12394	7.454	[M-H]-1	Full match	No results			No match	2	No results	1.60E+07
+838		C22 H46 N2 O10 P2 S	592.23733	591.23005	7.487	[M-H]-1	Full match	No results			No results	0	No results	1.24E+06
+839		C9 H21 N8 P	272.16224	271.15495	4.076	[M-H]-1	Full match	No results			No results	0	No results	2.85E+07
+840		C20 H34 O S2	354.2042	355.21139	3.588	[M+H]+1	Full match	No results			No match	1	No results	1.10E+07
+841		C9 H9 N7	215.09204	429.17682	9.719	[2M-H]-1	Full match	No results			No results	0	No results	7.82E+06
+842		C12 H15 N2 P S	250.07028	251.07753	9.966	[M+H]+1	Full match	No results			No results	0	No results	5.64E+06
+843		C8 H5 N O3 S	194.99925	193.99197	4.458	[M-H]-1	Full match	No results			No results	0	No results	5.25E+06
+844		C28 H50 N2 O3	462.38201	463.38913	3.888	[M+H]+1	Full match	No results			No results	0	No results	2.98E+06
+845		C6 H20 N5 O4 P	257.12622	258.13347	4.754	[M+H]+1	Full match	No results			No results	0	No results	1.24E+07
+846		C13 H13 N5	239.1158	240.12316	4.754	[M+H]+1	Invalid mass	No results			No results	0	No results	7.53E+06
+847		C8 H19 N3 O S2	237.09611	238.10334	11.901	[M+H]+1	Full match	No results			No results	0	No results	4.99E+06
+848		C8 H15 N O P2	203.06197	202.0547	4.161	[M-H]-1	Full match	No results			No results	0	No results	4.36E+06
+849		C7 H10 N4 O5 P2 S	323.986	322.97879	10.465	[M-H]-1	Full match	No results			No results	0	No results	1.04E+07
+850		C16 H38 N9 P	387.29808	388.30538	4.047	[M+H]+1	Full match	No results			No match	2	No results	7.49E+05
+851		C12 H19 O8 P	322.08018	323.08744	12.676	[M+H]+1	Full match	No results			No results	1	No results	6.33E+06
+852		C11 H27 N4 O6 P	342.16798	341.16094	4.741	[M-H]-1	Full match	No results			No match	1	No results	5.72E+06
+853		C16 H40 N9 P	389.31403	390.32131	3.911	[M+H]+1	Full match	No results			No results	0	No results	1.03E+06
+854		C32 H36 N4 O8	604.2528	301.11914	7.483	[M-2H]-2	Full match	No results			No match	2	No results	1.15E+06
+855		C39 H71 N S	585.53288	586.54018	3.764	[M+H]+1	Full match	No results			No results	0	No results	1.15E+06
+856		C31 H58 N2 O2	490.44991	491.45719	3.805	[M+H]+1	Full match	No results			No results	0	No results	8.62E+06
+857		C8 H21 N4 P S2	268.09464	267.0873	7.454	[M-H]-1	Full match	No results			No results	0	No results	4.53E+06
+858		C9 H7 N7 O	229.07156	230.07884	7.713	[M+H]+1	Full match	No results			No results	0	No results	3.10E+05
+859		C10 H29 N6 O3 P	312.20452	313.2118	3.89	[M+H]+1	Full match	No results			No match	1	No results	6.83E+05
+860		C12 H2 N10	286.04769	287.05496	9.066	[M+H]+1	Full match	No results			No match	36	No results	4.08E+05
+861		C22 H43 N5 O2	409.34006	410.34734	3.896	[M+H]+1	Full match	No results			No results	0	No results	6.48E+06
+862		C28 H45 N O P2	473.29871	474.30599	12.174	[M+H]+1	Full match	No results			No results	0	No results	6.33E+05
+863		C6 H13 Cl O6	216.04002	215.03274	11.417	[M-H]-1	Full match	No results			No match	2	No results	6.83E+05
+864		C9 H20 O7	240.12085	241.12806	9.611	[M+H]+1	Full match	No results			No results	0	No results	5.56E+06
+865		C7 H4 O6 S	215.97299	214.96571	14.837	[M-H]-1	Full match	No results			No results	0	No results	7.10E+06
+866		C32 H45 N O8	571.3141	572.32137	4.195	[M+H]+1	Full match	No results			No results	0	No results	9.19E+05
+867		C40 H63 N O7	669.45995	670.46722	3.684	[M+H]+1	Full match	No results			No results	0	No results	5.51E+05
+868		C12 H23 O P S	246.1216	229.11833	7.905	[M+H-H2O]+1	Full match	No results			No match	12	No results	2.08E+07
+869		C19 H34 O S2	342.20408	343.21163	3.555	[M+H]+1	Full match	No results			No match	5	No results	7.64E+06
+870		C8 H9 N	119.07353	120.0808	9.99	[M+H]+1	Full match	No results			No results	0	No results	1.03E+07
+871		C9 H16 S	156.09691	311.18649	3.85	[2M-H]-1	Full match	No results			No results	0	No results	8.46E+06
+872		C6 H13 N O9	243.059	242.05172	12.231	[M-H]-1	Full match	No results			No results	0	No results	1.53E+05
+873		C10 H19 Cl O S4	317.99992	316.99266	12.405	[M-H]-1	Full match	No results			No results	0	No results	2.09E+07
+874		C8 H19 N O4	193.13161	194.13889	21.822	[M+H]+1	Full match	No results			No results	0	No results	4.13E+05
+875		C19 H39 N7 S2	429.27242	430.27969	4.064	[M+H]+1	Full match	No results			No results	0	No results	7.52E+06
+876		C23 H26 N10 S	474.20466	475.21192	4.033	[M+H]+1	Full match	No results			No match	1	No results	9.41E+05
+877		C20 H25 Cl N2	328.17095	327.16367	3.363	[M-H]-1	Full match	No results			No match	1	No results	8.35E+05
+878		C13 H12 O7	280.05818	279.05091	11.817	[M-H]-1	Full match	No results			No results	0	No results	1.47E+05
+879		C26 H44 O16	612.26415	611.25765	10.82	[M-H]-1	Full match	No results			No results	0	No results	3.99E+06
+880		C18 H34 O2 S2	346.19946	345.19218	4.429	[M-H]-1	Full match	No results			No match	2	No results	2.52E+07
+881		C4 H14 N9 O2 P	251.10182	252.1091	7.837	[M+H]+1	Full match	No results			No match	4	No match	2.81E+06
+882		C28 H43 N5	449.35037	450.3576	3.436	[M+H]+1	Full match	No results			No results	0	No results	3.44E+06
+883		C30 H56 N2 O2	476.43422	477.44149	3.819	[M+H]+1	Full match	No results			No results	0	No results	1.98E+07
+884		C21 H24 N4 O	348.19337	349.20065	3.618	[M+H]+1	Full match	No results			No match	15	No results	1.41E+07
+885		C10 H20 N2 O5	248.13719	249.14446	7.76	[M+H]+1	Full match	No results			No results	0	No results	3.03E+05
+886		C22 H47 N5 O3 P2	491.3167	492.32397	3.246	[M+H]+1	Full match	No results			No results	0	No results	1.63E+07
+887		C42 H92 N9 O4 P3	879.64892	880.6562	7.508	[M+H]+1	Full match	No results			No results	0	No results	2.57E+05
+888		C10 H28 N5 O3 P	297.19393	298.20122	3.712	[M+H]+1	Full match	No results			No match	2	No results	2.02E+07
+889		C18 H22 N4	294.18296	295.19025	4.162	[M+H]+1	Invalid mass	No results			No match	8	No results	2.90E+07
+890		C20 H22 N2 P2	352.12732	351.12004	7.464	[M-H]-1	Full match	No results			No match	1	No results	3.00E+06
+891		C11 H26 N6 O2 S	306.18295	307.19026	3.566	[M+H]+1	Full match	No results			No match	5	No results	1.54E+07
+892		C8 H11 N O5	201.06372	202.07102	12.28	[M+H]+1	Full match	No results			No results	0	No results	9.50E+06
+893		C29 H54 N2 O2	462.4185	463.42578	3.829	[M+H]+1	Full match	No results			No results	0	No results	1.40E+07
+894		C20 H32 O11	448.19465	447.1873	10.076	[M-H]-1	Full match	No results			No results	0	No results	5.01E+06
+895		C28 H45 N O S2	475.29379	476.30108	3.484	[M+H]+1	Full match	No results			No match	2	No results	6.24E+06
+896		C7 H15 N S2	177.06508	178.07235	8.015	[M+H]+1	Full match	No results			No match	1	No results	5.80E+06
+897		C24 H34 N O7 P	479.20614	238.59579	7.474	[M-2H]-2	Full match	No results			No match	1	No results	2.13E+06
+898		C12 H28 N6 O S	304.2036	305.21061	3.535	[M+H]+1	Full match	No results			No match	29	No results	4.60E+06
+899		C28 H31 N O2 P2	475.18412	476.19151	3.471	[M+H]+1	Full match	No results			No match	1	No results	3.00E+05
+900		C9 H18 O5	206.11562	205.10831	4.337	[M-H]-1	Full match	No results			No results	0	No results	5.75E+06
+901		C5 H13 O6 P	200.04525	199.03798	6.036	[M-H]-1	Full match	No results			No results	0	No results	9.45E+05
+902		C7 H10 O8	222.03771	221.03044	13.781	[M-H]-1	Full match	No results			No results	0	No results	4.81E+06
+903		C14 H19 O3 P	266.10874	591.23017	7.49	[2M-H+HAc]-1	Invalid mass	No results			No match	1	No results	1.24E+06
+904		C14 H25 P3	286.11655	287.12383	10.565	[M+H]+1	Full match	No results			No results	0	No results	3.84E+05
+905		C16 H33 N O5	319.23576	320.24314	3.466	[M+H]+1	Full match	No results			No results	0	No results	4.57E+06
+906		C20 H32 O12	464.18933	463.18205	11.952	[M-H]-1	Full match	No results			No results	0	No results	4.49E+06
+907		C15 H36 N6 O P2	378.24049	379.24784	3.57	[M+H]+1	Invalid mass	No results			No match	5	No results	8.07E+06
+908		C16 H31 Cl N4 O3	362.20931	363.21656	3.606	[M+H]+1	Full match	No results			No match	17	No results	8.44E+06
+909		C15 H11 N O	221.08416	220.07688	3.586	[M-H]-1	Full match	No results			No results	0	No results	8.18E+06
+910		C9 H27 N7 O2 P2 S	359.14269	360.14996	13.624	[M+H]+1	Full match	No results			No results	0	No results	3.74E+06
+911		C12 H30 N6 O3 S	338.20923	339.21656	3.478	[M+H]+1	Full match	No results			No match	8	No results	9.75E+06
+912		C10 H13 N O S2	227.04319	226.03591	11.451	[M-H]-1	Full match	No results			No match	11	No results	2.74E+06
+913		C9 H17 N4 O2 P S	276.08217	277.08945	12.14	[M+H]+1	Full match	No results			No match	1	No results	9.49E+05
+914		C14 H26 N2 O3	270.19446	271.20174	10.859	[M+H]+1	Full match	No results			No results	0	No results	4.77E+05
+915		C13 H21 N4 O2 P	296.14137	297.14864	0.581	[M+H]+1	Full match	No results			No match	8	No results	2.66E+06
+916		C23 H46 N5 O13 P S	663.25298	664.26026	10.243	[M+H]+1	Full match	No results			No results	0	No results	7.30E+06
+917		C12 H22 Cl N O S4	359.02627	360.03355	12.39	[M+H]+1	Full match	No results			No results	0	No results	1.22E+07
+918		C33 H74 N10 O2	642.59838	643.60565	5.389	[M+H]+1	Full match	No results			No results	0	No results	4.06E+06
+919		C11 H25 N7 P2 S	349.13707	350.14435	7.755	[M+H]+1	Full match	No results			No results	0	No results	4.44E+05
+920		C11 H25 N O	187.19364	188.20091	14.032	[M+H]+1	Full match	No results			No results	0	No results	8.39E+05
+921		C14 H20 N10 O2	360.17878	359.17148	4.751	[M-H]-1	Full match	No results			No match	1	No results	5.48E+06
+922		C18 H41 N4 O10 P	504.2569	503.24962	4.72	[M-H]-1	Full match	No results			No results	0	No results	2.33E+05
+923		C14 H34 N5 O9 P	447.21035	448.21762	10.209	[M+H]+1	Full match	No results			No results	0	No results	2.95E+07
+924		C31 H71 N10 O2 P	646.55022	647.5575	5.449	[M+H]+1	Full match	No results			No results	0	No results	3.52E+06
+925		C13 H14 O7	282.07429	563.14136	11.848	[2M-H]-1	Full match	No results			No results	0	No results	1.74E+05
+926		C28 H52 N2 O2	448.40262	449.4099	3.839	[M+H]+1	Full match	No results			No results	0	No results	9.15E+06
+927		C16 H24 S2	280.13269	281.13996	9.916	[M+H]+1	Full match	No results			No match	1	No results	9.11E+05
+928		C14 H20 O9	332.11069	331.10373	7.769	[M-H]-1	Full match	No results			No results	0	No results	2.05E+05
+929		C15 H28 O2 S2	304.15233	303.14505	4.109	[M-H]-1	Full match	No results			No results	0	No results	7.32E+06
+930		C7 H20 N5 O P	221.14138	222.14866	9.929	[M+H]+1	Full match	No results			No match	7	No results	1.81E+06
+931		C27 H67 N10 O P	578.52575	579.53303	5.367	[M+H]+1	Full match	No results			No results	0	No results	2.14E+06
+932		C17 H26 O P2	308.14717	307.13988	4.76	[M-H]-1	Full match	No results			No results	0	No results	1.21E+06
+933		C31 H63 N7 O9	677.46964	678.47692	3.839	[M+H]+1	Full match	No results			No results	0	No results	8.56E+05
+934		C20 H30 N10 O4	474.24636	473.23908	12.213	[M-H]-1	Full match	No results			No results	0	No results	1.46E+05
+935		C9 H10 N3 O2 P	223.05149	224.05876	5.957	[M+H]+1	Full match	No results			No match	2	No results	1.56E+05
+936		C53 H41 N O S2	771.26406	772.27134	3.767	[M+H]+1	Full match	No results			No results	0	No results	6.75E+06
+937		C10 H18 N4 O2	226.14296	227.15023	8.948	[M+H]+1	Full match	No results			No results	0	No results	8.67E+05
+938		C15 H11 N	205.08937	204.08209	3.558	[M-H]-1	Full match	No results			No match	1	No results	6.80E+06
+939		C7 H12 O7	208.05861	207.05131	12.476	[M-H]-1	Full match	No results			No match	3	No results	2.78E+06
+940		C8 H11 N2 O P	182.06136	183.06865	9.813	[M+H]+1	Full match	No results			No match	1	No results	1.42E+06
+941		C13 H29 N4 O3 P	320.19847	321.20577	3.59	[M+H]+1	Full match	No results			No match	14	No results	8.88E+06
+942		C12 H22 N4 O2	254.17426	253.16696	7.513	[M-H]-1	Full match	No results			No results	0	No results	1.88E+05
+943		C15 H20 N4 O3	304.1522	303.145	4.739	[M-H]-1	Full match	No results			No results	0	No results	1.02E+07
+944		C26 H51 N O5	457.37688	458.384	3.413	[M+H]+1	Full match	No results			No results	0	No results	1.18E+06
+945		C12 H10 N10 O3	342.09533	341.08805	12.213	[M-H]-1	Full match	No results			No match	3	No results	1.24E+05
+946		C7 H9 N O5 S	219.02022	218.01292	12.717	[M-H]-1	Full match	No results			No results	0	No results	3.04E+06
+947		C11 H8 N6 O4	288.05934	287.05207	10.837	[M-H]-1	Full match	No results			No match	1	No match	4.22E+06
+948		C9 H18 O4 S2	254.06369	253.05641	12.826	[M-H]-1	Full match	No results			No results	0	No results	4.69E+05
+949		C6 H13 N9 O2 S	275.09067	276.09793	9.419	[M+H]+1	Full match	No results			No match	1	No results	3.22E+07
+950		C18 H24 N4 O5	376.17374	375.16661	4.746	[M-H]-1	Full match	No results			No results	0	No results	2.84E+06
+951		C18 H31 N O5	341.22027	342.22755	7.492	[M+H]+1	Full match	No results			No results	0	No results	7.37E+06
+952		C13 H12 O7	280.0582	279.05092	12.269	[M-H]-1	Full match	No results			No results	0	No results	1.98E+05
+953		C5 H15 N P2	151.0684	361.15057	4.751	[2M-H+HAc]-1	Full match	No results			No results	0	No results	2.41E+06
+954		C10 H18 O8	266.10004	265.09277	9.956	[M-H]-1	Full match	No results			No results	0	No results	2.87E+06
+955		C9 H11 Cl3 N4 O	295.99868	294.99137	11.222	[M-H]-1	Full match	No results			No results	0	No results	1.03E+06
+956		C21 H34 O5 S2	430.18408	429.17681	9.681	[M-H]-1	Full match	No results			No results	0	No results	7.82E+06
+957		C15 H42 N8 O4 P2	460.28276	461.29001	3.584	[M+H]+1	Invalid mass	No results			No match	2	No results	1.60E+06
+958		C3 H10 N9 O3 P	251.06412	250.05685	7.459	[M-H]-1	Full match	No results			No results	0	No results	9.70E+05
+959		C21 H16 N4 S	356.11085	401.10885	7.475	[M+FA-H]-1	Full match	No results			No match	5	No results	3.97E+05
+960		C8 H21 N O2 P2	225.10518	449.203	9.853	[2M-H]-1	Full match	No results			No results	0	No results	2.40E+06
+961		C6 H4 O4 S	171.98336	170.97608	14.843	[M-H]-1	Full match	No results			No results	0	No results	3.39E+06
+962		C8 H21 N O2 P2	225.10518	449.20303	4.751	[2M-H]-1	Full match	No results			No results	0	No results	1.64E+06
+963		C14 H33 N4 O2 P	320.23496	321.24223	3.494	[M+H]+1	Full match	No results			No match	54	No results	4.52E+06
+964		C7 H18 N6 O2 S	250.12047	249.11317	10.231	[M-H]-1	Full match	No results			No match	11	No results	3.03E+06
+965		C10 H23 N O2	189.17284	190.18011	7.696	[M+H]+1	Full match	No results			No results	0	No results	3.90E+05
+966		C12 H15 N S2	237.06373	236.05645	10.578	[M-H]-1	Full match	No results			No match	2	No results	1.28E+05
+967		C17 H18 N4 O3	326.1368	325.12956	4.746	[M-H]-1	Full match	No results			No match	3	No results	2.43E+06
+968		C11 H26 Br N7 S	367.11624	366.10896	12.222	[M-H]-1	Full match	No results			No results	0	No results	1.20E+05
+969		C18 H26 S2	306.14661	307.1541	4.03	[M+H]+1	Full match	No results			No match	24	No results	1.05E+06
+970		C18 H20 P2	298.10524	297.09796	4.531	[M-H]-1	Full match	No results			No match	4	No results	3.65E+06
+971		C6 H17 N8 O2 P	264.1209	263.11357	7.458	[M-H]-1	Full match	No results			No results	0	No results	5.10E+06
+972		C24 H57 N6 O2 P	492.42904	493.43656	3.859	[M+H]+1	Full match	No results			No results	0	No results	3.23E+06
+973		C11 H23 Cl O4 S2	318.07194	317.06466	11.324	[M-H]-1	Full match	No results			No match	2	No results	2.23E+05
+974		C3 H2 N4 O5 P2 S	267.92315	266.91588	14.418	[M-H]-1	Full match	No results			No results	0	No results	2.23E+06
+975		C7 H4 O6 S	215.97302	214.96574	16.132	[M-H]-1	Full match	No results			No results	0	No results	1.51E+06
+976		C4 H13 N8 O P	220.09474	219.08747	12.136	[M-H]-1	Full match	No results			No results	0	No results	3.92E+06
+977		C6 H2 O3 S3	217.91678	216.9095	14.728	[M-H]-1	Full match	No results			No results	0	No results	1.13E+06
+978		C11 H30 Br N7 P2	401.12206	400.11478	7.325	[M-H]-1	Full match	No results			No results	0	No results	3.46E+05
+979		C24 H38 P2	388.24628	387.23901	3.821	[M-H]-1	Full match	No results			No match	1	No results	2.40E+06
+980		C21 H44 N6 O4 S	476.3139	477.32133	3.517	[M+H]+1	Full match	No results			No match	1	No results	6.28E+06
+981		C4 H11 N8 P	202.08378	203.09106	12.808	[M+H]+1	Full match	No results			No match	2	No results	1.23E+06
+982		C12 H18 N6 O4 S	342.11006	360.14385	3.683	[M+NH4]+1	Full match	No results			No match	12	No results	2.65E+05
+983		C33 H78 N9 O5 P S	743.55582	744.56193	3.361	[M+H]+1	Full match	No results			No results	0	No results	2.82E+06
+984		C6 H19 N8 P	234.14664	235.15387	4.168	[M+H]+1	Full match	No results			No results	0	No results	1.46E+06
+985		C9 H18 O10 S	318.06218	317.0549	12.732	[M-H]-1	Full match	No results			No results	0	No results	1.00E+05
+986		C57 H48 N4 O4	852.3684	853.37567	3.658	[M+H]+1	Full match	No results			No results	0	No results	3.58E+05
+987		C8 H7 N O6	213.02782	212.02054	13.367	[M-H]-1	Full match	No results			No results	0	No results	3.35E+05
+988		C8 H12 N2 O6	232.06964	231.06236	9.193	[M-H]-1	Full match	No results			No results	0	No results	3.64E+06
+989		C29 H48 P2	458.32461	457.3173	3.344	[M-H]-1	Full match	No results			No results	0	No results	7.84E+05
+990		C10 H3 O6 P S	281.93893	280.93166	13.026	[M-H]-1	Full match	No results			No results	0	No results	2.50E+06
+991		C18 H28 N10 O S2	464.18949	463.18222	10.899	[M-H]-1	Full match	No results			No results	0	No results	5.31E+06
+992		C17 H32 S2	300.19383	299.18655	4.023	[M-H]-1	Full match	No results			No results	0	No results	6.47E+06
+993		C6 H17 N2 O P	164.10716	228.12309	7.284	[M+ACN+Na]+1	Full match	No results			No results	0	No results	2.15E+07
+994		C7 H20 N6 O3	236.15951	235.15213	3.334	[M-H]-1	Full match	No results			No match	3	No results	2.02E+07
+995		C7 H15 N S2	177.06402	176.05674	11.5	[M-H]-1	Full match	No results			No match	3	No results	2.08E+06
+996		C9 H15 N3 O10	325.07485	649.14252	10.47	[2M-H]-1	Full match	No results			No match	1	No results	1.77E+05
+997		C18 H39 N O4	333.2877	334.29498	3.513	[M+H]+1	Full match	No results			No results	0	No results	6.37E+06
+998		C16 H35 N O8 S2	433.17958	434.18686	13.174	[M+H]+1	Full match	No results			No results	0	No results	2.63E+05
+999		C17 H38 Br N3 O	379.22006	380.22733	3.996	[M+H]+1	Full match	No results			No results	0	No results	2.59E+05
+1000		C10 H18 O6	234.11028	233.103	10.378	[M-H]-1	Full match	No results			No results	0	No results	9.16E+06
+1001		C4 H13 N8 O2 P	236.0897	235.0825	4.746	[M-H]-1	Full match	No results			No results	0	No results	7.99E+05
+1002		C15 H26 O3 S2	318.1315	317.12415	4.738	[M-H]-1	Full match	No results			No match	4	No results	3.76E+06
+1003		C13 H24 O2 S2	276.12095	275.11358	4.757	[M-H]-1	Full match	No results			No match	1	No results	1.58E+07
+1004		C29 H49 N O6	507.35634	508.36349	3.403	[M+H]+1	Full match	No results			No results	0	No results	6.79E+06
+1005		C6 H6 N O2 P	155.013	309.01869	10.685	[2M-H]-1	Full match	No results			No results	0	No results	1.55E+05
+1006		C21 H39 N O3	353.29289	354.3001	3.38	[M+H]+1	Full match	No results			No results	0	No results	1.77E+06
+1007		C6 H6 N4 O S	182.02528	181.018	13.311	[M-H]-1	Invalid mass	No results			No match	5	No results	2.22E+06
+1008		C11 H25 N O2	203.18867	204.19594	9.385	[M+H]+1	Full match	No results			No results	0	No results	1.20E+06
+1009		C8 H9 N7	203.09213	405.17695	10.175	[2M-H]-1	Full match	No results			No results	0	No results	2.65E+06
+1010		C7 H16 N5 O3 P	249.1001	248.09281	3.72	[M-H]-1	Full match	No results			No results	0	No results	2.30E+05
+1011		C6 H13 Cl O6	216.04001	215.03273	12.851	[M-H]-1	Full match	No results			No match	2	No results	2.77E+05
+1012		C H2 N9 P	171.01714	170.00986	7.422	[M-H]-1	Full match	No results			No results	0	No results	2.28E+06
+1013		C2 H7 N5 O P2 S	210.98497	211.99225	12.571	[M+H]+1	Full match	No results			No results	0	No results	4.34E+06
+1014		C14 H26 N2 O8	350.16888	349.1616	12.218	[M-H]-1	Full match	No results			No results	0	No results	1.46E+05
+1015		C18 H8 N4 O2	312.06346	311.05608	9.744	[M-H]-1	Full match	No results			No match	14	No results	2.08E+05
+1016		C12 H23 N8 O P	326.17306	325.16578	4.287	[M-H]-1	Full match	No results			No results	0	No results	1.65E+07
+1017		C19 H21 N O6	359.13665	360.14393	3.693	[M+H]+1	Full match	No results			No results	0	No results	3.00E+05
+1018		C3 H5 Cl N3 P S3	244.90661	243.89934	8.899	[M-H]-1	Full match	No results			No results	0	No results	1.65E+07
+1019		C8 H5 N O8	243.00159	241.99432	17.725	[M-H]-1	Full match	No results			No results	0	No results	2.11E+06
+1020		C11 H26 N6 S	274.19313	275.2004	3.548	[M+H]+1	Full match	No results			No match	9	No results	5.68E+06
+1021		C7 H15 N6 O4 P	278.09031	277.08303	12.66	[M-H]-1	Full match	No results			No results	0	No results	2.66E+06
+1022		C23 H46 N4 O6 P2	536.28984	535.28256	3.268	[M-H]-1	Full match	No results			No results	0	No results	4.57E+06
+1023		C11 H13 Cl3 N4 O3	354.00419	352.99707	12.789	[M-H]-1	Full match	No results			No results	0	No results	9.76E+04
+1024		C5 H13 N8 O2 P	248.08971	249.09691	3.67	[M+H]+1	Full match	No results			No results	0	No results	2.54E+05
+1025		C5 H7 N8 O P	226.04771	209.04442	13.427	[M+H-H2O]+1	Full match	No results			No match	12	No results	3.22E+05
+1026		C2 H5 N8 P	172.03727	205.07078	9.829	[M+H+MeOH]+1	Full match	No results			No match	14	No results	1.33E+06
+1027		C35 H68 O6 P2	646.45099	647.45826	3.694	[M+H]+1	Full match	No results			No results	0	No results	1.79E+06
+1028		C6 H12 N2 P2	174.04835	173.04109	7.457	[M-H]-1	Full match	No results			No results	0	No results	2.52E+06
+1029		C24 H41 N O3	391.3083	392.31553	3.443	[M+H]+1	Full match	No results			No results	0	No results	1.31E+06
+1030		C15 H31 N4 O3 P	346.21427	347.22151	3.533	[M+H]+1	Full match	No results			No match	25	No results	4.65E+06
+1031		C16 H8 Cl3 O2 P3	429.8808	430.8881	0.579	[M+H]+1	Full match	No results			No results	0	No results	8.63E+05
+1032		C17 H28 N6 S2	380.1831	381.19061	3.572	[M+H]+1	Full match	No results			No match	5	No results	3.16E+06
+1033		C27 H35 N5 O	445.2828	446.29008	3.367	[M+H]+1	Full match	No results			No results	0	No results	4.52E+05
+1034		C27 H49 N O3	435.37124	436.37857	3.391	[M+H]+1	Full match	No results			No results	0	No results	4.71E+06
+1035		C6 H17 N8 O P	248.12592	247.11872	3.757	[M-H]-1	Full match	No results			No results	0	No results	1.16E+06
+1036		C37 H63 N5	577.50643	578.51404	3.751	[M+H]+1	Full match	No results			No results	0	No results	5.97E+05
+1037		C10 H20 N8 O3 S	332.13898	333.14625	20.243	[M+H]+1	Full match	No results			No results	0	No results	1.43E+07
+1038		C25 H58 N4 P2 S	508.38751	509.39486	3.468	[M+H]+1	Full match	No results			No results	0	No results	1.55E+06
+1039		C21 H51 N9 O P2	507.3681	508.37534	3.541	[M+H]+1	Full match	No results			No match	1	No results	4.72E+05
+1040		C10 H15 N O S2	229.05875	228.05147	13.416	[M-H]-1	Full match	No results			No match	5	No results	1.58E+06
+1041		C3 H5 N3 O	99.04346	158.05732	13.476	[M-H+HAc]-1	Full match	No results			No results	0	No results	9.04E+04
+1042		C28 H50 N2 S2	478.34053	479.34781	3.484	[M+H]+1	Full match	No results			No results	0	No results	4.10E+06
+1043		C20 H43 N7 O3 S	461.31381	462.32104	3.465	[M+H]+1	Full match	No results			No results	0	No results	4.26E+06
+1044		C22 H47 N7 O4 S	505.34069	506.34834	3.485	[M+H]+1	Full match	No results			No match	1	No results	2.33E+06
+1045		C19 H26 N4 O13	518.14786	517.14058	14.003	[M-H]-1	Full match	No results			No results	1	No results	8.00E+04
+1046		C9 H13 Cl N4 O S3	323.99371	322.98643	12.373	[M-H]-1	Full match	No results			No results	0	No results	5.64E+06
+1047		C11 H20 N6 P2 S	330.09518	329.08791	10.676	[M-H]-1	Full match	No results			No match	2	No results	1.12E+05
+1048		C9 H Cl N P3	250.90037	249.89309	8.913	[M-H]-1	Full match	No results			No results	0	No results	1.27E+07
+1049		C15 H37 N7 O5 S	427.25683	428.26379	3.506	[M+H]+1	Full match	No results			No results	0	No results	4.53E+06
+1050		C14 H21 N O5 P2	345.0909	344.08362	11.156	[M-H]-1	Full match	No results			No match	2	No results	1.48E+05
+1051		C25 H59 N9 O P2	563.42935	564.43679	3.486	[M+H]+1	Full match	No results			No results	0	No results	3.81E+05
+1052		C11 H21 N5 O3 P2	333.11143	665.2157	14.012	[2M-H]-1	Full match	No results			No results	0	No results	1.00E+05
+1053		C5 H2 Cl N2 O2 P3	249.9007	248.89342	8.87	[M-H]-1	Full match	No results			No results	0	No results	1.30E+07
+1054		C13 H36 N9 O P	365.27703	366.28431	3.445	[M+H]+1	Full match	No results			No results	0	No results	7.69E+06
+1055		C19 H44 N5 P S2	437.27675	438.28335	3.503	[M+H]+1	Full match	No results			No results	0	No results	4.00E+06
+1056		C21 H48 N5 O2 P	433.35546	434.36261	3.397	[M+H]+1	Full match	No results			No results	0	No results	2.86E+06
+1057		C9 H18 O4	190.12087	189.1137	7.469	[M-H]-1	Full match	No results			No results	0	No results	1.57E+06
+1058		C39 H54 N7 O6 P3 S3	905.25045	906.25773	3.768	[M+H]+1	Full match	No results			No results	0	No results	7.17E+05
+1059		C4 H6 Br N3 O S	222.94235	223.94963	0.615	[M+H]+1	Full match	No results			No results	0	No results	5.63E+06
+1060		C19 H26 N4 O6	406.18419	405.17692	10.169	[M-H]-1	Full match	No results			No results	0	No results	2.65E+06
+1061		C25 H32 N4 P2	450.21025	449.20273	9.845	[M-H]-1	Full match	No results			No results	0	No results	2.40E+06
+1062		C19 H41 N7 O2 S	431.30358	432.3105	3.437	[M+H]+1	Full match	No results			No results	0	No results	2.64E+06
+1063		C18 H44 N5 O3 P	409.31882	410.32592	3.457	[M+H]+1	Full match	No results			No results	0	No results	2.43E+06
+1064		C27 H24 N4 O S	452.16566	453.17294	10.205	[M+H]+1	Full match	No results			No results	0	No results	1.75E+07
+1065		C19 H43 N7 O8 S	529.28883	530.2961	3.448	[M+H]+1	Full match	No results			No results	0	No results	1.33E+06
+1066		C12 H17 O2 P	224.09744	447.18747	4.773	[2M-H]-1	Full match	No results			No results	0	No results	4.05E+06
+1067		C12 H27 O16 P	458.10585	457.09858	14.016	[M-H]-1	Full match	No results			No results	0	No results	8.14E+04
+1068		C10 H16 O7	248.08939	247.08211	14.134	[M-H]-1	Full match	No results			No results	0	No results	1.74E+06
+1069		C11 H19 Cl N6 O2	302.12667	301.1194	7.475	[M-H]-1	Full match	No results			No results	0	No results	1.40E+06
+1070		C7 H19 N8 O6 P	342.11637	341.10909	14.399	[M-H]-1	Full match	No results			No match	74	No match	3.69E+05
+1071		C9 H17 N8 O3 P	316.11597	315.1088	4.753	[M-H]-1	Full match	No results			No match	1	No results	1.81E+06
+1072		C18 H22 N4 O4	358.16277	357.15543	4.751	[M-H]-1	Full match	No results			No results	0	No results	3.98E+06
+1073		C16 H20 O4 P2	338.08495	337.07767	12.398	[M-H]-1	Full match	No results			No match	1	No results	9.60E+04
+1074		C8 H12 N9 O P	281.09022	280.08295	11.352	[M-H]-1	Full match	No results			No match	2	No results	1.40E+06
+1075		C24 H54 N5 O2 P S2	539.346	540.35322	3.436	[M+H]+1	Full match	No results			No results	0	No results	2.47E+06
+1076		C7 H22 N5 O4 P	271.14186	270.13454	4.701	[M-H]-1	Full match	No results			No results	0	No results	3.84E+06
+1077		C20 H45 N9 O S2	491.31694	492.32421	23.288	[M+H]+1	Full match	No results			No results	0	No results	5.62E+06
+1078		C20 H17 N O2 S	335.09877	336.1054	0.583	[M+H]+1	Full match	No results			No results	0	No results	7.23E+05
+1079		C16 H35 O10 P	418.19523	417.18795	12.212	[M-H]-1	Full match	No results			No results	0	No results	1.48E+05
+1080		C13 H14 O7	282.07443	563.14167	9.293	[2M-H]-1	Full match	No results			No results	0	No results	1.87E+05
+1081		C6 H17 N8 O P	248.12588	247.11855	5.931	[M-H]-1	Full match	No results			No results	0	No results	1.39E+07
+1082		C H3 N2 P3 S	167.92308	166.9158	7.269	[M-H]-1	Full match	No results			No results	0	No results	4.39E+05
+1083		C18 H47 N10 O P S	482.33963	483.34691	23.291	[M+H]+1	Full match	No results			No match	1	No results	4.09E+06
+1084		C18 H44 N5 O2 P	393.32408	394.33136	3.403	[M+H]+1	Full match	No results			No results	0	No results	2.51E+06
+1085		C9 H15 Cl N3 O4 P	295.04909	294.04181	7.14	[M-H]-1	Full match	No results			No results	0	No results	4.30E+05
+1086		C4 H6 N9 O5 P S	322.99429	321.98701	12.384	[M-H]-1	Full match	No results			No results	0	No results	5.63E+06
+1087		C9 H17 N4 O P3	290.06143	291.0687	12.138	[M+H]+1	Full match	No results			No results	0	No results	4.75E+05
+1088		C2 H7 N9 O5	237.05797	473.10856	9.748	[2M-H]-1	Full match	No results			No match	1	No results	2.16E+05
+1089		C H3 Br O3	141.92689	140.91961	11.337	[M-H]-1	Full match	No results			No results	0	No results	1.42E+06
+1090		C6 H19 N8 O4 P	298.12658	297.11922	11.634	[M-H]-1	Full match	No results			No match	1	No results	7.61E+05
+1091		C5 H12 N9 P	229.0952	228.08792	4.743	[M-H]-1	Full match	No results			No results	0	No results	5.47E+06
+1092		C8 H19 O P S4	290.00484	288.99756	11.152	[M-H]-1	Full match	No results			No results	0	No results	1.50E+05
+1093		C13 H22 O8	306.13202	611.25749	10.798	[2M-H]-1	Full match	No results			No results	0	No results	3.99E+06
+1094		C19 H41 N O5	363.29809	364.30527	3.401	[M+H]+1	Full match	No results			No results	0	No results	1.92E+06
+1095		C6 H8 N4 O	152.0696	194.1033	7.242	[M+ACN+H]+1	Full match	No results			No results	0	No results	5.49E+05
+1096		C7 H19 N7 O5 P2	343.09082	342.08354	11.137	[M-H]-1	Full match	No results			No match	5	No results	1.08E+05
+1097		C4 H5 N O2 S	131.00443	129.99715	13.662	[M-H]-1	Full match	No results			No results	0	No results	9.82E+04
