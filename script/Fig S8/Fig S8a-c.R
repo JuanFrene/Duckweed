@@ -43,10 +43,5 @@ ps.3.R.W = subset_samples(ps.3, Compartment !=  "Front")
 ps.3.R.F = subset_samples(ps.3, Compartment !=  "Water")
 ps.3.W.F = subset_samples(ps.3, Compartment !=  "Root")
 
-ps.3@sam_data
-#
-saveRDS(ps.3.W.F, "G:/My Drive/labs/Nottingham/Duckweed/Figuras paper/Clean data/Fig S4/Fig S4g/seqtab.rds")
-seqtab <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/Figuras paper/Clean data/Fig S4/Fig S4 e-g/seqtab.rds")
-
 #Diagram venn based on the core
 ps_venn(ps.3.core, group = "Compartment", fill = c("red", "blue"), quantities = list(type=c("counts")))
