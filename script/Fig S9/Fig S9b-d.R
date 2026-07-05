@@ -18,83 +18,52 @@ library(factoextra)
 library(ggdendro)
 library(cowplot)
 library(ggcorrplot)
+seqtab <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/Figuras paper/Clean data/Fig S8/Fig S9a/seqtab Fig S9a.rds")
 
+#  Plotting Relative Abundance Bar Charts####
+# phylum-level
+ps.perc <- transform_sample_counts(seqtab, function(x) x / sum(x)) 
 
-setwd("G:/My Drive/labs/Nottingham/Duckweed/16S Exp1/")
+taxa_level <- function(physeq,which_level){
+  #enforce orientation
+  if(taxa_are_rows(physeq)){
+    physeq <- t(physeq)
+  }
+  OTU <- otu_table(physeq)
+  SAM <- sample_data(physeq)
+  OTU_taxonomy <- tax_table(physeq)
+  new_abund_table<-NULL
+  if(which_level=="Otus"){
+    OTU_tree <- phy_tree(physeq)
+    new_abund_table<-OTU
+  } else {
+    list<-na.omit(unique(OTU_taxonomy[,which_level]))
+    new_abund_table<-NULL
+    for(i in list){
+      rt <- na.omit(rownames(OTU_taxonomy)[OTU_taxonomy[,which_level]==i])
+      tmp<-data.frame(rowSums(OTU[,rt]))
+      if(i==""){colnames(tmp)<-c("__Unknowns__")} else {colnames(tmp)<-paste("",i,sep="")}
+      if(is.null(new_abund_table)){new_abund_table<-tmp} else {new_abund_table<-cbind(tmp,new_abund_table)}
+    }
+  }
+  OTU<-as.data.frame(as(new_abund_table,"matrix"))
+  #Convert the data to phyloseq format
+  OTU = otu_table(as.matrix(OTU), taxa_are_rows = FALSE)
+  TAX = tax_table(as.matrix(OTU_taxonomy))
+  SAM = sample_data(SAM)
+  #reconstruct the phyloseq object
+  physeq<-NULL
+  if(which_level=="Otus"){
+    physeq<-merge_phyloseq(phyloseq(OTU, TAX),SAM,midpoint(OTU_tree))
+  } else {
+    physeq<-merge_phyloseq(phyloseq(OTU),SAM)
+  }
+  return(physeq)
+}
 
-###Track sequencing abundance
-#track <- readRDS("C:/Users/juanp/Google Drive/labs/Nottingham/Duckweed/16S Exp1/track240-200.rds")
-#write.table(track, "track 16S 240-240 Exp1.txt")
+ps.phyla.perc <- taxa_level(ps.perc, "Phylum")
 
-# 1. Taxonomy Table
-taxa <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/16S Exp1/tax_final250_220.rds")
-# check your taxonomic classifications #
-taxa.print<- taxa
-rownames(taxa.print)
-head(taxa.print)
-unname(head(taxa))
-
-###Metadata
-meta <- read.table("Metadata.txt", header = TRUE, row.names = 1)
-#write.table(ps2@sam_data, file = "C:/Users/juanp/Google Drive/labs/Nottingham/Duckweed/16S Exp1/metadataP.tsv", row.names=FALSE, sep="\t")
-
-###ASV table
-asv.table<- readRDS("G:/My Drive/labs/Nottingham/Duckweed/16S Exp1/seqtab_final250_220.rds")
-#write.table(asv.table, file = "C:/Users/juanp/Google Drive/labs/Nottingham/Duckweed/16S Exp1/asv_table.txt", row.names=FALSE, sep="\t")
-asv.table2<- otu_table(asv.table, taxa_are_rows=FALSE)
-
-
-# 14. Assign taxonomy gg_13_8 ####
-#otumat <- read.table("clipboard", header = TRUE)
-#taxa.print2<- otumat
-#rownames(taxa.print2)
-#head(taxa.print2)
-#unname(head(otumat))
-
-# check your taxonomic classifications #
-#taxgg <- assignTaxonomy(asv.table2, "C:/Users/juanp/Downloads/gg_13_8_train_set_97.fa.gz", multithread=TRUE)
-
-#Now we can make the phyloseq object
-ps2 <- phyloseq(asv.table2, tax_table(taxa), sample_data(meta))
-#ps2gg <- phyloseq(asv.table2, tax_table(taxgg), sample_data(meta))
-
-#Random phylogenetic tree
-random_tree = rtree(ntaxa(ps2), rooted=TRUE, tip.label=taxa_names(ps2))
-
-ps.1 = merge_phyloseq(ps2, random_tree)
-
-# while it doesn't seem to be the case, if it were we would use the following lines to remove samples with low sequence counts
-set.seed(500)
-ps.2 = subset_taxa(ps.1, Kingdom == "Bacteria" | Kingdom == "Archaea")
-ps.pruned <- prune_samples(sample_sums(ps.2)>=2, ps.2)
-ps.pruned_taxa <- filter_taxa(ps.2, function(x) sum(x) > .005, TRUE)
-
-ps.3 = subset_samples(ps.pruned, Compartment !=  "BLANK")
-taxa_names(ps.3) <- paste0("ASV", seq(ntaxa(ps.3)))
-
-ps.perc.3 <- transform_sample_counts(ps.3, function(x) x / sum(x)) 
-
-
-ps.3.Root = subset_samples(ps.3, Compartment ==  "Root")
-ps.3.Water = subset_samples(ps.3, Compartment ==  "Water")
-ps.3.SInoculum = subset_samples(ps.3, Compartment !=  "Inoculum")
-ps.3.SWater = subset_samples(ps.3.SInoculum, Compartment !=  "Water")
-ps.3.Front = subset_samples(ps.3, Compartment ==  "Front")
-ps.3.SC = subset_samples(ps.3, Specie !=  "Control")
-ps.3.SCSI = subset_samples(ps.3.SC, Specie !=  "Inoculum")
-
-ps.3.SWater.perc<- transform_sample_counts(ps.3.SWater, function(x) x / sum(x))
-ps.perc.Root = subset_samples(ps.3.SWater.perc, Compartment ==  "Root")
-ps.perc.Front = subset_samples(ps.3.SWater.perc, Compartment ==  "Front")
-
-
-#Root and Front vs water
-ps.3.SInoculum
-ps.3.SInoculum_core = core(ps.3.SInoculum , detection = 0.001, prevalence = 20/100)
-ps.Syncom.Syncom31 = subset_samples(ps.3.SInoculum.H_core, Compartment !=  "Root")
-ps.Syncom.Syncom32 = subset_samples(ps.3.SInoculum.H_core, Specie !=  "Control")
-
-tableSyncom = cbind(ps.Syncom.Syncom32@sam_data, ps.Syncom.Syncom32@otu_table)
+tableSyncom = cbind(ps.phyla.perc@sam_data, ps.phyla.perc@otu_table)
 tableSyncom2=tableSyncom[,-c(1:7,10,13)]
 tableSyncom2$Complexity = as.factor(tableSyncom2$Complexity)
 tableSyncom2$Subsample = as.factor(tableSyncom2$Subsample)
