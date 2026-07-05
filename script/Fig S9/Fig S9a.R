@@ -5,39 +5,17 @@ packages <- c('edgeR', 'ggthemes','dplyr', "ape", "ShortRead", "Biostrings", "ph
 sapply(packages, require, character.only = TRUE)              
 setwd("G:/My Drive/labs/Nottingham/Duckweed/16S Exp1/")
 
-###Track sequencing abundance
-#track <- readRDS("C:/Users/juanp/Google Drive/labs/Nottingham/Duckweed/16S Exp1/track240-200.rds")
-#write.table(track, "track 16S 240-240 Exp1.txt")
+seqtab <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/Figuras paper/Clean data/Fig S8/Fig S9a/seqtab Fig S9a.rds")
 
-# 1. Taxonomy Table
-taxa <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/16S Exp1/tax_final250_220.rds")
-
-# 2. Metadata
-meta <- read.table("Metadata.txt", header = TRUE, row.names = 1)
-#write.table(ps2@sam_data, file = "C:/Users/juanp/Google Drive/labs/Nottingham/Duckweed/16S Exp1/metadataP.tsv", row.names=FALSE, sep="\t")
-
-# 3. ASV table
-asv.table<- readRDS("G:/My Drive/labs/Nottingham/Duckweed/16S Exp1/seqtab_final250_220.rds")
-#write.table(asv.table, file = "C:/Users/juanp/Google Drive/labs/Nottingham/Duckweed/16S Exp1/asv_table.txt", row.names=FALSE, sep="\t")
-asv.table2<- otu_table(asv.table, taxa_are_rows=FALSE)
-
-
-# 4. Now we can make the phyloseq object
-ps2 <- phyloseq(asv.table2, tax_table(taxa), sample_data(meta))
-
-ps.2 = subset_taxa(ps2, Kingdom == "Bacteria" | Kingdom == "Archaea")
-ps.pruned <- prune_samples(sample_sums(ps.2)>=2, ps.2)
-ps.pruned_taxa <- filter_taxa(ps.2, function(x) sum(x) > .005, TRUE)
-
-ps.3 = subset_samples(ps.pruned, Compartment !=  "BLANK")
-taxa_names(ps.3) <- paste0("ASV", seq(ntaxa(ps.3)))
+seqtab.Root = subset_samples(seqtab, Compartment ==  "Root")
+seqtab.Front = subset_samples(seqtab, Compartment ==  "Front")
+seqtab.water = subset_samples(seqtab, Compartment ==  "Water")
 
 #  Plotting Relative Abundance Bar Charts####
 # phylum-level
-ps.perc <- transform_sample_counts(ps.3, function(x) x / sum(x)) 
-ps.perc.Front <- transform_sample_counts(ps.3.Front, function(x) x / sum(x)) 
-ps.perc.Root <- transform_sample_counts(ps.3.Root.H4, function(x) x / sum(x)) 
-ps.perc.Water <- transform_sample_counts(ps.3.Water, function(x) x / sum(x)) 
+ps.perc.Front <- transform_sample_counts(seqtab.Front, function(x) x / sum(x)) 
+ps.perc.Root <- transform_sample_counts(seqtab.Root, function(x) x / sum(x)) 
+ps.perc.Water <- transform_sample_counts(seqtab.Water, function(x) x / sum(x)) 
 
 taxa_level <- function(physeq,which_level){
   #enforce orientation
