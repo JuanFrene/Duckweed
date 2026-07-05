@@ -15,39 +15,15 @@ library(scales)
 library(car)
 library(Rmisc)
 
-setwd("G:/My Drive/labs/Nottingham/Duckweed/16S Exp1/")
+seqtab <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/Figuras paper/Clean data/Fig S10/Fig S10a/seqtab.rds")
 
-# 1. Taxonomy Table
-taxa <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/16S Exp1/tax_final250_220.rds")
+ps.perc <- transform_sample_counts(seqtab, function(x) x / sum(x)) 
 
-# 2. Metadata
-meta <- read.table("Metadata.txt", header = TRUE, row.names = 1)
-
-####ASV table
-asv.table<- readRDS("G:/My Drive/labs/Nottingham/Duckweed/16S Exp1/seqtab_final250_220.rds")
-asv.table2<- otu_table(asv.table, taxa_are_rows=FALSE)
-
-#Now we can make the phyloseq object
-ps2 <- phyloseq(asv.table2, tax_table(taxa), sample_data(meta))
-
-ps.2 = subset_taxa(ps2, Kingdom == "Bacteria" | Kingdom == "Archaea")
-ps.pruned <- prune_samples(sample_sums(ps.2)>=2, ps.2)
-ps.pruned_taxa <- filter_taxa(ps.2, function(x) sum(x) > .005, TRUE)
-
-ps.3 = subset_samples(ps.pruned, Compartment !=  "BLANK")
-taxa_names(ps.3) <- paste0("ASV", seq(ntaxa(ps.3)))
-
-ps.perc.3 <- transform_sample_counts(ps.3, function(x) x / sum(x)) 
-
-
-ps.3.SInoculum = subset_samples(ps.3, Compartment !=  "Inoculum")
-ps.3.SWater = subset_samples(ps.3.SInoculum, Compartment !=  "Water")
-ps.3.SWater.perc<- transform_sample_counts(ps.3.SWater, function(x) x / sum(x))
-ps.perc.Front = subset_samples(ps.3.SWater.perc, Compartment ==  "Front")
+ps.perc.Frond = subset_samples(ps.3.SWater.perc, Compartment ==  "Frond")
 
 
 #####PCoA for ASV-level data with Bray-Curtis
-PCoA <- ordinate(ps.3.Front, "PCoA", "bray")
+PCoA <- ordinate(ps.perc.Front, "PCoA", "bray")
 title ="PCoA - PCoA1 vs PCoA2"
 ev1 <- (PCoA$values$Relative_eig[1])*100
 ev2 <- (PCoA$values$Relative_eig[2])*100
