@@ -21,34 +21,12 @@ PCA_Root_mean = aggregate(cbind(mean.x=PC1,mean.y=PC2)~Species*Microbiome ,x,mea
 PCA_Root_sd = aggregate(cbind(ds.x=PC1,ds.y=PC2)~Species*Microbiome ,x,sd)
 Root_trait2 <- cbind(PCA_Root_mean,PCA_Root_sd[,-(1:2)])
 
-setwd("G:/My Drive/labs/Nottingham/Duckweed/16S Exp1/")
+seqtab <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/Figuras paper/Clean data/Fig S10/Fig S10a/seqtab.rds")
 
-# 1. Taxonomy Table
-taxa <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/16S Exp1/tax_final250_220.rds")
-
-# 2. Metadata
-meta <- read.table("Metadata.txt", header = TRUE, row.names = 1)
-
-####ASV table
-asv.table<- readRDS("G:/My Drive/labs/Nottingham/Duckweed/16S Exp1/seqtab_final250_220.rds")
-asv.table2<- otu_table(asv.table, taxa_are_rows=FALSE)
-
-#Now we can make the phyloseq object
-ps2 <- phyloseq(asv.table2, tax_table(taxa), sample_data(meta))
-
-ps.2 = subset_taxa(ps2, Kingdom == "Bacteria" | Kingdom == "Archaea")
-ps.pruned <- prune_samples(sample_sums(ps.2)>=2, ps.2)
-ps.pruned_taxa <- filter_taxa(ps.2, function(x) sum(x) > .005, TRUE)
-
-ps.3 = subset_samples(ps.pruned, Compartment !=  "BLANK")
-taxa_names(ps.3) <- paste0("ASV", seq(ntaxa(ps.3)))
-
-ps.3.Frond = subset_samples(ps.3, Compartment ==  "Frond")
-
-
+seqtab.Frond = subset_samples(seqtab, Compartment ==  "Frond")
 
 #####PCoA for ASV-level data with Bray-Curtis
-PCoA.F <- ordinate(ps.3.Frond, "PCoA", "bray")
+PCoA.F <- ordinate(seqtab.Frond, "PCoA", "bray")
 f<-data.frame(PCoA.F$vectors[, 1:2])
 f <- merge(f,ps.3.Frond@sam_data, by=0)
 rownames(f)<-f$Row.names
