@@ -17,7 +17,7 @@ require(CCP)
 
 setwd("G:/My Drive/labs/Nottingham/Duckweed/Exudados/")
 
-Exudados <- read.table("Exudados.txt", header = TRUE, row.names = 1)
+Exudados <- read.table("Exudates.txt", header = TRUE, row.names = 1)
 Exudados[,1:5]
 
 Exudados$Subsample = as.factor(Exudados$Subsample)
