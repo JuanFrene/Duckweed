@@ -7,20 +7,9 @@ packages <- c('edgeR', 'ggthemes','dplyr', "ape", "ShortRead", "Biostrings", "ph
 setwd("G:/My Drive/labs/Nottingham/Duckweed/Ex2/DExp2 16S analysis/")
 
 ###Metadata
-metaSyncom <- read.table("Metadata.txt", header = TRUE, row.names = 1)
+seqtabExp2 <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/Figuras paper/Clean data/Fig S12/Fig S12b/seqtab Exp2.rds")
 
-###ASV table
-asv.table_Syncom <- readRDS('G:/My Drive/labs/Nottingham/Duckweed/Ex2/DExp2 16S analysis/seqtab_final240_220.rds')
-asv.table_Syncom2<- otu_table(asv.table_Syncom, taxa_are_rows=FALSE)
-
-##ASing to the syncom
-taxaSyncom <- assignTaxonomy(asv.table_Syncom2, "G:/My Drive/labs/Nottingham/Duckweed/Ex2/DExp2 16S analysis/Syncom_Sequence.pcr.unique.fasta", multithread=TRUE)#, minBoot = 100
-
-##Create phyloseq
-ps.Syncom <- phyloseq(asv.table2, tax_table(taxaSyncom), sample_data(meta))
-taxa_names(ps.Syncom) <- paste0("ASV", seq(ntaxa(ps.Syncom)))
-ps.Syncom = subset_taxa(ps.Syncom, Genus  != "NA")
-ps.Syncom.SC = subset_samples(ps.pruned2, Species !=  "Control")
+ps.Syncom.SC = subset_samples(seqtabExp2, Species !=  "Control")
 ps.Syncom.Syncom = subset_samples(ps.Syncom.SC, Treatment !=  "NB")
 ps.Syncom.Syncom2 = subset_samples(ps.Syncom.Syncom, Treatment !=  "NatCom")
 
@@ -43,34 +32,9 @@ melt.phylum <- psmelt(ps.phylum.10)
 
 
 ############Natural community
-setwd("G:/My Drive/labs/Nottingham/Duckweed/16S Exp1/")
+seqtabExp1 <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/Figuras paper/Clean data/Fig S12/Fig S12b/seqtab Exp1.rds")
 
-###Track sequencing abundance
-#track <- readRDS("C:/Users/juanp/Google Drive/labs/Nottingham/Duckweed/16S Exp1/track240-200.rds")
-#write.table(track, "track 16S 240-240 Exp1.txt")
-
-# 1. Taxonomy Table
-taxa <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/16S Exp1/tax_final250_220.rds")
-
-# 2. #Metadata
-meta <- read.table("Metadata.txt", header = TRUE, row.names = 1)
-#write.table(ps2@sam_data, file = "C:/Users/juanp/Google Drive/labs/Nottingham/Duckweed/16S Exp1/metadataP.tsv", row.names=FALSE, sep="\t")
-
-# 3. ASV table
-asv.table<- readRDS("G:/My Drive/labs/Nottingham/Duckweed/16S Exp1/seqtab_final250_220.rds")
-asv.table2<- otu_table(asv.table, taxa_are_rows=FALSE)
-
-# 4. Now we can make the phyloseq object
-ps2 <- phyloseq(asv.table2, tax_table(taxa), sample_data(meta))
-
-ps.2 = subset_taxa(ps2, Kingdom == "Bacteria")
-ps.pruned <- prune_samples(sample_sums(ps.2)>=2, ps.2)
-ps.3 = subset_samples(ps.pruned, Compartment !=  "BLANK")
-taxa_names(ps.3) <- paste0("ASV", seq(ntaxa(ps.3)))
-ps.3.SC = subset_samples(ps.3, Specie !=  "Control")
-ps.3.SCSI = subset_samples(ps.3.SC, Specie !=  "Inoculum")
-ps.3.SCSI.pruned <- prune_taxa(taxa_sums(ps.3.SCSI)>=5, ps.3.SCSI)
-ps.3.Root = subset_samples(ps.3.SCSI.pruned, Compartment ==  "Root")
+ps.3.Root = subset_samples(seqtabExp1, Compartment ==  "Root")
 ps.3.Root.pruned <- prune_taxa(taxa_sums(ps.3.Root)>=5, ps.3.Root)
 
 
