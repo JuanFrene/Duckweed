@@ -16,14 +16,6 @@ setwd("G:/My Drive/labs/Nottingham/Duckweed/thermodynamics/")
 Curves <- read.table("Themodynamics2.txt", header = TRUE, row.names = 1)
 Curves[2,]
 
-Curves2 = Curves[Curves$ID!=58,]
-Curves3 = Curves2[Curves2$ID!= 23,]
-Curves4 = Curves3[Curves3$ID== 26,]
-Curves5 = Curves4[Curves4$ID== 27,]
-
-Curves3[Curves3$ID==25,]
-Curves3[Curves3$ID==26,]
-
 Curves.mean <- Curves5 %>% group_by(Species, Treatment,Root_complexity,Temperature)%>%
   summarise_all(mean)
 Curves.mean2 = data.frame(Curves.mean[Curves.mean$Temperature > 25,])
