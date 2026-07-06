@@ -4,58 +4,19 @@ packages <- c('edgeR', 'ggthemes','dplyr', "ape", "ShortRead", "Biostrings", "ph
               'igraph','Hmisc','VennDiagram',"microbiomeMarker", 'dada2')
 sapply(packages, require, character.only = TRUE)              
 
-setwd("G:/My Drive/labs/Nottingham/Duckweed/Ex2/DExp2 16S analysis/") #Users/juanp/Google
-
-###Metadata
-meta <- read.table("Metadata.txt", header = TRUE, row.names = 1)
-
-###ASV table
-asv.table <- readRDS('G:/My Drive/labs/Nottingham/Duckweed/Ex2/DExp2 16S analysis/seqtab_final240_220.rds')
-asv.table2<- otu_table(asv.table, taxa_are_rows=FALSE)
-
-##ASing to the syncom
-taxaSyncom <- assignTaxonomy(asv.table2, "G:/My Drive/labs/Nottingham/Duckweed/Ex2/DExp2 16S analysis/Syncom_Sequence.pcr.unique.fasta", multithread=TRUE)#, minBoot = 98
-
-#Now we can make the phyloseq object
-ps.Syncom <- phyloseq(asv.table2, tax_table(taxaSyncom), sample_data(meta))
-taxa_names(ps.Syncom) <- paste0("ASV", seq(ntaxa(ps.Syncom)))
-ps.Syncom = subset_taxa(ps.Syncom, Genus  != "NA")
-
-ps.Syncom.3 = subset_samples(ps.Syncom, Treatment !=  "ConNeg")
-ps.pruned <- prune_taxa(taxa_sums(ps.Syncom.3)>=1, ps.Syncom.3)
-
-ps.Syncom.SC = subset_samples(ps.pruned, Species !=  "Control")
-ps.Syncom.SC2 = subset_samples(ps.Syncom.SC, Species !=  "Inoculum")
-
-ps.Syncom.Syncom = subset_samples(ps.Syncom.SC2, Treatment ==  "SynCom")
-ps.Syncom.Syncom2 <- prune_taxa(taxa_sums(ps.Syncom.Syncom)>1, ps.Syncom.Syncom)
-
-ps.Syncom.Syncom2 <- prune_taxa(taxa_sums(ps.Syncom.Syncom)>1, ps.Syncom.Syncom)
-ps.Syncom.Syncom3 <- prune_samples(sample_sums(ps.Syncom.Syncom2)>1, ps.Syncom.Syncom2) 
-
-ps.Syncom.Front = subset_samples(ps.Syncom.Syncom, Compartment ==  "Front")
-ps.Syncom.Front2 <- prune_taxa(taxa_sums(ps.Syncom.Front)>0, ps.Syncom.Front)
-ps.Syncom.Front3 <- prune_samples(sample_sums(ps.Syncom.Front)>0, ps.Syncom.Front) 
-ps.Frond.perc <- transform_sample_counts(ps.Syncom.Front3, function(x) x / sum(x)) 
-
-
-ps.Syncom.Root = subset_samples(ps.Syncom.Syncom, Compartment ==  "Root")
-ps.Syncom.Root2 <- prune_taxa(taxa_sums(ps.Syncom.Root)>0, ps.Syncom.Root)
-ps.Syncom.Root3 <- prune_samples(sample_sums(ps.Syncom.Root2)>0, ps.Syncom.Root2) 
-
-ps.Syncom.Root4 <- subset_samples(ps.Syncom.Root3, Species != 'PS')
-ps.Root.perc <- transform_sample_counts(ps.Syncom.Root4, function(x) x / sum(x)) 
+seqtab_Root <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/Figuras paper/Clean data/Fig S16/Fig S16a/seqtab_Root.rds")
+seqtab_Frond <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/Figuras paper/Clean data/Fig S16/Fig S16a/seqtab_Frond.rds")
 
 ###CAP
 data = ps.Syncom.Root3@sam_data
 
-CAP2 <- ordinate(ps.Root.perc, "CAP", "bray",~data$Nutrient)
+CAP2 <- ordinate(seqtab_Root, "CAP", "bray",~data$Nutrient)
 summary(CAP2)
 xxlab_text = 'CAP1 (46.63%)'
 ylab_text = 'CAP2 (23.86%)'
 
 x<-data.frame(CAP2$CCA$wa[, 1:2])
-x <- merge(x,ps.Syncom.Root3@sam_data, by=0)
+x <- merge(x,seqtab_Root@sam_data, by=0)
 rownames(x)<-x$Row.names
 x$Row.names <- NULL
 nrow(x)
@@ -99,14 +60,14 @@ ggplot(x, aes(CAP1, CAP2)) + #
 
 
 ###CAP Frond
-dataF = ps.Frond.perc@sam_data
-CAPF <- ordinate(ps.Frond.perc, "CAP", "bray",~dataF$Nutrient)
+dataF = seqtab_Frond@sam_data
+CAPF <- ordinate(seqtab_Frond, "CAP", "bray",~dataF$Nutrient)
 summary(CAPF)
 xlab_text = 'CAP1 (33,06%)'
 ylab_text = 'CAP2 (11.49%)'
 
 f<-data.frame(CAPF$CCA$wa[, 1:2])
-f <- merge(f,ps.Syncom.Front3@sam_data, by=0)
+f <- merge(f,seqtab_Frond@sam_data, by=0)
 rownames(f)<-x$Row.names
 f$Row.names <- NULL
 nrow(f)

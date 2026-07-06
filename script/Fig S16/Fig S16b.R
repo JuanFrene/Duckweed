@@ -4,46 +4,9 @@ packages <- c('ggthemes','dplyr', "ape", "ShortRead", "Biostrings", "phyloseq",
               'igraph','Hmisc','VennDiagram',"microbiomeMarker", 'dada2')
 sapply(packages, require, character.only = TRUE)              
 
-setwd("G:/My Drive/labs/Nottingham/Duckweed/Ex2/DExp2 16S analysis/")
+seqtab <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/Figuras paper/Clean data/Fig S16/Fig S16b/seqtab Fig S16b.rds")
 
-# Control sequence ####
-track240_240 <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/Ex2/DExp2 16S analysis/track240240.rds")
-
-###Metadata
-meta <- read.table("Metadata.txt", header = TRUE, row.names = 1)
-
-###ASV table
-asv.table <- readRDS('G:/My Drive/labs/Nottingham/Duckweed/Ex2/DExp2 16S analysis/seqtab_final240_220.rds')
-asv.table2<- otu_table(asv.table, taxa_are_rows=FALSE)
-
-##ASing to the syncom
-taxaSyncom <- assignTaxonomy(asv.table2, "G:/My Drive/labs/Nottingham/Duckweed/Ex2/DExp2 16S analysis/Syncom_Sequence.pcr.unique.fasta", multithread=TRUE)#, minBoot = 98
-
-#Now we can make the phyloseq object
-ps.Syncom <- phyloseq(asv.table2, tax_table(taxaSyncom), sample_data(meta))
-taxa_names(ps.Syncom) <- paste0("ASV", seq(ntaxa(ps.Syncom)))
-
-ps.Syncom = subset_taxa(ps.Syncom, Genus  != "NA")
-
-ps.Syncom.3 = subset_samples(ps.Syncom, Treatment !=  "ConNeg")
-ps.pruned <- prune_taxa(taxa_sums(ps.Syncom.3)>=1, ps.Syncom.3)
-
-ps.Syncom.3.H <- transform(ps.pruned, "hellinger")
-ps.Syncom.3.perc <- transform_sample_counts(ps.pruned, function(x) x / sum(x)) 
-
-ps.Syncom.SC = subset_samples(ps.pruned, Species !=  "Control")
-ps.Syncom.SC2 = subset_samples(ps.Syncom.SC, Species !=  "Inoculum")
-
-ps.Syncom.NOSyncom = subset_samples(ps.Syncom.SC2, Treatment !=  "SynCom")
-ps.Syncom.NOSyncom2 <- prune_taxa(taxa_sums(ps.Syncom.NOSyncom)>0, ps.Syncom.NOSyncom)
-
-ps.Syncom.Syncom = subset_samples(ps.Syncom.SC2, Treatment ==  "SynCom")
-ps.Syncom.Syncom2 <- prune_taxa(taxa_sums(ps.Syncom.Syncom)>1, ps.Syncom.Syncom)
-
-ps.Syncom.SyncomW = subset_samples(ps.Syncom.Syncom, Compartment !=  "Water")
-ps.Syncom.SyncomW2 <- prune_taxa(taxa_sums(ps.Syncom.SyncomW)>440, ps.Syncom.SyncomW)
-
-tableSyncom = cbind(ps.Syncom.SyncomW2@sam_data, ps.Syncom.SyncomW2@otu_table)
+tableSyncom = cbind(seqtab@sam_data, seqtab@otu_table)
 tableSyncom2=tableSyncom[,-c(1,2,3,8)]
 tableSyncom2$cell_layer_n = as.factor(tableSyncom2$cell_layer_n)
 

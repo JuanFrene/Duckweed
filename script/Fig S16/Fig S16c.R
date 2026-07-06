@@ -6,67 +6,20 @@ library(ade4)
 
 sapply(packages, require, character.only = TRUE)              
 
-setwd("G:/My Drive/labs/Nottingham/Duckweed/Ex2/DExp2 16S analysis/")
-
-###Metadata
-meta <- read.table("Metadata.txt", header = TRUE, row.names = 1)
-
-###ASV table
-asv.table <- readRDS('G:/My Drive/labs/Nottingham/Duckweed/Ex2/DExp2 16S analysis/seqtab_final240_220.rds')
-asv.table2<- otu_table(asv.table, taxa_are_rows=FALSE)
-
-##ASing to the syncom
-taxaSyncom <- assignTaxonomy(asv.table2, "G:/My Drive/labs/Nottingham/Duckweed/Ex2/DExp2 16S analysis/Syncom_Sequence.pcr.unique.fasta", multithread=TRUE)#, minBoot = 98
-
-#Now we can make the phyloseq object
-ps.Syncom <- phyloseq(asv.table2, tax_table(taxaSyncom), sample_data(meta))
-taxa_names(ps.Syncom) <- paste0("ASV", seq(ntaxa(ps.Syncom)))
-ps.Syncom = subset_taxa(ps.Syncom, Genus  != "NA")
-
-ps.Syncom.3 = subset_samples(ps.Syncom, Treatment !=  "ConNeg")
-ps.pruned <- prune_taxa(taxa_sums(ps.Syncom.3)>=1, ps.Syncom.3)
-
-ps.Syncom.3.H <- transform(ps.pruned, "hellinger")
-ps.Syncom.3.perc <- transform_sample_counts(ps.pruned, function(x) x / sum(x)) 
-
-ps.Syncom.SC = subset_samples(ps.Syncom.3.H, Species !=  "Control")
-ps.Syncom.SC2 = subset_samples(ps.Syncom.SC, Species !=  "Inoculum")
-
-ps.Syncom.NOSyncom = subset_samples(ps.Syncom.SC2, Treatment !=  "SynCom")
-ps.Syncom.NOSyncom2 <- prune_taxa(taxa_sums(ps.Syncom.NOSyncom)>0, ps.Syncom.NOSyncom)
-
-ps.Syncom.Syncom = subset_samples(ps.Syncom.SC2, Treatment ==  "SynCom")
-ps.Syncom.Syncom2 <- prune_taxa(taxa_sums(ps.Syncom.Syncom)>1, ps.Syncom.Syncom)
-
-ps.Syncom.Syncom2 <- prune_taxa(taxa_sums(ps.Syncom.Syncom)>1, ps.Syncom.Syncom)
-ps.Syncom.Syncom3 <- prune_samples(sample_sums(ps.Syncom.Syncom2)>1, ps.Syncom.Syncom2) 
-
-ps.Syncom.Front = subset_samples(ps.Syncom.Syncom, Compartment ==  "Front")
-ps.Syncom.Root = subset_samples(ps.Syncom.Syncom, Compartment ==  "Root")
-
-ps.Syncom.Front2 <- prune_taxa(taxa_sums(ps.Syncom.Front)>0, ps.Syncom.Front)
-ps.Syncom.Front3 <- prune_samples(sample_sums(ps.Syncom.Front)>0, ps.Syncom.Front) 
-ps.Syncom.Front4 <- subset_samples(ps.Syncom.Front3, Species !=  "PS") 
-
-ps.Syncom.Root2 <- prune_taxa(taxa_sums(ps.Syncom.Root)>0, ps.Syncom.Root)
-ps.Syncom.Root3 <- prune_samples(sample_sums(ps.Syncom.Root2)>0, ps.Syncom.Root2) 
-ps.Syncom.Root4 <- subset_samples(ps.Syncom.Root3, Species !=  "PS") 
-
-ps.Syncom.High = subset_samples(ps.Syncom.Root4, Nutrient ==  "High")
-ps.Syncom.Medium = subset_samples(ps.Syncom.Root4, Nutrient ==  "Medium")
-ps.Syncom.Low = subset_samples(ps.Syncom.Root4, Nutrient ==  "Low")
+seqtab_Root <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/Figuras paper/Clean data/Fig S16/Fig S16a/seqtab_Root.rds")
+seqtab_Frond <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/Figuras paper/Clean data/Fig S16/Fig S16a/seqtab_Frond.rds")
 
 #####PCoA for ASV-level data with Bray-Curtis
-PCoA <- ordinate(ps.Syncom.Front4, "PCoA", "bray")
+PCoA <- ordinate(seqtab_Frond, "PCoA", "bray")
 f<-data.frame(PCoA$vectors[, 1:2])
-f <- merge(f,ps.Syncom.Front3@sam_data, by=0)
+f <- merge(f,seqtab_Frond@sam_data, by=0)
 f$cell_layer_n = as.numeric(f$cell_layer_n)
 
 PCoAFrondMicro = aggregate(cbind(Frond.x=Axis.1,Frond.y=Axis.2)~Species*Nutrient,f,mean)
 PCoAFrondMicrosd = aggregate(cbind(Frond_ds.x=Axis.1,Frond_ds.y=Axis.2)~Species*Nutrient,f,sd)
 Frond <- cbind(PCoAFrondMicro,PCoAFrondMicrosd[,3:4])
 
-PCoA <- ordinate(ps.Syncom.Root4, "PCoA", "bray")
+PCoA <- ordinate(seqtab_Root, "PCoA", "bray")
 r<-data.frame(PCoA$vectors[, 1:2])
 r <- merge(r,ps.Syncom.Root3@sam_data, by=0)
 r$cell_layer_n = as.numeric(r$cell_layer_n)
