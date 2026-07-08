@@ -1,42 +1,14 @@
-packages <- c('ggthemes','dplyr', "ape", "ShortRead", "Biostrings", "phyloseq",
-              "DESeq2", "microbiome", "DECIPHER", "phangorn", "tibble", "lme4",
-              "lmerTest", "ggplot2", "vegan", "car", "rcompanion", "emmeans", "RVAideMemoire",
-              'igraph','Hmisc','VennDiagram',"microbiomeMarker", 'dada2','reshape2')
+library(ggplot2)
+library(cowplot)
+library(dplyr)
 
-sapply(packages, require, character.only = TRUE)              
+setwd("G:/My Drive/labs/Nottingham/Duckweed/Bacrteria Inhibition exp/")
 
-setwd("G:/My Drive/labs/Nottingham/Duckweed/Exp Metabolites addition/")
+# 1. Metadata
+Data <- read.table("Bacteria_inhibition.txt", header = TRUE, row.names = 1)
+Slope <- read.table("Bacteria_inhibition_slope.txt", header = TRUE, row.names = 1)
 
-# Control sequence ####
-#track <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/Exp Metabolites addition/track.rds")
-#write.table(track, "track 16S.txt")
-
-
-###ASV table
-asv.table <- readRDS('G:/My Drive/labs/Nottingham/Duckweed/Exp Metabolites addition/seqtab_final.rds')
-asv.table2<- otu_table(asv.table, taxa_are_rows=FALSE)
-
-##ASing to the syncom
-taxaSyncom <- assignTaxonomy(asv.table2, "G:/My Drive/labs/Nottingham/Duckweed/Ex2/DExp2 16S analysis/Syncom_Sequence.pcr.unique.fasta", multithread=TRUE)#, minBoot = 98
-
-#Metadata
-meta <- read.table("Metadata SR.txt", header = TRUE, row.names = 1)
-
-#Now we can make the phyloseq object
-ps.Syncom <- phyloseq(asv.table2, tax_table(taxaSyncom), sample_data(meta))
-
-taxa_names(ps.Syncom) <- paste0("ASV", seq(ntaxa(ps.Syncom)))
-ps.Syncom = subset_taxa(ps.Syncom, Genus  != "NA")
-
-ps.pruned <- prune_taxa(taxa_sums(ps.Syncom)>=1, ps.Syncom)
-ps.pruned3 <- prune_samples(sample_sums(ps.pruned)>1, ps.pruned) 
-ps.perc <- transform_sample_counts(ps.pruned3, function(x) x / sum(x)) 
-
-tableSyncom = cbind(ps.perc@sam_data, ps.perc@otu_table)
-tableSyncom2 = tableSyncom[,-c(1:7)][1:50]
-
-library(reshape2)
-melted_table <- tableSyncom2 %>% melt
+write.table(Data, "G:/My Drive/labs/Nottingham/Duckweed/Figuras paper/Clean data/Fig S14/Fig S14d/Data_gwoth.txt")
 
 ttestRat <- function(df, grp1, grp2) {
   x = df[grp1]
@@ -47,126 +19,186 @@ ttestRat <- function(df, grp1, grp2) {
   results$p.value
 }
 
-log2foldchange <- c()
-for(specie in melted_table$Species  %>% unique){
-  melted_sub <- melted_table %>% subset(Species ==  specie) %>% droplevels
-  for(root in melted_sub$Root  %>% unique){
-    melted_sub2 <- melted_sub %>% subset(Root ==  root) %>% droplevels #'ASV522'
-    for(var in melted_sub2$variable  %>% unique){
-      melted_sub3 <- melted_sub2 %>% subset(variable ==  var) %>% droplevels #'ASV522'
-      for(drug in melted_sub3[melted_sub3$Drug  !='No',]$Drugs  %>% unique){
-        melted_sub4 <- melted_sub3[melted_sub3$Drug  !='No',] %>% subset(Drugs  ==  drug) %>% droplevels
-        
-        Control = data.frame(t(melted_sub3[melted_sub3$Drug  =='No',][,5]))
-        Compound = data.frame(t(melted_sub4[,5]))
-        
-        Control_mean = apply(Control, 1, mean) 
-        Compound_mean = apply(Compound, 1, mean) 
-        
-        C_C_mean <- log2(Control_mean+1) - log2(Compound_mean+1) 
-        
-        C_C_mean_statistic = t.test(Control,Compound)
-        pvalueB_C_C = C_C_mean_statistic$p.value
-        
-        result = cbind(C_C_mean,pvalueB_C_C)
-        specie2 = specie
-        row.names(result)= var
-        result2 = cbind(specie2,result)
-        result3 = cbind(drug,result2)
-        result4 = cbind(var,result3)
-        result5 = cbind(result4,root)
-        log2foldchange <- rbind(log2foldchange,result5)
-      }}}}
+Data1 = Data[Data$Experiment == '1',]
+Data2 = Data[Data$Experiment != '1',]
 
-log2foldchange = data.frame(log2foldchange)
-log2foldchange2 = log2foldchange[log2foldchange$drug!='Glutaric',]
-colnames(log2foldchange2) = c('ASV','Compound', 'Species', 'diff', 'pvalue', 'Root')
+log2foldchange2 <- c()
+for(specie in Data1$Microbe  %>% unique){
+  melted_sub <- Data1 %>% subset(Microbe ==  specie) %>% droplevels
+  for(time in melted_sub[melted_sub$Time!='T0',]$Time  %>% unique){
+    melted_sub2 <- melted_sub[melted_sub$Time!='T0',] %>% subset(Time ==  time) %>% droplevels #'ASV522'
+    for(drug in melted_sub2[melted_sub2$Compound2  =='Compound',]$Compound  %>% unique){
+      melted_sub3 <- melted_sub2[melted_sub2$Compound2  =='Compound',] %>% subset(Compound  ==  drug) %>% droplevels
+      
+      Control = data.frame(t(melted_sub2[melted_sub2$Compound  =='Control',][,10]))
+      Compound = data.frame(t(melted_sub3[melted_sub3$Compound2  =='Compound',][,10]))
+      
+      Control_mean = apply(Control, 1, mean) 
+      Compound_mean = apply(Compound, 1, mean) 
+      
+      C_C_mean <- log2(Compound_mean+1) - log2(Control_mean+1) 
+      
+      C_C_mean_statistic = t.test(Control,Compound)
+      pvalueB_C_C = C_C_mean_statistic$p.value
+      C_C_mean_conf = t(data.frame(C_C_mean_statistic$conf.int))
+      colnames(C_C_mean_conf) = c('inf','sup')
+      
+      result = cbind(C_C_mean,pvalueB_C_C)
+      specie2 = specie
+      row.names(result)= time
+      result2 = cbind(specie2,result)
+      result3 = cbind(drug,result2)
+      result4 = cbind(time,result3)
+      result5 = cbind(result4,C_C_mean_conf)
+      log2foldchange2 <- rbind(log2foldchange2,result5)
+    }}}
 
-log2foldchange2$Significance <- "No Significant"
+
+log2foldchange_a =data.frame(log2foldchange2)
+
+log2foldchange_a$Significance <- "No Significant"
 pval_thres <- 0.1
-log2foldchange2$Significance[which(log2foldchange2$pvalue < pval_thres)] <- "q < 0.1"
-log2foldchange2$Significance <- log2foldchange2$Significance %>% factor
-log2foldchange2$diff = as.numeric(log2foldchange2$diff)
+log2foldchange_a$Significance[which(log2foldchange_a$pvalue < pval_thres)] <- "q < 0.1"
+log2foldchange_a$Significance <- log2foldchange_a$Significance %>% factor
+log2foldchange_a$C_C_mean = as.numeric(log2foldchange_a$C_C_mean)
+
+log2foldchange_a$Significance <- "No Significant"
+pval_thres <- 0.1
+log2foldchange_a$Significance[which(log2foldchange_a$pvalue < pval_thres)] <- "q < 0.1"
+log2foldchange_a$Significance <- log2foldchange_a$Significance %>% factor
+log2foldchange_a$C_C_mean = as.numeric(log2foldchange_a$C_C_mean)
+
 
 head(log2foldchange2)
-#Aggregate the dataframe to display as heatmap
-display <- log2foldchange2  %>%
-  acast(formula = Species~ASV, mean,
-        value.var = "diff")
 
-display2 = data.frame(t(display))
+# Plot
+log2foldchange = log2foldchange_a[log2foldchange_a$specie2!='Control_Neg',]
 
-# Obtain the dendrogram
-library(ggdendro)
-dend <- as.dendrogram(hclust(dist(display2)))
-dend_data <- dendro_data(dend)
-ASV_order = dend_data$labels[,3]
+#C1
+new_df <- log2foldchange[log2foldchange$drug=='C1',] %>% 
+  # desc orders from largest to smallest
+  arrange(desc(C_C_mean))
 
-dend_nutr <- as.dendrogram(hclust(dist(t(display2))))
-dend_nutr_data <- dendro_data(dend_nutr)
-nutr_order = dend_nutr_data$labels[,3]
+new_df2 = data.frame(new_df[new_df$time=='T6',])
+order = 1:191
+new_df3 = cbind(new_df2, order)
+new_df3$specie2 = factor(new_df3$specie2, rev(new_df3$specie2))
 
-# Setup the data, so that the layout is inverted (this is more 
-# "clear" than simply using coord_flip())
-segment_data <- with(
-  segment(dend_data), 
-  data.frame(x = y, y = x, xend = yend, yend = xend))
+C1 = ggplot(new_df3, aes(x=specie2, y=C_C_mean)) + 
+  geom_hline(yintercept = 0,size = 0.5,color = "black")+
+  geom_point(stat='identity', aes(col=Significance), size=2)  +
+  scale_color_manual(values = c('black',"red"))+
+  labs(title="Methy-Citrate", y='log2FC', x='Syncom members') + 
+  coord_flip()+
+  theme_bw()+
+  theme(axis.text.y = element_text(size = 3),
+        legend.position = 'none')
 
-# Use the dendrogram label data to position the gene labels
-gene_pos_table <- with(
-  dend_data$labels, 
-  data.frame(y_center = x, gene = as.character(label), height = 1))
+#C2
+new_df <- log2foldchange[log2foldchange$drug=='C2',] %>% 
+  # desc orders from largest to smallest
+  arrange(desc(C_C_mean))
 
-# Table to position the samples
-sample_pos_table <- data.frame(sample = nutr_order) %>%
-  group_by(x_center = (1:n()), width = 1)
+new_df2 = data.frame(new_df[new_df$time=='T6',])
+order = 1:191
+new_df3 = cbind(new_df2, order)
+new_df3$specie2 = factor(new_df3$specie2, rev(new_df3$specie2))
 
-# Neglecting the gap parameters
-heatmap_data <- display2 %>% 
-  reshape2::melt(value.name = "expr", varnames = c("gene", "sample")) %>%
-  cross_join(gene_pos_table) %>%
-  cross_join(sample_pos_table)
+C2 = ggplot(new_df3, aes(x=specie2, y=C_C_mean)) + 
+  geom_hline(yintercept = 0,size = 0.5,color = "black")+
+  geom_point(stat='identity', aes(col=Significance), size=2)  +
+  scale_color_manual(values = c('black',"red"))+
+  labs(title="Citruline", y='log2FC', x='Syncom members') + 
+  #ylim(-2.5, 2.5) +
+  coord_flip()+
+  theme_bw()+
+  theme(axis.text.y = element_text(size = 3),
+        legend.position = 'none')
 
-# Limits for the vertical axes
-gene_axis_limits <- with(
-  gene_pos_table, 
-  c(min(y_center - 0.5 * height), max(y_center + 1 * height))) + 0.1 * c(-1, 1) # extra spacing: 0.1
+#C3
+new_df <- log2foldchange[log2foldchange$drug=='C3',] %>% 
+  # desc orders from largest to smallest
+  arrange(desc(C_C_mean))
+
+new_df2 = data.frame(new_df[new_df$time=='T6',])
+order = 1:191
+new_df3 = cbind(new_df2, order)
+new_df3$specie2 = factor(new_df3$specie2, rev(new_df3$specie2))
+
+ggplot(new_df3, aes(x=specie2, y=C_C_mean)) + 
+  geom_hline(yintercept = 0,size = 0.5,color = "black")+
+  geom_point(stat='identity', aes(col=Significance), size=1)  +
+  scale_color_manual(values = c('black',"red"))+
+  labs(title="Adrenaline", y='log2FC', x='Syncom members') + 
+  #ylim(-2.5, 2.5) +
+  coord_flip()+
+  theme_bw()+
+  theme(axis.text.y = element_text(size = 5),
+        legend.position = 'none')
 
 
+#C4
+new_df <- log2foldchange[log2foldchange$drug=='C3',] %>% 
+  # desc orders from largest to smallest
+  arrange(desc(C_C_mean))
 
-log2foldchange2$ASV = factor(log2foldchange2$ASV, c(ASV_order))
-log2foldchange2$Species = factor(log2foldchange2$Species, c('LJ9250', "SP9509"))
-log2foldchange2$Root =  factor(log2foldchange2$Root, c('Low', "Medium", "High"))
+new_df2 = data.frame(new_df[new_df$time=='T6',])
+order = 1:191
+new_df3 = cbind(new_df2, order)
+new_df3$specie2 = factor(new_df3$specie2, rev(new_df3$specie2))
 
-log2foldchange2$diff[which(log2foldchange2$diff < -0.5)] <- -0.5
-log2foldchange2$diff[which(log2foldchange2$diff > 0.5)] <- 0.5
+ggplot(new_df3, aes(x=specie2, y=C_C_mean)) + 
+  geom_hline(yintercept = 0,size = 0.5,color = "black")+
+  geom_point(stat='identity', aes(col=Significance), size=1)  +
+  scale_color_manual(values = c('black',"red"))+
+  labs(title="3-Methyl-Lysine", y='log2FC', x='Syncom members') + 
+  #ylim(-2.5, 2.5) +
+  coord_flip()+
+  theme_bw()+
+  theme(axis.text.y = element_text(size = 5),
+        legend.position = 'none')
 
-plt_hmap = ggplot(data = log2foldchange2, aes(Species, ASV)) + 
-  geom_raster(aes(fill = diff)) +
-  geom_tile(aes(color = Significance),fill = '#00000000', size = 0.3,width = 0.9,height = 0.95) + #
-  facet_grid(~Root*Compound, space = "free",scales = "free") +
-  theme_few()+
-  scale_fill_paletteer_c("pals::kovesi.diverging_bwr_40_95_c42", #kovesi.diverging_bwr_55_98_c37
-                         limits = c(-0.5,0.5),na.value = "#D9D9D9",name = "Fold Change") +
-  scale_color_manual(values = c('grey',"black"),na.value =  "transparent",name = "Significance vs Full") + #Significance Genotype vs Col-0
-  #theme(size_panel_border = 0.2)+
-  theme(axis.text.x = element_text(angle = -45, hjust=-0.05, size = 5),
-        axis.text.y = element_text(size = 5),
-        axis.title = element_blank())
+#C5
+new_df <- log2foldchange[log2foldchange$drug=='C5',] %>% 
+  # desc orders from largest to smallest
+  arrange(desc(C_C_mean))
 
-# Dendrogram plot
-plt_dendr <- ggplot(segment_data) + 
-  geom_segment(aes(x = x, y = y, xend = xend, yend = yend)) + 
-  scale_x_reverse() + 
-  scale_y_continuous(breaks = gene_pos_table$y_center, 
-                     labels = gene_pos_table$gene, 
-                     limits = gene_axis_limits, 
-                     expand = c(0, 0)) + 
-  labs(x = "Distance", y = "", colour = "", size = "") +
-  theme_tufte() + 
-  theme(panel.grid.minor = element_blank(),axis.text.y=element_blank(),
-        axis.title = element_blank()) #
+new_df2 = data.frame(new_df[new_df$time=='T6',])
+order = 1:191
+new_df3 = cbind(new_df2, order)
+new_df3$specie2 = factor(new_df3$specie2, rev(new_df3$specie2))
 
-library(cowplot)
-plot_grid(plt_dendr, plt_hmap, align = 'h', rel_widths = c(0.1, 1))
+C5 = ggplot(new_df3, aes(x=specie2, y=C_C_mean)) + 
+  geom_hline(yintercept = 0,size = 0.5,color = "black")+
+  geom_point(stat='identity', aes(col=Significance), size=2)  +
+  scale_color_manual(values = c('black',"red"))+
+  labs(title="Glutaric acid", y='log2FC', x='Syncom members') + 
+  #ylim(-2.5, 2.5) +
+  coord_flip()+
+  theme_bw()+
+  theme(axis.text.y = element_text(size = 3),
+        legend.position = 'none')
 
+#C6
+new_df <- log2foldchange[log2foldchange$drug=='C6',] %>% 
+  # desc orders from largest to smallest
+  arrange(desc(C_C_mean))
+
+new_df2 = data.frame(new_df[new_df$time=='T6',])
+order = 1:191
+new_df3 = cbind(new_df2, order)
+new_df3$specie2 = factor(new_df3$specie2, rev(new_df3$specie2))
+
+C6 = ggplot(new_df3, aes(x=specie2, y=C_C_mean)) +
+  geom_hline(yintercept = 0,size = 0.5,color = "black")+
+  geom_point(stat='identity', aes(col=Significance), size=2)  +
+  scale_color_manual(values = c('black',"red"))+
+  labs(title="Pyrone", y='log2FC', x='Syncom members') + 
+  #ylim(-2.5, 2.5) +
+  coord_flip()+
+  theme_bw()+
+  theme(axis.text.y = element_text(size = 3),
+        legend.position = 'none')
+
+
+plot_grid(C1,C2,C3,C4,C5,C6, align = 'h', rel_widths = c(1,1,1,1,1,1))

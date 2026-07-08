@@ -1,157 +1,145 @@
 packages <- c('ggthemes','dplyr', "ape", "ShortRead", "Biostrings", "phyloseq",
               "DESeq2", "microbiome", "DECIPHER", "phangorn", "tibble", "lme4",
               "lmerTest", "ggplot2", "vegan", "car", "rcompanion", "emmeans", "RVAideMemoire",
-              'igraph','Hmisc','VennDiagram',"microbiomeMarker", 'dada2')
+              'igraph','Hmisc','VennDiagram',"microbiomeMarker", 'dada2', 'pals', 'paletteer')
 
 sapply(packages, require, character.only = TRUE)              
 
-setwd("G:/My Drive/labs/Nottingham/Duckweed/Exp Metabolites addition/")
+ps.perc <- readRDS(ps.perc, "G:/My Drive/labs/Nottingham/Duckweed/Figuras paper/Clean data/Fig S24/Fig S24b/seqtab Fig S24a.rds")
 
-# Control sequence ####
-track <- readRDS("G:/My Drive/labs/Nottingham/Duckweed/Exp Metabolites addition/track.rds")
-write.table(track, "track 16S.txt")
+tableSyncom = cbind(ps.perc@sam_data, ps.perc@otu_table)
+tableSyncom2=tableSyncom[,-c(1:6,10,11)][1:100]
+tableSyncom3 = tableSyncom2[tableSyncom2$Drugs != 'DMSO',]
 
-# 1. Metadata
-meta <- read.table("Metadata.txt", header = TRUE, row.names = 1)
+library(reshape2)
+melted_table <- tableSyncom3 %>% melt
 
-###ASV table
-asv.table <- readRDS('G:/My Drive/labs/Nottingham/Duckweed/Exp Metabolites addition/seqtab_final.rds')
-asv.table2<- otu_table(asv.table, taxa_are_rows=FALSE)
+ttestRat <- function(df, grp1, grp2) {
+  x = df[grp1]
+  y = df[grp2]
+  x = as.numeric(x)
+  y = as.numeric(y)  
+  results = t.test(x, y)
+  results$p.value
+}
 
-##ASing to the syncom
-taxaSyncom <- assignTaxonomy(asv.table2, "G:/My Drive/labs/Nottingham/Duckweed/Ex2/DExp2 16S analysis/Syncom_Sequence.pcr.unique.fasta", multithread=TRUE)#, minBoot = 98
+log2foldchange <- c()
+for(specie in melted_table$Species  %>% unique){
+  melted_sub <- melted_table %>% subset(Species ==  specie) %>% droplevels
+  for(var in melted_sub$variable  %>% unique){
+    melted_sub2 <- melted_sub %>% subset(variable ==  var) %>% droplevels #'ASV522'
+    for(drug in melted_sub2[melted_sub2$Compound  !='Control',]$Drugs  %>% unique){
+      melted_sub3 <- melted_sub2[melted_sub2$Compound  !='Control',] %>% subset(Drugs  ==  drug) %>% droplevels
+      
+      Control = data.frame(t(melted_sub2[melted_sub2$Compound  =='Control',][,5]))
+      Compound = data.frame(t(melted_sub3[melted_sub3$Compound  =='Compound',][,5]))
+      
+      Control_mean = apply(Control, 1, mean) 
+      Compound_mean = apply(Compound, 1, mean) 
+      
+      C_C_mean <- log2(Control_mean+1) - log2(Compound_mean+1) 
+      
+      C_C_mean_statistic = t.test(Control,Compound)
+      pvalueB_C_C = C_C_mean_statistic$p.value
+      C_C_mean_conf = t(data.frame(C_C_mean_statistic$conf.int))
+      colnames(C_C_mean_conf) = c('inf','sup')
+      
+      result = cbind(C_C_mean,pvalueB_C_C)
+      specie2 = specie
+      row.names(result)= var
+      result2 = cbind(specie2,result)
+      result3 = cbind(drug,result2)
+      result4 = cbind(var,result3)
+      result5 = cbind(result4,C_C_mean_conf)
+      log2foldchange <- rbind(log2foldchange,result5)
+    }}}
 
-#write.table(taxaSyncom, "taxaSyncom.txt")
-#taxaSyncom = read.table("taxaSyncom.txt", header = TRUE, row.names = 1)
+log2foldchange2 = data.frame(log2foldchange)
+colnames(log2foldchange2) = c('ASV','Compound', 'Species', 'diff', 'pvalue', ' inf','sup')
 
-#Now we can make the phyloseq object
-ps.Syncom <- phyloseq(asv.table2, tax_table(taxaSyncom), sample_data(meta))
-
-taxa_names(ps.Syncom) <- paste0("ASV", seq(ntaxa(ps.Syncom)))
-
-ps.Syncom = subset_taxa(ps.Syncom, Genus  != "NA")
-#ps.SyncomSilva = subset_taxa(ps.SyncomSilva, Genus  != "NA")
-
-ps.Syncom@sam_data
-Tax95s=ps.Syncom@tax_table
-Tax95s=data.frame(Tax95s)
-unique(Tax95s$Kingdom)
-
-ps.Syncom.3 = subset_samples(ps.Syncom, ID !=  "C-")
-ps.pruned <- prune_taxa(taxa_sums(ps.Syncom.3)>=1, ps.Syncom.3)
-ps.pruned3 <- prune_samples(sample_sums(ps.pruned)>1, ps.pruned) 
-ps.perc <- transform_sample_counts(ps.pruned3, function(x) x / sum(x)) 
-
-saveRDS(ps.perc, "G:/My Drive/labs/Nottingham/Duckweed/Figuras paper/Clean data/Fig S14/Fig 14a/seqtab.rds")
-
-
-ps.Syncom2 = subset_samples(ps.Syncom, Species !=  "LP8539")
-ps.Syncom3 = subset_samples(ps.Syncom2, Species !=  "LY9250")
-
-ps.perc.Control = subset_samples(ps.Syncom3, Drugs ==  "Control")
-ps.perc.DMSO = subset_samples(ps.Syncom, Drugs ==  "DMSO")
-
-
-ps.perc.Methycitrate = subset_samples(ps.Syncom3, Drugs ==  "Methycitrate")
-ps.perc.Methycitrate2 <- prune_samples(sample_sums(ps.perc.Methycitrate)>1, ps.perc.Methycitrate) 
-
-ps.perc.Citruline = subset_samples(ps.Syncom3, Drugs ==  "Citruline")
-ps.perc.Citruline2 <- prune_samples(sample_sums(ps.perc.Citruline)>1, ps.perc.Citruline) 
-
-ps.perc.Adrenaline = subset_samples(ps.Syncom3, Drugs ==  "Adrenaline")
-ps.perc.Adrenaline2 <- prune_samples(sample_sums(ps.perc.Adrenaline)>1, ps.perc.Adrenaline) 
-
-ps.perc.Pyrone = subset_samples(ps.Syncom3, Drugs ==  "Pyrone")
-ps.perc.Pyrone2 <- prune_samples(sample_sums(ps.perc.Pyrone)>1, ps.perc.Pyrone) 
-
-ps.perc.Glutaric = subset_samples(ps.Syncom3, Drugs ==  "Glutaric")
-ps.perc.Glutaric2 <- prune_samples(sample_sums(ps.perc.Glutaric)>1, ps.perc.Glutaric) 
-
-ps.perc.Lysine = subset_samples(ps.Syncom3, Drugs ==  "Lysine")
-ps.perc.Lysine2 <- prune_samples(sample_sums(ps.perc.Lysine)>1, ps.perc.Lysine) 
-#LY9250 LP8539 
-
-#####PCoA for ASV-level data with Bray-Curtis
-# Calculates Bray-Curtis distances between samples. Because taxa is in
-# columns, it is used to compare different samples. We transpose the
-# assay to get taxa to columns
-PCoA <- ordinate(ps.perc.Methycitrate2, "PCoA", "bray")
-title ="PCoA - PCoA1 vs PCoA2"
-ev1 <- (PCoA$values$Relative_eig[1])*100
-ev2 <- (PCoA$values$Relative_eig[2])*100
-xlab_text <- paste("PCoA1 (", round(ev1,2), "%)")
-ylab_text <- paste("PCoA2 (", round(ev2,2), "%)")
-
-x<-data.frame(PCoA$vectors[, 1:2])
-x <- merge(x, ps.perc@sam_data, by=0)
-rownames(x)<-x$Row.names
-x$Row.names <- NULL
-
-PCoAmean = aggregate(cbind(mean.x=Axis.1,mean.y=Axis.2)~Species*Drugs,x,mean)
-PCoAmeands = aggregate(cbind(ds.x=Axis.1,ds.y=Axis.2)~Species*Drugs,x,se)
-PCoAmean2 =merge(PCoAmean,PCoAmeands[,-(2)],by="Species")
-
-gg2 <- merge(PCoAmean2,x[,c(9,12)], by="Species")
-gg2$Complexity = as.numeric(gg2$Complexity)
-
-ggplot(data = gg2, aes(mean.x, mean.y, label=Species)) +
-  geom_vline(xintercept = 0,size = 2,color = "#D9D9D9",linetype = "longdash")+
-  geom_hline(yintercept = 0,size = 2,color = "#D9D9D9",linetype = "longdash")+
-  geom_errorbarh(mapping = aes(xmin =mean.x - ds.x ,xmax = mean.x + ds.x),size = 0.1, alpha = 0.15) +
-  geom_errorbar(mapping = aes(ymin =mean.y - ds.y ,ymax = mean.y + ds.y),size = 0.1, alpha = 0.15)  + 
-  geom_point( size = 6, aes(col = Complexity),stroke = 1) + 
-  scale_colour_gradientn(colours=c("Blue","Red"))+
-  labs(y=ylab_text, x=xlab_text)+ theme_few()
-
-###PERMANOVA
-# Calculate bray curtis distance matrix
-ps.3_bray <- phyloseq::distance(ps.perc.Citruline2, method = "bray")
-# make a data frame from the sample_data
-sample_ps.3c <- data.frame(sample_data(ps.perc.Citruline2))
-# Adonis test
-adonis2(ps.3_bray ~ Species, data = sample_ps.3c)
-
-### 4 Speceis
-#Pyrone no differences
-#Methilcitrate Species: 0.002 Complexity 0.001  
-#Adrenaline Species: 0.005 Complexity 0.004
-#Control Species: 0.001 Complexity 0.001
-#Citruline Species: 0.002  Complexity 0.001
+log2foldchange2$Significance <- "No Significant"
+pval_thres <- 0.1
+log2foldchange2$Significance[which(log2foldchange2$pvalue < pval_thres)] <- "q < 0.1"
+log2foldchange2$Significance <- log2foldchange2$Significance %>% factor
+log2foldchange2$diff = as.numeric(log2foldchange2$diff)
 
 
-#Control: Species: R2=0.34524 F=2.531  P=0.002 
-#Complexity  1   0.8729 0.11855 4.3453  0.002 **
-#Species     4   1.6693 0.22670 2.0774  0.008 **
-#Residual   24   4.8213 0.65476    
+head(log2foldchange2)
+#Aggregate the dataframe to display as heatmap
+display <- log2foldchange2[log2foldchange2$Compound=='Lysine',]  %>%
+  acast(formula = Species~ASV, mean,
+        value.var = "diff")
 
-#Methy-Citrate Species:   R2 = 0.36381 F=2.6306  P=0.001 
-#Complexity  1   0.3934 0.04038 1.4597  0.136    
-#Species     4   3.1516 0.32344 2.9233  0.001 ***
-#Residual   23   6.1991 0.63619
+display2 = data.frame(t(display))
 
-#Citruline: Species   R2 = 0.37595 F=2.5302  P=0.001
-#Complexity  1   0.3980 0.04781 1.6090  0.124    
-#Species     4   2.7313 0.32813 2.7605  0.001 ***
-#Residual   21   5.1944 0.62405 
+# Obtain the dendrogram
+library(ggdendro)
+dend <- as.dendrogram(hclust(dist(display2)))
+dend_data <- dendro_data(dend)
+ASV_order = dend_data$labels[,3]
 
-#Adrenaline: Species   R2 = 0.32682 F= 2.3303  P= 0.001
-#Complexity  1   0.1993 0.02817 1.0043  0.390    
-#Species     4   2.1133 0.29865 2.6618  0.001 ***
-#Residual   24   4.7636 0.67318 
+dend_nutr <- as.dendrogram(hclust(dist(t(display2))))
+dend_nutr_data <- dendro_data(dend_nutr)
+nutr_order = dend_nutr_data$labels[,3]
 
-#Pyrone: Species R2 = 0.34545 F= 1.7944  P=0.009
-#Complexity  1   0.3215 0.03943 1.0241  0.006 **   
-#Species     4   2.4952 0.30601 1.9869  0.003 **
-#Residual   17   5.3372 0.65455 
+# Setup the data, so that the layout is inverted (this is more 
+# "clear" than simply using coord_flip())
+segment_data <- with(
+  segment(dend_data), 
+  data.frame(x = y, y = x, xend = yend, yend = xend))
 
-#Gluraic: Species R2 =  0.2893 1.6282  0.012
-#Complexity  1   0.5616 0.14202 2.2936  0.052 .
-#Species     2   0.6995 0.17688 1.4283  0.168  
-#Residual   11   2.6936 0.68110 
+# Use the dendrogram label data to position the gene labels
+gene_pos_table <- with(
+  dend_data$labels, 
+  data.frame(y_center = x, gene = as.character(label), height = 1))
 
-#Lysine: 
-#adonis2(formula = ps.3_bray ~ Complexity * Species, data = sample_ps.3c)
-#Complexity  1   0.5616 0.14202 2.2936  0.060 .
-#Species     2   0.6995 0.17688 1.4283  0.144  
-#Residual   11   2.6936 0.68110                
+# Table to position the samples
+sample_pos_table <- data.frame(sample = nutr_order) %>%
+  group_by(x_center = (1:n()), width = 1)
+
+# Neglecting the gap parameters
+heatmap_data <- display2 %>% 
+  reshape2::melt(value.name = "expr", varnames = c("gene", "sample")) %>%
+  cross_join(gene_pos_table) %>%
+  cross_join(sample_pos_table)
+
+# Limits for the vertical axes
+gene_axis_limits <- with(
+  gene_pos_table, 
+  c(min(y_center - 0.5 * height), max(y_center + 1 * height))) + 0.1 * c(-1, 1) # extra spacing: 0.1
+
+
+
+log2foldchange2$ASV = factor(log2foldchange2$ASV, c(ASV_order))
+log2foldchange2$Species = factor(log2foldchange2$Species, c('LY9250', "SP9505","SP7498","LP0049", "LJ9250","LP8539"))
+
+plt_hmap = ggplot(data = log2foldchange2[log2foldchange2$Compound=='Lysine',], aes(Species, ASV)) + 
+  geom_raster(aes(fill = diff)) +
+  geom_tile(aes(color = Significance),fill = '#00000000', size = 0.3,width = 0.9,height = 0.9) + #
+  #geom_text(aes(label = Phylum),color = "black",size = 5)+
+  #facet_grid(~Compound, space = "free",scales = "free") +
+  theme_few()+
+  scale_fill_paletteer_c("pals::kovesi.diverging_bwr_40_95_c42", #kovesi.diverging_bwr_55_98_c37
+                         limits = c(-0.25,0.25),na.value = "#D9D9D9",name = "Fold Change") +
+  scale_color_manual(values = c('grey',"black"),na.value =  "transparent",name = "Significance vs Full") + #Significance Genotype vs Col-0
+  #theme(size_panel_border = 0.2)+
+  theme(axis.text.x = element_text(angle = -45, hjust=-0.05, size = 5),
+        axis.text.y = element_text(size = 5),
+        axis.title = element_blank())
+
+# Dendrogram plot
+plt_dendr <- ggplot(segment_data) + 
+  geom_segment(aes(x = x, y = y, xend = xend, yend = yend)) + 
+  scale_x_reverse() + 
+  scale_y_continuous(breaks = gene_pos_table$y_center, 
+                     labels = gene_pos_table$gene, 
+                     limits = gene_axis_limits, 
+                     expand = c(0, 0)) + 
+  labs(x = "Distance", y = "", colour = "", size = "") +
+  theme_tufte() + 
+  theme(panel.grid.minor = element_blank(),axis.text.y=element_blank(),
+        axis.title = element_blank()) #
+
+library(cowplot)
+plot_grid(plt_dendr, plt_hmap, align = 'h', rel_widths = c(0.5, 1))
 
