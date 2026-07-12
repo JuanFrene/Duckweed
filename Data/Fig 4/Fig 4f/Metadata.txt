@@ -1,0 +1,17 @@
+	ID	Type	Species	Thickness	Complexity	Subsample
+P04.bc96	c-	c-	c-	NA	NA	1
+P04.bc70	RS1	SR	SR_High	High	NA	1
+P04.bc63	RS2	SR	SR_High	High	NA	2
+P04.bc74	RS3	SR	SR_High	High	NA	3
+P04.bc72	RS4	SR	SR_High	High	NA	4
+P04.bc65	RS5	SR	SR_High	High	NA	5
+P04.bc61	RS11	SR	SR_Low	Low	NA	1
+P04.bc73	RS12	SR	SR_Low	Low	NA	2
+P04.bc68	RS13	SR	SR_Low	Low	NA	3
+P04.bc75	RS14	SR	SR_Low	Low	NA	4
+P04.bc64	RS15	SR	SR_Low	Low	NA	5
+P04.bc67	RS10	SR	SR_Medium	Medium	NA	5
+P04.bc69	RS6	SR	SR_Medium	Medium	NA	1
+P04.bc66	RS7	SR	SR_Medium	Medium	NA	2
+P04.bc71	RS8	SR	SR_Medium	Medium	NA	3
+P04.bc62	RS9	SR	SR_Medium	Medium	NA	4
