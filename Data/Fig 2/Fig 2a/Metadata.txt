@@ -1,68 +1,55 @@
-	Plate	Column	Row	Compartment	Treatment	Nutrient	Species	ID	cell_layer_n
-P02.bc69	2	9	E	Root	SynCom	High	LA7339	R48	5
-P04.bc58	4	8	B	Root	SynCom	High	LA7339	R49	5
-P02.bc42	2	6	B	Root	SynCom	High	LA7339	R51	5
-P03.bc65	3	9	A	Root	SynCom	Low	LA7339	R213	7
-P01.bc93	1	12	E	Root	SynCom	Medium	LA7339	R153	5
-P02.bc37	2	5	E	Root	SynCom	Medium	LA7339	R154	6
-P03.bc4	3	1	C	Root	SynCom	Medium	LA7339	R155	5
-P02.bc86	2	11	F	Root	SynCom	Medium	LA7339	R156	5
-P02.bc51	2	7	C	Root	SynCom	High	LJ9250	R60	5
-P03.bc18	3	3	A	Root	SynCom	High	LJ9250	R61	5
-P04.bc20	4	3	D	Root	SynCom	High	LJ9250	R62	5
-P03.bc15	3	2	F	Root	SynCom	High	LJ9250	R63	5
-P02.bc9	2	2	A	Root	SynCom	Low	LJ9250	R235	5
-P02.bc85	2	11	E	Root	SynCom	Low	LJ9250	R236	5
-P02.bc56	2	7	H	Root	SynCom	Low	LJ9250	R237	5
-P01.bc82	1	11	B	Root	SynCom	Medium	LJ9250	R165	5
-P01.bc14	1	2	F	Root	SynCom	Medium	LJ9250	R166	6
-P01.bc30	1	4	F	Root	SynCom	Medium	LJ9250	R167	5
-P04.bc50	4	7	B	Root	SynCom	Medium	LJ9250	R168	5
-P01.bc5	1	1	E	Root	SynCom	High	LP0049	R57	5
-P03.bc13	3	2	D	Root	SynCom	High	LP0049	R58	6
-P04.bc63	4	8	G	Root	SynCom	High	LP0049	R59	5
-P03.bc44	3	6	D	Root	SynCom	Low	LP0049	R231	6
-P04.bc3	4	1	C	Root	SynCom	Low	LP0049	R232	6
-P02.bc82	2	11	B	Root	SynCom	Low	LP0049	R233	5
-P01.bc27	1	4	C	Root	SynCom	Low	LP0049	R234	6
-P02.bc27	2	4	C	Root	SynCom	Medium	LP0049	R161	5
-P01.bc88	1	11	H	Root	SynCom	Medium	LP0049	R162	6
-P01.bc37	1	5	E	Root	SynCom	Medium	LP0049	R163	6
-P04.bc22	4	3	F	Root	SynCom	Medium	LP0049	R164	6
-P04.bc18	4	3	B	Root	SynCom	High	LP8539	R44	6
-P04.bc56	4	7	H	Root	SynCom	High	LP8539	R45	5
-P01.bc26	1	4	B	Root	SynCom	High	LP8539	R46	5
-P01.bc91	1	12	C	Root	SynCom	High	LP8539	R47	5
-P01.bc78	1	10	F	Root	SynCom	Low	LP8539	R219	5
-P03.bc57	3	8	A	Root	SynCom	Low	LP8539	R220	5
-P03.bc3	3	1	B	Root	SynCom	Low	LP8539	R221	5
-P02.bc70	2	9	F	Root	SynCom	Low	LP8539	R222	5
-P01.bc56	1	7	H	Root	SynCom	Medium	LP8539	R149	6
-P01.bc94	1	12	F	Root	SynCom	Medium	LP8539	R150	6
-P01.bc75	1	10	C	Root	SynCom	Medium	LP8539	R151	5
-P03.bc86	3	11	F	Root	SynCom	Medium	LP8539	R152	5
-P04.bc83	4	11	C	Root	SynCom	High	SI7820	R36	7
-P01.bc43	1	6	C	Root	SynCom	High	SI7820	R37	7
-P02.bc3	2	1	C	Root	SynCom	High	SI7820	R38	6
-P03.bc66	3	9	B	Root	SynCom	High	SI7820	R39	6
-P02.bc21	2	3	E	Root	SynCom	Low	SI7820	R225	7
-P04.bc9	4	2	A	Root	SynCom	Low	SI7820	R211	7
-P01.bc8	1	1	H	Root	SynCom	Low	SI7820	R212	7
-P02.bc53	2	7	E	Root	SynCom	Low	SI7820	R214	7
-P03.bc55	3	7	G	Root	SynCom	Medium	SI7820	R141	6
-P03.bc26	3	4	A	Root	SynCom	Medium	SI7820	R142	7
-P01.bc49	1	7	A	Root	SynCom	Medium	SI7820	R143	8
-P03.bc28	3	4	C	Root	SynCom	Medium	SI7820	R144	8
-P02.bc83	2	11	C	Root	SynCom	High	SP9509	R40	6
-P04.bc86	4	11	F	Root	SynCom	High	SP9509	R41	6
-P02.bc18	2	3	B	Root	SynCom	High	SP9509	R42	7
-P04.bc69	4	9	E	Root	SynCom	High	SP9509	R43	6
-P01.bc23	1	3	G	Root	SynCom	Low	SP9509	R215	7
-P04.bc70	4	9	F	Root	SynCom	Low	SP9509	R216	7
-P03.bc27	3	4	B	Root	SynCom	Low	SP9509	R217	7
-P02.bc44	2	6	D	Root	SynCom	Low	SP9509	R218	7
-P03.bc47	3	6	G	Root	SynCom	Low	SP9509	W218	7
-P02.bc12	2	2	D	Root	SynCom	Medium	SP9509	R145	7
-P02.bc41	2	6	A	Root	SynCom	Medium	SP9509	R146	8
-P04.bc43	4	6	C	Root	SynCom	Medium	SP9509	R147	7
-P04.bc11	4	2	C	Root	SynCom	Medium	SP9509	R148	6
+	Compartment	Treatment 	Nutrient	Species	ID	cell_layer_n	Complexity
+P01.bc43	Root	SynCom	High	SI7820	R37	7	High
+P02.bc18	Root	SynCom	High	SP9509	R42	7	High
+P03.bc66	Root	SynCom	High	SI7820	R39	6	High
+P04.bc69	Root	SynCom	High	SP9509	R43	6	High
+P04.bc83	Root	SynCom	High	SI7820	R36	7	High
+P04.bc86	Root	SynCom	High	SP9509	R41	6	High
+P01.bc23	Root	SynCom	Low	SP9509	R215	7	High
+P02.bc21	Root	SynCom	Low	SI7820	R225	7	High
+P02.bc44	Root	SynCom	Low	SP9509	R218	7	High
+P02.bc53	Root	SynCom	Low	SI7820	R214	7	High
+P03.bc27	Root	SynCom	Low	SP9509	R217	7	High
+P04.bc70	Root	SynCom	Low	SP9509	R216	7	High
+P01.bc49	Root	SynCom	Medium	SI7820	R143	8	High
+P02.bc41	Root	SynCom	Medium	SP9509	R146	8	High
+P03.bc26	Root	SynCom	Medium	SI7820	R142	7	High
+P03.bc28	Root	SynCom	Medium	SI7820	R144	8	High
+P03.bc55	Root	SynCom	Medium	SI7820	R141	6	High
+P04.bc43	Root	SynCom	Medium	SP9509	R147	7	High
+P01.bc26	Root	SynCom	High	LP8539	R46	5	Low
+P01.bc91	Root	SynCom	High	LP8539	R47	5	Low
+P02.bc42	Root	SynCom	High	LA7339	R51	5	Low
+P04.bc18	Root	SynCom	High	LP8539	R44	6	Low
+P04.bc56	Root	SynCom	High	LP8539	R45	5	Low
+P04.bc58	Root	SynCom	High	LA7339	R49	5	Low
+P01.bc78	Root	SynCom	Low	LP8539	R219	5	Low
+P02.bc70	Root	SynCom	Low	LP8539	R222	5	Low
+P03.bc3	Root	SynCom	Low	LP8539	R221	5	Low
+P03.bc65	Root	SynCom	Low	LA7339	R213	7	Low
+P01.bc56	Root	SynCom	Medium	LP8539	R149	6	Low
+P01.bc75	Root	SynCom	Medium	LP8539	R151	5	Low
+P01.bc93	Root	SynCom	Medium	LA7339	R153	5	Low
+P01.bc94	Root	SynCom	Medium	LP8539	R150	6	Low
+P02.bc37	Root	SynCom	Medium	LA7339	R154	6	Low
+P02.bc86	Root	SynCom	Low	LA7339	R156	5	Low
+P03.bc4	Root	SynCom	Medium	LA7339	R155	5	Low
+P03.bc86	Root	SynCom	Low	LA7339	R152	5	Low
+P01.bc5	Root	SynCom	High	LP0049	R57	5	Medium
+P03.bc13	Root	SynCom	High	LP0049	R58	6	Medium
+P03.bc15	Root	SynCom	High	LJ9250	R63	5	Medium
+P03.bc18	Root	SynCom	High	LJ9250	R61	5	Medium
+P04.bc20	Root	SynCom	High	LJ9250	R62	5	Medium
+P04.bc63	Root	SynCom	High	LP0049	R59	5	Medium
+P01.bc27	Root	SynCom	Low	LP0049	R234	6	Medium
+P02.bc85	Root	SynCom	Low	LJ9250	R236	5	Medium
+P02.bc9	Root	SynCom	Low	LJ9250	R235	5	Medium
+P03.bc44	Root	SynCom	Low	LP0049	R231	6	Medium
+P04.bc50	Root	SynCom	Low	LJ9250	R168	5	Medium
+P02.bc27	Root	SynCom	Low	LP0049	R161	5	Medium
+P01.bc14	Root	SynCom	Medium	LJ9250	R166	6	Medium
+P01.bc30	Root	SynCom	Medium	LJ9250	R167	5	Medium
+P01.bc82	Root	SynCom	Medium	LJ9250	R165	5	Medium
+P01.bc37	Root	SynCom	Medium	LP0049	R163	6	Medium
+P01.bc88	Root	SynCom	Medium	LP0049	R162	6	Medium
+P04.bc22	Root	SynCom	Medium	LP0049	R164	6	Medium
