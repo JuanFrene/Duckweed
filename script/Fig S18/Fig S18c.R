@@ -10,91 +10,97 @@ library(ggplot2)
 library(ggthemes)
 library(ggdendro)
 library(pals)
+library(ape)
 library(paletteer)
+library(vegan)
 require(GGally)
 require(CCA)
 require(CCP)
+library(ggdendro)
 
 setwd("G:/My Drive/labs/Nottingham/Duckweed/Exudados/")
 
-Exudados <- read.table("Exudados.txt", header = TRUE, row.names = 1)
+Exudados <- read.table("Exudates.txt", header = TRUE, row.names = 1)
 Exudados[,1:5]
 
-varespec.bray <- vegdist(Exudados[,-c(1:4)], method = "bray") # -c(3,27)dissimilarity matrix using bray-curtis distance indices on the varespec dataset native to vegan
-pcoaVS <- pcoa(varespec.bray)
-pcoaVS$vectors[,1:2]
+Exudados$Subsample = as.factor(Exudados$Subsample)
+Exudados$CCL = as.factor(Exudados$CCL)
+Exudados$CCL_ds = as.factor(Exudados$CCL_ds)
+ 
 
-f<-data.frame(pcoaVS$vectors[,1:4])
-f <- cbind(Exudados[,c(1:4)],f )#-c(3,27)
-rownames(f)<-x$Row.names
-f$Row.names <- NULL
+melted_Exudados <- Exudados[1:101] %>% melt
+unique(melted_Exudados2$variable)
+gen.means <- aggregate(value~Species+variable, melted_Exudados, FUN=mean)
+gen.means2 = cbind(gen.means,log10(gen.means[,3]+1))
+colnames(gen.means2) = c('Species', 'variable', 'value','log10')
 
-PCA_Comp_mean = aggregate(cbind(mean.x=Axis.1,mean.y=Axis.2,CCL=CCL,CCL_ds=CCL_ds)~Species ,f,mean)
-PCA_Comp_meands = aggregate(cbind(ds.x=Axis.1,ds.y=Axis.2)~Species,f,sd)
-PCoA_Comp_mean2 =cbind(PCA_Comp_mean,PCA_Comp_meands[,c(2:3)])
+# Obtain the dendrogram
+display <- gen.means2  %>%
+  acast(formula = Species~variable, mean,
+        value.var = "log10")
 
-
-paleta_alive <- c("#88CCEE", "#CC6677", "#DDCC77", "#117733", "#332288", "#AA4499", 
-                  "#661100","#44AA99", "#999933", "#882255",  "#6699CC", "#888888",
-                  "#49AA91", "#999983", "#882249", "#661830", "#6699DC", "#828389")
-
-PCoA_Comp_mean2$CCL = as.numeric(PCoA_Comp_mean2$CCL)
-
-PcoA = ggplot(data = PCoA_Comp_mean2, aes(mean.x,mean.y)) + #PCoA_Comp.F_mean2 mean.x mean.y
-  geom_vline(xintercept = 0,size = 2,color = "#D9D9D9",linetype = "longdash")+
-  geom_hline(yintercept = 0,size = 2,color = "#D9D9D9",linetype = "longdash")+
-  geom_errorbarh(mapping = aes(xmin =mean.x - ds.x, xmax = mean.x + ds.x),linewidth = 0.1,alpha = 0.4) +
-  geom_errorbar(mapping = aes(ymin =mean.y - ds.y, ymax = mean.y + ds.y),linewidth = 0.01,alpha = 0.4)  + 
-  geom_point(size=2.5, aes(color = CCL),stroke = 1) + #size = 4,
-  labs(x='PCoA1', y='PCoA2') +
-  scale_color_gradientn(colours=c('blue','red'))+
-  theme_few()
-  scale_color_manual(values = paleta_alive)
-
-#####PERMANOVA
-###PERMANOVA
-# Calculate bray curtis distance matrix
-adonis2(varespec.bray ~ CCL*Species, data = Exudados)
-
-paleta_alive <- c('#FF0000','#00008B',"#FFB919","#00CC1C")
-
-PERMANOVA = adonis2(varespec.bray ~ CCL*Species, data = Exudados, by = "terms")
-
-PERMANOVA2 = data.frame(PERMANOVA)
-variable  = c('variable','variable','variable','variable')
-PERMANOVA2$Significance <- "No Significant"
-pval_thres <- 0.05
-PERMANOVA2$Significance[which(PERMANOVA2$Pr..F. < pval_thres)] <- "Significant"
-PERMANOVA2$Significance <- PERMANOVA2$Significance %>% factor
-
-PERMANOVA2$R2[which(PERMANOVA2$R2 < '0.05201346')] <- "0.144"
-PERMANOVA2$R2[which(PERMANOVA2$R2 == '0.396731354925236')] <- "0.304"
-
-LC = data.frame(cbind(variable, row.names(PERMANOVA2), PERMANOVA2[,c(3,6)]))
-colnames(LC) = c('variable','Effect', 'R2','Significance')
+display2 = data.frame(display)
 
 
-#Plot Variance
-dim(LC)
-colnames(LC)
-dim(LC)
-data_melt <- LC[-(4),]
+dend <- as.dendrogram(hclust(dist(display2)))
+dend_data <- dendro_data(dend)
 
-#Reorder x axis: the order of the factor will be the same as in the data.csv file
-data_melt$Effect <- as.character(data_melt$Effect)#Turn your 'treatment' column into a character vector
-data_melt$Effect <- factor(data_melt$Effect, levels=unique(rev(data_melt$Effect)))#Then turn it back into a factor with the levels in the correct order
+dend_nutr <- as.dendrogram(hclust(dist(t(display2))))
+dend_nutr_data <- dendro_data(dend_nutr)
+nutr_order = dend_nutr_data$labels[,3]
 
-mypal = c('white','#FF0000','#00008B',"#FFB919","#00CC1C")
+# Setup the data, so that the layout is inverted (this is more 
+# "clear" than simply using coord_flip())
+segment_data <- with(
+  segment(dend_data), 
+  data.frame(x = y, y = x, xend = yend, yend = xend))
 
-data_melt$R2 = as.numeric(data_melt$R2)#, c('Crop','Compost','Crop:Compost','Residual'))
+# Use the dendrogram label data to position the gene labels
+gene_pos_table <- with(
+  dend_data$labels, 
+  data.frame(y_center = x, gene = as.character(label), height = 1))
 
-PERMANOVA_grap = ggplot(data=data_melt, aes(x=variable, y=R2,fill=Effect)) +
-  geom_bar(stat="identity",aes(color=Significance), size = 0.3,width = 1,linewidth=1) +# 
-  scale_fill_manual(values = mypal) +
-  theme_few() + #guides() + #color = FALSE, fill=FALSE
-  labs(y="Variance explained (%)") +
-  scale_color_manual(values = c('black',"orange"),na.value =  "transparent",name = "Significance vs Water")+
-  theme(legend.title=element_blank(), legend.margin=margin(c(0,0,0,0)),
-        axis.text.x   = element_blank())
+# Table to position the samples
+sample_pos_table <- data.frame(sample = nutr_order) %>%
+  group_by(x_center = (1:n()), width = 1)
 
-plot_grid(PcoA, PERMANOVA_grap, align = 'h', rel_widths = c(1, 0.4))
+# Neglecting the gap parameters
+heatmap_data <- display2 %>% 
+  reshape2::melt(value.name = "expr", varnames = c("gene", "sample")) %>%
+  cross_join(gene_pos_table) %>%
+  cross_join(sample_pos_table)
+
+# Limits for the vertical axes
+gene_axis_limits <- with(
+  gene_pos_table, 
+  c(min(y_center - 0.5 * height), max(y_center + 1 * height))) + 0.1 * c(-1, 1) # extra spacing: 0.1
+
+
+
+gen.means2$variable = factor(gen.means2$variable, c(nutr_order))#)
+gen.means2$Species = factor(gen.means2$Species, dend_data$labels[,3])
+
+
+plt_hmap = ggplot(data = gen.means2, aes(Species,variable)) +
+  geom_raster(aes(fill = log10))+
+  theme_few() +
+  scale_fill_paletteer_c("pals::kovesi.diverging_bwr_55_98_c37",name = "Abundance") +
+  scale_color_manual(values = c('grey',"black"),na.value =  "transparent",name = "Significance vs Water") + #Significance Genotype vs Col-0
+  theme(axis.text.x = element_text(angle = -45, hjust=-0.05),
+        axis.text.y = element_text(size = 5))
+
+# Dendrogram plot
+plt_dendr <- ggplot(segment_data) + 
+  geom_segment(aes(x = x, y = y, xend = xend, yend = yend)) + 
+  scale_x_reverse() + 
+  scale_y_continuous(breaks = gene_pos_table$y_center, 
+                     labels = gene_pos_table$gene, 
+                     limits = gene_axis_limits, 
+                     expand = c(0, 0)) + 
+  labs(x = "Distance", y = "", colour = "", size = "") +
+  theme_tufte() + 
+  theme(panel.grid.minor = element_blank(),axis.text.y=element_blank(),
+        axis.title = element_blank()) #
+
+plot_grid(plt_dendr, plt_hmap, align = 'h', rel_widths = c(0.1, 1))
+
